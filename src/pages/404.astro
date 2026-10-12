@@ -1,0 +1,14 @@
+---
+import Base from "../layouts/Base.astro";
+import { notFound } from "../content/site";
+---
+
+<Base title={`${notFound.heading} · Ignition APG`} noindex>
+  <section class="py-16 md:py-26">
+    <div class="wrap max-w-[48rem]">
+      <h1 class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{notFound.heading}</h1>
+      <p class="mt-6 text-lead">{notFound.text}</p>
+      <p class="mt-10"><a class="link inline-flex min-h-11 items-center font-bold" href="/">{notFound.homeLink}</a></p>
+    </div>
+  </section>
+</Base>

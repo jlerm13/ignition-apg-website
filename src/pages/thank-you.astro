@@ -1,0 +1,24 @@
+---
+// Calendly sends visitors here after a booking. Its page view is the booking_completed event.
+import Base from "../layouts/Base.astro";
+import { thankYou, links } from "../content/site";
+---
+
+<Base title={`${thankYou.heading} · Ignition APG`} noindex>
+  <section class="py-16 md:py-26">
+    <div class="wrap max-w-[48rem]">
+      <h1 class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{thankYou.heading}</h1>
+      <div class="mt-6 space-y-4 text-lead leading-[1.45]">
+        {thankYou.paragraphs.map((p) => <p>{p}</p>)}
+        <p>
+          {thankYou.emailLine}{" "}
+          <a class="link link--inline break-all" href={`mailto:${links.email}`} data-event="email_click" data-section="thank-you">{links.email}</a>.
+        </p>
+      </div>
+      <p class="mt-10"><a class="link inline-flex min-h-11 items-center font-bold" href="/">{thankYou.backLink}</a></p>
+    </div>
+  </section>
+  <script is:inline>
+    window.va && window.va("event", { name: "booking_completed" });
+  </script>
+</Base>

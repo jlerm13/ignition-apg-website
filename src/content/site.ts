@@ -164,8 +164,8 @@ export const privacy = {
     "Calendly handles the booking. We do not sell your information or add you to a mailing list.",
   ],
   emailLine: "To see or delete your information, email",
-  // Set at launch in Stage 3. The check script must block this placeholder.
-  lastUpdated: "[set at launch]",
+  // A practical date, not a statistic. check-claims allows digits only on this line.
+  lastUpdated: "Last updated: October 12, 2026",
 };
 
 export const notFound = {

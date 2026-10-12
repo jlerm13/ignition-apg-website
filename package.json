@@ -10,8 +10,11 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "check": "astro build && node scripts/check-copy.mjs && node scripts/check-claims.mjs",
     "check:message": "node scripts/check-message.mjs docs/MESSAGE.md",
-    "shots:directions": "node scripts/screenshot-directions.mjs"
+    "og": "node scripts/make-og.mjs",
+    "shots": "node scripts/screenshots.mjs",
+    "shots:directions": "node scripts/screenshots.mjs directions"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",

@@ -183,7 +183,7 @@ Approved as written. There is no personal story and no photo.
 | Text | We use that information to prepare for the call. |
 | Text | Calendly handles the booking. We do not sell your information or add you to a mailing list. |
 | Text | To see or delete your information, email ja.lerman@ignitionapg.com. |
-| Text | Last updated: [set at launch] |
+| Text | Last updated: October 12, 2026 |
 
 Before launch, Stage 3 checks that every line above is true. One example: if the Calendly booking opens inside the site, Calendly may set cookies, and this page must then say so. `docs/BOOKING.md` explains this.
 

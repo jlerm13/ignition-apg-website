@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 3 (build) in progress.** Gate ★2 closed on 2026-10-12: Jake picked Spec sheet. `docs/DESIGN.md` holds the design rules. Stop after the build so Jake can look before Stage 4.
+**Stage 3 (build): done. Waiting for Jake's look before Stage 4 (audit).** This check-in was Jake's choice at gate 2.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -56,6 +56,27 @@ Last updated: 2026-10-12
   - One preview branch with four pages at `/directions/` replaces four preview branches. It is one link instead of four, and Jake allowed preview links.
   - Jake said: start fresh, do not use the old Ignition APG brand. He may send old brand details later.
 
+- Stage 3:
+  - Built the full site in the Spec sheet direction with Astro and Tailwind CSS v4: home, privacy, thank-you, and 404 pages.
+  - Every word comes from `src/content/site.ts`, matching `docs/MESSAGE.md`.
+  - Added cookieless Vercel Web Analytics with page views:
+    - `booking_completed` is the `/thank-you` view.
+    - The click events (`cta_click` with section, `booking_opened`, `email_click`) are wired in. They count once Jake is on Vercel Pro.
+  - Added the share image `public/og.png` (made by `npm run og`), the favicon, the sitemap, and robots.txt.
+  - The site address is a placeholder (`https://ignition-apg-website.vercel.app`). Set `SITE_URL` in Stage 5.
+  - Check scripts:
+    - `npm run check` builds the site, then runs `scripts/check-copy.mjs` and `scripts/check-claims.mjs`. Both pass. The shared rules live in `scripts/rules.mjs`.
+    - Both scripts were tested on planted errors and caught them.
+  - Kill AI Slop scan: no signals. Two hits in the source were confirmed false positives and marked with reasons:
+    - link underline
+    - the step list
+  - Screenshots in `docs/build/` with `npm run shots`. No horizontal scroll at 375, 390, or 1440 px.
+  - At 375 px every button and link is 44 px or taller, except email links inside sentences. Those get a 44 px tap area through CSS, and WCAG 2.2 exempts inline links.
+  - All text at 375 px is 16 px or larger.
+  - The privacy page shows "Last updated: October 12, 2026." This is the one number besides "20-minute", allowed as a practical date.
+  - Light mode only by design (`docs/DESIGN.md`). The Taste Skill's dark-mode rule ranks below the approved design.
+  - The Stage 2 direction pages stay at `/directions/` (noindex) until launch.
+
 ## Jake's decisions so far
 
 - 2026-10-12: Impeccable is installed as instructions only. Its program is never run, so nothing downloads and nothing is sent.
@@ -90,8 +111,9 @@ Last updated: 2026-10-12
 
 ## Waiting on Jake
 
-- Link Vercel with `docs/VERCEL.md`, then send the preview address. The Calendly redirect and the sitemap address need it.
-- Set up Calendly with `docs/BOOKING.md`.
+1. **Look at the full site** in `docs/build/`, or in the Vercel preview once it is linked. Say "go" for the Stage 4 audit, or send changes.
+2. **Link Vercel** with `docs/VERCEL.md` and send the preview address. The Calendly redirect, the Lighthouse audit on a real address, and the final sitemap address need it.
+3. **Set up Calendly** with `docs/BOOKING.md`.
 
 ## The stages
 
@@ -124,7 +146,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
 4. Commit and STOP. Jake picks one direction or asks for a mix.
 5. After he picks, write `docs/DESIGN.md`: type, colour, spacing, and components.
 
-### Stage 3: Build
+### Stage 3: Build (done, waiting for Jake's look)
 
 1. Build these four pages, using the Taste Skill rules and `docs/DESIGN.md`:
    - the home page
