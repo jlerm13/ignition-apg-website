@@ -1,0 +1,46 @@
+---
+// Stage 2 review index for Jake. Not part of the final site.
+const directions = [
+  { slug: "ledger", name: "1. Ledger", theme: "Almanac theme, split layout", note: "Cool blue-grey, like an audit record. A small table in the hero shows who does what: the data team collects, checks, connects, and explains. Coaches and clinicians decide." },
+  { slug: "briefing", name: "2. Briefing", theme: "Specimen theme, long document", note: "Warm paper and a light serif heading. The page reads like a written memo to a director, one column, hairline rules." },
+  { slug: "spec-sheet", name: "3. Spec sheet", theme: "Grid theme, marquee hero", note: "Near-white, bold Swiss type, and a visible column grid. Exact and engineered. The heading fills the first screen." },
+  { slug: "service", name: "4. Service", theme: "Coral theme, two columns", note: "Warm grey and a clean sans serif. A calm, modern company look with rounded buttons and one soft panel." },
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Design directions · Ignition APG</title>
+    <style>
+      body { margin: 0; font: 1.0625rem/1.55 ui-sans-serif, system-ui, sans-serif; background: oklch(97% 0.004 250); color: oklch(20% 0.01 250); }
+      main { max-width: 44rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+      h1 { font-size: 1.75rem; margin: 0 0 0.5rem; }
+      p.intro { color: oklch(40% 0.01 250); margin: 0 0 2rem; }
+      ol { list-style: none; padding: 0; margin: 0; }
+      li { border-top: 1px solid oklch(85% 0.006 250); padding: 1.25rem 0; }
+      a { color: oklch(35% 0.13 255); font-weight: 600; font-size: 1.25rem; display: inline-block; min-height: 44px; line-height: 44px; }
+      a:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+      .theme { display: block; font-size: 0.875rem; color: oklch(45% 0.01 250); }
+      .note { margin: 0.25rem 0 0; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Ignition APG: four design directions</h1>
+      <p class="intro">Each direction shows the hero and the problem section with the approved words. Open each one on your phone too.</p>
+      <ol>
+        {directions.map((d) => (
+          <li>
+            <a href={`/directions/${d.slug}/`}>{d.name}</a>
+            <span class="theme">{d.theme}</span>
+            <p class="note">{d.note}</p>
+          </li>
+        ))}
+      </ol>
+    </main>
+  </body>
+</html>

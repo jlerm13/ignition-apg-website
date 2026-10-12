@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 1: done. Gate ★1 approved by Jake on 2026-10-12.** Stage 2 (directions) is in progress.
+**Stage 2: four directions are ready. Waiting at gate ★2 for Jake to pick one.** Gate ★1 was approved on 2026-10-12.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -41,6 +41,21 @@ Last updated: 2026-10-12
     - Wrote `docs/BOOKING.md`: Calendly setup steps for Jake (length, name, three booking questions, redirect to the thank-you page, test).
     - The Calendly link could not be opened from the build environment, because the network blocks calendly.com. Jake checks it.
 
+- Stage 2:
+  - Set up the Astro project: `package.json`, `astro.config.mjs`, and fonts from Fontsource. Tailwind is added in Stage 3.
+  - Moved every approved word into `src/content/site.ts`, the single copy file.
+  - Built four directions from Hallmark themes, hero and problem section only, in `src/pages/directions/`:
+    - Ledger (Almanac)
+    - Briefing (Specimen)
+    - Spec sheet (Grid)
+    - Service (Coral)
+  - Unslop-UI rules applied as a filter.
+  - Screenshots at 1440 px and 390 px are in `docs/directions/`, with one paragraph per direction in `docs/directions/README.md`.
+  - `npm run shots:directions` rebuilds the screenshots. No direction scrolls sideways at either width.
+  - Wrote `docs/VERCEL.md`: steps for Jake to link Vercel.
+  - One preview branch with four pages at `/directions/` replaces four preview branches. It is one link instead of four, and Jake allowed preview links.
+  - Jake said: start fresh, do not use the old Ignition APG brand. He may send old brand details later.
+
 ## Jake's decisions so far
 
 - 2026-10-12: Impeccable is installed as instructions only. Its program is never run, so nothing downloads and nothing is sent.
@@ -66,11 +81,20 @@ Last updated: 2026-10-12
   - Jake approved message sheet v4.
   - Vercel: Jake has an account. It is not yet linked to this repo.
   - Jake allows preview links for the Stage 2 directions.
+- 2026-10-12 (Stage 2 start): the old training-business brand is not used. Start fresh. Jake may send old brand details after he assesses the directions.
 
-## Waiting on Jake
+## Waiting on Jake (gate ★2)
 
-- Link Vercel to this GitHub repo. Steps will be in `docs/VERCEL.md`. Until then, Jake reviews the directions as screenshots.
-- Set up Calendly with `docs/BOOKING.md`.
+1. **Pick a direction, or ask for a mix.** See `docs/directions/README.md` and the screenshots.
+   - If he picks Ledger, he also approves the table labels named in the README.
+2. **Link Vercel** with `docs/VERCEL.md`. Then push any update to the working branch to trigger a preview, and send Jake the `/directions/` link.
+3. **Set up Calendly** with `docs/BOOKING.md`. The redirect address waits for the preview link.
+
+When Jake picks:
+
+1. Write `docs/DESIGN.md` for that direction: type, colour, spacing, and components. Include the fix for the small label text (16 px or larger on phones).
+2. Commit "Design direction picked: <name>".
+3. Start Stage 3.
 
 ## The stages
 
@@ -93,7 +117,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
    - his booking link and email address
 4. Commit and STOP.
 
-### Stage 2 ★: Directions
+### Stage 2 ★: Directions (done, waiting at gate)
 
 1. Make four distinct directions. Unslop-UI has no directions feature, so use Hallmark themes. Each direction shows the hero and the problem section with real copy from the approved MESSAGE.md.
 2. Take screenshots at 1440 px and 390 px wide for each. Save them in `docs/directions/`.
