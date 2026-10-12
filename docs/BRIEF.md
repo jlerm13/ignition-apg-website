@@ -2,6 +2,26 @@
 
 Source of truth for all copy and claims. Saved verbatim from section 3 of Jake's build prompt on 2026-10-12. Change it only with Jake's approval.
 
+## Changes from Jake at gate 1 (2026-10-12)
+
+These override the original text below where they conflict. The original stays below for traceability.
+
+1. **Button:** "Book a 20-minute data audit call" is confirmed.
+2. **No BASIS on the site for now.** Do not name the software anywhere on the site. This includes the vision sentence in the hero.
+3. **"Us", not "Jake", on the site.** Visitors book a call with us and email us. Jake's name does not appear in page copy.
+4. **Company first, not Jake.** Jake leads the new vision and mission of Ignition APG. He is not the founder.
+   - There is no founder section and no personal story. Section 7 becomes a short company section.
+   - Facts Jake has stated about the company:
+     - Ignition APG began as a sports performance training company.
+     - It trained athletes of all ages and solved sports performance problems for its partners.
+     - The data team is the next evolution of that work, and it is now the main focus.
+   - Jake's analogy: Ignition APG is like Google, and the data team is like Waymo, a new project that Jake leads.
+   - Jake's own years of experience no longer appear on the page.
+5. **Keep some detail for the call.** The page says what the data team does. The call shows how, with a walkthrough Jake presents.
+   - "What you can hand us" shows one short line per verb: collect, check, connect, explain.
+   - The method details move to a "Save for the call" list in `docs/MESSAGE.md`.
+   - Every line still traces to a confirmed row in 3.6.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

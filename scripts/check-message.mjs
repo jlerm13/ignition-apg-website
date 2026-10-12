@@ -26,16 +26,14 @@ for (const line of m[1].split("\n")) {
   if (contraction.test(copy)) findings.push(`contraction  ${where}`);
   if (/%/.test(copy)) findings.push(`percent  ${where}`);
   if (xOfY.test(copy)) findings.push(`X of Y  ${where}`);
-  for (const d of copy.match(/\d+(?:[-\s]\w+)?/g) || []) if (!/^20[-\s](minute|years)$/.test(d)) findings.push(`number "${d}"  ${where}`);
+  for (const d of copy.match(/\d+(?:[-\s]\w+)?/g) || []) if (!/^20-minute$/.test(d)) findings.push(`number "${d}"  ${where}`);
+  // Gate 1 (Jake, 2026-10-12): no software name and no personal name on the site.
+  for (const name of ["BASIS", "Jake"]) if (new RegExp(`\\b${name}\\b`).test(copy)) findings.push(`name "${name}" in page copy  ${where}`);
   const low = copy.toLowerCase();
   for (const b of banned) if (new RegExp(`(^|[^a-z])${b.replace(/[-]/g, "[- ]?")}([^a-z]|$)`).test(low)) findings.push(`banned "${b}"  ${where}`);
   const words = (s) => s.split(/\s+/).filter((w) => /[A-Za-z0-9]/.test(w)).length;
   if (SHORT.test(el) && words(copy) > 20) findings.push(`heading/button over 20 words (${words(copy)})  ${where}`);
   for (const s of copy.split(/(?<=[.?!])\s+/)) if (words(s) > 25) findings.push(`sentence over 25 words (${words(s)})  "${s}"`);
-  if (el === "Text" && /^I am Jake/.test(copy0)) {
-    const n = words(copy0.replace(/\[JAKE:[^\]]*\]/g, "Lastname"));
-    if (n < 60 || n > 100) findings.push(`founder text ${n} words`); else console.log(`founder text: ${n} words`);
-  }
 }
 const ids = all.match(/\b(PDS|APS)-W\d+-T\d+\b/g);
 if (ids) findings.push(`task IDs in file: ${ids.join(", ")}`);

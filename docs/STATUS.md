@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 1 (message sheet): done. Waiting at gate ★1 for Jake.** Do not start Stage 2 until Jake approves `docs/MESSAGE.md` and answers the five decisions below.
+**Stage 1: message sheet v2 is ready. Still at gate ★1.** Jake gave his first round of changes. Do not start Stage 2 until he approves `docs/MESSAGE.md` and answers the open decisions below.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -28,21 +28,31 @@ Last updated: 2026-10-12
     - task IDs
 
     The only items left are 14 `[JAKE:]` slots.
+  - Message sheet v2, after Jake's first gate 1 feedback:
+    - Applied his five changes. They are listed at the top of `docs/BRIEF.md`.
+    - Updated `CLAUDE.md`, `PRODUCT.md`, and `docs/SHAPE.md` to match.
+    - The copy check now also flags "BASIS" and "Jake" in page copy. It passes with 13 `[JAKE:]` slots open.
 
 ## Jake's decisions so far
 
 - 2026-10-12: Impeccable is installed as instructions only. Its program is never run, so nothing downloads and nothing is sent.
 - 2026-10-12: If a skill install command fails, copy the same skill from its own GitHub repo as its README describes. Never substitute a different skill.
+- 2026-10-12 (gate 1, round 1):
+  - The button stays "Book a 20-minute data audit call."
+  - BASIS is not named on the site for now.
+  - The site says "us," not "Jake."
+  - Company first. Jake leads the new vision and mission of Ignition APG and is not the founder. The founder section becomes "Who we are."
+  - Keep method details for the call. Jake walks directors through them in a presentation.
 
 ## Waiting on Jake (gate ★1)
 
-Full detail is at the bottom of `docs/MESSAGE.md`.
+Full detail is at the bottom of `docs/MESSAGE.md`. The button name is settled.
 
-1. **Button name.** Keep "Book a 20-minute data audit call", or use "Book a 20-minute call with Jake".
+1. **Name on the site.** Ignition, Ignition APG, or Ignition with "an Ignition APG company" in the footer.
 2. **Customer phrases.** 3 to 5 things directors or sport scientists say about their data. The best three fill the symptom slots in section 2.
 3. **Answers.**
    - Approve or rewrite the five question answers. Drafts are in MESSAGE.md.
-   - Approve the founder text and add his last name.
+   - Approve "Who we are."
    - Confirm the privacy line "We use that information to prepare for the call."
 4. **"How it starts."** Confirm the three steps and their order. Say whether any step costs money.
 5. **Links.** The booking link (Cal.com or Calendly) and the email address for the site.
@@ -56,7 +66,7 @@ When Jake answers:
 
 1. Update `docs/MESSAGE.md`.
 2. Rerun the copy check: `node scripts/check-message.mjs docs/MESSAGE.md`. It must report no findings. Open `[JAKE:]` slots are counted and must reach zero before Stage 3 ships.
-3. Commit "Message sheet v2, approved by Jake".
+3. Commit "Message sheet approved by Jake".
 4. Start Stage 2.
 
 ## The stages

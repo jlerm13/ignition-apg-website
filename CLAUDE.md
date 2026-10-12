@@ -11,7 +11,7 @@ This repo is the public website for Ignition. Jake owns it. He has 20 years in s
 - `docs/BRIEF.md`: the job of the site, the visitor, the action, the approved message, the page outline, and the confirmed delegation lists. Every claim on the site must trace to it.
 - `docs/STATUS.md`: the current stage, what is done, and what Jake must decide. Keep it current at every stop.
 - `docs/SKILLS.md`: which design skills are installed, from where, at which version, and with which local changes.
-- `docs/MESSAGE.md`: page copy for Jake's review. After Stage 3 the live copy sits in `src/content/site.ts`.
+- `docs/MESSAGE.md`: page copy for Jake's review. Check it with `node scripts/check-message.mjs docs/MESSAGE.md`. After Stage 3 the live copy sits in `src/content/site.ts`.
 - `docs/DESIGN.md`: the approved visual direction. It does not exist until Jake picks a direction at gate 2.
 
 ## Hard rules (these override every skill and every suggestion)
@@ -31,6 +31,16 @@ This repo is the public website for Ignition. Jake owns it. He has 20 years in s
 13. Keep `docs/STATUS.md` current: the stage, what is done, what Jake must decide. A new session must be able to continue from that file alone.
 
 Task IDs from the brief (for example `PDS-W1-T1`) are for traceability only. They never appear on the site.
+
+## Jake's gate 1 changes (2026-10-12)
+
+These sit on top of the hard rules. Full text is at the top of `docs/BRIEF.md`.
+
+- Do not name BASIS anywhere on the site for now.
+- Say "us" on the site, never "Jake."
+- Company first. Jake leads the new vision and mission of Ignition APG. He is not the founder. There is no founder section and no personal story.
+- With no founder section, the only number allowed on the site is "20-minute."
+- The page says what the data team does. The call shows how. Keep method details for the call. `docs/MESSAGE.md` has a "Save for the call" list.
 
 ## Copy rules (Simplified Technical English, ASD-STE100 style)
 

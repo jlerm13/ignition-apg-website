@@ -1,6 +1,6 @@
 # Shape brief: home page
 
-Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12.
+Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12. Updated the same day with Jake's gate 1 changes.
 
 - Phase 1 discovery is answered by `docs/BRIEF.md` and `PRODUCT.md`.
 - Phase 2 (visual direction) is left for Stage 2 on purpose. This brief has no visual choices.
@@ -17,14 +17,15 @@ Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12.
 ## 2. Outcome and proof
 
 - **Primary action:** "Book a 20-minute data audit call." The name is open until gate 1. It is a link to Jake's booking page.
-- **Secondary action:** email Jake.
+- **Secondary action:** email us. The site says "us," not "Jake."
 - **Success:** a qualified booking.
 - **What only Ignition can show:** a written limit with equal weight to the offer.
   - "What you can hand us" sits next to "What stays with your staff."
   - Most vendors hide their limits. Ignition shows them as a reason to trust it.
-- **Evidence on hand:** none beyond Jake's own background.
+- **Evidence on hand:** the company's own history only.
   - No testimonials, logos, statistics, or screenshots.
   - The page must persuade with specifics: what the data team does, what it never does, and how the first step works.
+- **Strategic depth (Jake, gate 1):** the page says what the data team does. The call shows how, with Jake's walkthrough. The page must give enough to book, and no more.
 
 ## 3. Direction
 
@@ -55,25 +56,26 @@ Constraints any direction must meet:
   - a stats strip
   - a "trusted by" row
   - a testimonial slider
-  - any number other than "20-minute" and Jake's 20 years
+  - any number other than "20-minute"
+  - the software name BASIS, or Jake's name
   - any line that suggests software does the work on its own
 
 ## 5. Sequence and focal points
 
 1. **Hero:** heading, one vision sentence, the button, and the line "Every decision stays with your coaches and clinicians." The focal point is the heading and the button.
 2. **Problem:** the problem line, three symptoms in the visitor's own words, then the department message.
-3. **What you can hand us:** four groups (Collect, Check, Connect, Explain), short items, easy to scan.
+3. **What you can hand us:** four groups (Collect, Check, Connect, Explain), one short line each, easy to scan. One line points to the call for the how.
 4. **What stays with your staff:** six items. Same visual weight as section 3. Side by side on wide screens, one after the other on phones.
 5. **How it starts:** three numbered steps, then the line about email, Slack, or text.
 6. **Questions:** five questions. A plain list, or native disclosure elements with no script.
-7. **Founder:** 60 to 100 words. Text only until Jake supplies a real photo.
+7. **Who we are:** two short lines about the company. No founder section, no personal story, no photo.
 8. **Final call to action:** the button again, with the email link as the secondary action.
 
 ## 6. States and ranges
 
 - **Copy length:**
   - The hero heading is 6 words.
-  - The longest item in the lists is about 20 words.
+  - The longest item in the lists is under 20 words.
   - Questions run 1 to 3 sentences each.
 - **Booking:**
   - A click opens Jake's booking page. A later enhancement may load an embed after the click.
@@ -93,7 +95,8 @@ Constraints any direction must meet:
 - **Open at gate 1:**
   - the button name
   - the customer phrases
-  - the FAQ answers and founder text
+  - the FAQ answers and the "Who we are" text
+  - the name on the site: Ignition or Ignition APG
   - the "How it starts" steps
   - the booking link and email address
 - **Open at Stage 3:**
