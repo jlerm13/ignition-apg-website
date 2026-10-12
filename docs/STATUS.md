@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 1: message sheet v3 is ready. Still at gate ★1.** Jake gave two rounds of changes. Do not start Stage 2 until he approves `docs/MESSAGE.md` and answers the open decisions below.
+**Stage 1: message sheet v4 is ready for Jake's sign-off. Still at gate ★1.** Every copy decision is made and every slot is filled. Do not start Stage 2 until Jake replies "approved" and answers the two Vercel questions below.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -35,6 +35,11 @@ Last updated: 2026-10-12
   - Message sheet v3, after round 2:
     - Name is Ignition APG. Row 5 is back. Jake's two software answers are in.
     - The copy check allows BASIS once, in an Answer row only. It passes with 12 `[JAKE:]` slots open.
+  - Message sheet v4, after round 3:
+    - Jake's symptoms, answers, "How it starts" wording, email, Calendly link, and analytics choice are in.
+    - The copy check passes with 0 `[JAKE:]` slots. The only placeholder is "[set at launch]" on the privacy page.
+    - Wrote `docs/BOOKING.md`: Calendly setup steps for Jake (length, name, three booking questions, redirect to the thank-you page, test).
+    - The Calendly link could not be opened from the build environment, because the network blocks calendly.com. Jake checks it.
 
 ## Jake's decisions so far
 
@@ -51,28 +56,25 @@ Last updated: 2026-10-12
   - Row 5 is back on the page.
   - Jake wrote "Do you replace our software?" and the new "What do we get?".
   - BASIS is named once, in "What do we get?". Staff log in to our platform to see results.
+- 2026-10-12 (gate 1, round 3):
+  - Symptoms and the closing line of the problem section are Jake's wording.
+  - New heading for section 4: "We handle the data work. Your staff keep the judgment."
+  - "How it starts. Free." Step 3 makes no time promise.
+  - Answers on data protection and cost are Jake's. The other answers and "Who we are" are approved.
+  - Booking is Calendly. Analytics is Vercel Web Analytics. The site email is ja.lerman@ignitionapg.com.
 
 ## Waiting on Jake (gate ★1)
 
-Full detail is at the bottom of `docs/MESSAGE.md`. The button and the name are settled.
+1. **Sign off on `docs/MESSAGE.md` v4.** A reply of "approved" closes gate 1.
+2. **Set up Calendly** with `docs/BOOKING.md`. Tell us whether the redirect option is available on his plan.
+3. **Two questions for Stage 2:**
+   - Is Vercel linked to this GitHub repo?
+   - May Stage 2 push one preview branch per direction?
 
-1. **Customer phrases.** 3 to 5 things directors or sport scientists say about their data. The best three fill the symptom slots in section 2.
-2. **Answers.**
-   - Approve or rewrite the last four question answers. Drafts are in MESSAGE.md.
-   - Approve "Who we are."
-   - Confirm the privacy line "We use that information to prepare for the call."
-3. **"How it starts."** Confirm the three steps and their order. Say whether any step costs money.
-4. **Links.** The booking link (Cal.com or Calendly) and the email address for the site.
+When Jake approves:
 
-Also needed before Stage 2:
-
-- Is Vercel linked to this GitHub repo?
-- May Stage 2 push one preview branch per direction?
-
-When Jake answers:
-
-1. Update `docs/MESSAGE.md`.
-2. Rerun the copy check: `node scripts/check-message.mjs docs/MESSAGE.md`. It must report no findings. Open `[JAKE:]` slots are counted and must reach zero before Stage 3 ships.
+1. Rerun the copy check: `node scripts/check-message.mjs docs/MESSAGE.md`. It must report no findings and 0 `[JAKE:]` slots.
+2. Change the sheet title to "Message sheet (approved)" and log the approval here.
 3. Commit "Message sheet approved by Jake".
 4. Start Stage 2.
 

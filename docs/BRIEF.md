@@ -37,6 +37,21 @@ These override round 1 and the original text where they conflict.
    - Say "a data specialist from Ignition APG," never "hire a person." The visitor signs up for a service, not an employee.
    - Do not use the term "forward deployed engineer" on the site.
 
+## Changes from Jake at gate 1, round 3 (2026-10-12)
+
+Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
+
+  - The first call, the export review, and the written summary are free.
+  - After that, the price depends on the department's sports and systems. The department gets a fixed monthly price before it commits.
+  - A department can remove athlete names from the first export.
+  - Ignition APG does not share a department's data with anyone outside that department.
+  - Booking is Calendly: https://calendly.com/ja-lerman-ignitionapg/intro-call. Setup steps are in `docs/BOOKING.md`.
+  - Analytics is Vercel Web Analytics.
+  - Site email: ja.lerman@ignitionapg.com. The visible link text is "Email us."
+  - Step 3 of "How it starts" makes no time promise. "20-minute" stays the only number on the site.
+  - "What stays with your staff" has a new heading: "We handle the data work. Your staff keep the judgment."
+  - A new closing line ends the problem symptoms: "Each new system adds work when nobody owns the workflow."
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

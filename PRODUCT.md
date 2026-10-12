@@ -14,8 +14,8 @@ Set by Jake in the build prompt:
 
 - Astro with static output, Tailwind CSS, and no client JavaScript except analytics and small, optional enhancements.
 - Fonts self-hosted through Fontsource. No font CDN.
-- Deploy on Vercel. Booking is a link to Cal.com or Calendly. Load any embed only after a click.
-- Analytics are cookieless: Plausible or Vercel Web Analytics. Open: Jake picks one in Stage 3.
+- Deploy on Vercel. Booking is a link to Calendly (https://calendly.com/ja-lerman-ignitionapg/intro-call). Load any embed only after a click.
+- Analytics: Vercel Web Analytics, cookieless.
 
 ## Users
 
@@ -72,13 +72,13 @@ Set by Jake in the build prompt:
   - Athena or Palantir by name
   - job posting text, employer names, school names, posting IDs
 - **No research statistics in version 1.** No percentages and no "X of Y" figures. The only number allowed is "20-minute."
-- **Open, Jake decides at gate 1:**
-  - the button name
-  - the customer phrases
-  - the FAQ answers
-  - the "Who we are" text
-  - the booking link
-  - the email address
+- **Commercial facts (Jake, gate 1):**
+  - The first call, the export review, and the written summary are free.
+  - After that, the price depends on the department's sports and systems. The department gets a fixed monthly price before it commits.
+  - A department can remove athlete names from the first export.
+  - Ignition APG does not share a department's data with anyone outside that department.
+  - Site email: ja.lerman@ignitionapg.com. The visible link text is "Email us."
+- All gate 1 decisions are made. The final words are in `docs/MESSAGE.md` v4.
 
 ## Brand Commitments
 

@@ -79,7 +79,8 @@ The site should look like the work: careful, checked, and calm. Evidence over ef
 - All page copy in one file, `src/content/site.ts`, so Jake can edit words without touching layout.
 - Deploy on Vercel.
 - Booking is a link to Jake's booking page. Load any embed only after a click.
-- Analytics: Plausible or Vercel Web Analytics, cookieless. Track these events:
+- Booking: Calendly, https://calendly.com/ja-lerman-ignitionapg/intro-call. Setup steps for Jake are in `docs/BOOKING.md`.
+- Analytics: Vercel Web Analytics (Jake's choice), cookieless. Track these events:
   - `cta_click`, with the section name
   - `booking_opened`
   - `booking_completed` (thank-you page view)

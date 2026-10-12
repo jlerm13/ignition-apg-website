@@ -1,12 +1,20 @@
-# Message sheet v3
+# Message sheet v4
 
-For Jake's review at gate 1. This is every word on the site, in page order. There is no design yet.
+For Jake's sign-off at gate 1. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
 - The **Copy** column is what visitors will see.
-- `[JAKE: …]` marks a slot only you can fill. The site cannot launch while any slot is open.
-- Your decisions are at the bottom.
+- Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
+- What is left for you is at the bottom.
+
+## What changed in v4
+
+- Your three symptoms and the new closing line are in the problem section. The department message follows them.
+- "What stays with your staff" has your new heading: "We handle the data work. Your staff keep the judgment."
+- "How it starts" uses your new wording and says it is free. Step 3 makes no time promise.
+- Your answers on data protection and cost are in. The other answers and "Who we are" are approved.
+- Your email address, Calendly link, and Vercel Web Analytics are in.
 
 ## What changed in v3
 
@@ -53,12 +61,13 @@ How to read it:
 | Element | Copy |
 |---|---|
 | Heading | Performance staff cannot trust their numbers, and nobody owns fixing them. |
-| Symptom 1 | [JAKE: phrase] |
-| Symptom 2 | [JAKE: phrase] |
-| Symptom 3 | [JAKE: phrase] |
+| Symptom 1 | Your sport scientist cleans exports when they should be with athletes and coaches. |
+| Symptom 2 | The report arrives after the meeting where the coaches needed it. |
+| Symptom 3 | One person runs the GPS, the force plates, and the AMS, and the systems do not connect. |
+| Closing line | Each new system adds work when nobody owns the workflow. |
 | Department message | Your staff should coach, not fix spreadsheets. We work alongside the systems you already use. When a number looks wrong, we find the cause and fix it. |
 
-The symptoms appear as plain lines in the visitor's own words, with no names and no quote marks. That way they read as the problem, not as testimonials.
+The symptoms appear as plain lines, with no names and no quote marks. That way they read as the problem, not as testimonials. The department message turns the page from the problem to the offer.
 
 ## 3. What you can hand us
 
@@ -80,8 +89,8 @@ The symptoms appear as plain lines in the visitor's own words, with no names and
 
 | Element | Copy |
 |---|---|
-| Heading | What stays with your staff |
-| Text | Your staff keep this work. We support it with checked data. We never take it over. |
+| Heading | We handle the data work. Your staff keep the judgment. |
+| Text | We support this work with checked data. We never take it over. |
 | Item | Readiness, load, and return-to-play decisions. |
 | Item | Which athletes need a conversation, and what changes in training. |
 | Item | Training plans and sessions. |
@@ -95,16 +104,16 @@ This list gets the same visual weight as section 3. The six items use the confir
 
 | Element | Copy |
 |---|---|
-| Heading | How it starts |
+| Heading | How it starts. Free. |
 | Step 1 title | A 20-minute call |
-| Step 1 text | You tell us about your systems and the data problem that costs your staff the most time. We show you how our data team works. |
+| Step 1 text | You tell us about your systems and the data problem that costs your staff the most time. |
 | Step 2 title | A review of one export |
-| Step 2 text | You send one export from one system you use. We check it. |
-| Step 3 title | A written summary and a plan |
-| Step 3 text | We send you what we found in that export and a plan for your data. |
+| Step 2 text | You send one export from one system you use. You can remove athlete names first. We check every value. |
+| Step 3 title | What we found |
+| Step 3 text | We walk you through what we found on a short call. You get a written summary and a plan for your data. |
 | Closing line | Your staff reach us by email, Slack, or text. No new login is needed to ask a question. |
 
-Step 1 sets up your walkthrough on the call.
+None of these steps cost money. Step 3 makes no time promise, so "20-minute" stays the only number on the site.
 
 ## 6. Questions
 
@@ -118,25 +127,13 @@ Step 1 sets up your walkthrough on the call.
 | Question | Which systems do you work with? |
 | Answer | Your staff send the exports their systems already produce. We need no new connections and no IT project. |
 | Question | Do you make decisions about athletes? |
-| Answer | [JAKE: answer] |
+| Answer | No. Readiness, load, and return-to-play decisions stay with your coaches and clinicians. We collect, check, connect, and explain the data they use. |
 | Question | How do you protect athlete data? |
-| Answer | [JAKE: answer] |
+| Answer | You decide who can see athlete data. You set the rules and we follow them. For the first review, you can remove athlete names before you send the export. We do not share your data with anyone outside your department. |
 | Question | What does it cost? |
-| Answer | [JAKE: answer] |
+| Answer | The call, the export review, and the written summary are free. After that, the price depends on your sports and systems. You get a fixed monthly price before you commit. |
 
-The first two answers are yours, from round 2. For the others, here are suggested drafts to approve, change, or replace. Each one uses only lines you have already approved.
-
-- **Which systems do you work with?**
-  - The answer in the table is your approved draft from the brief. Please approve it.
-- **Do you make decisions about athletes?**
-  - Draft: "No. Readiness, load, and return-to-play decisions stay with your coaches and clinicians. We collect, check, connect, and explain the data they use."
-- **How do you protect athlete data?**
-  - Draft: "You decide who can see athlete data. You set the rules and we follow them. On the call, we show you how we handle every file."
-  - This keeps the details for the call. A director who worries about data leaving their control may want one more concrete line here. Your call.
-  - Do not name FERPA, HIPAA, SOC 2, GDPR, or any other standard unless you can show proof.
-- **What does it cost?**
-  - Only you can answer this.
-  - One option that keeps pricing for the call: "We set the price after the first call, based on your sports and systems."
+All six answers are yours or approved by you. None names a compliance standard.
 
 ## 7. Who we are
 
@@ -146,7 +143,7 @@ The first two answers are yours, from round 2. For the others, here are suggeste
 | Text | We began as a sports performance training company. We trained athletes of all ages and solved performance problems for our partners. |
 | Text | Our data team is the next step in that work. It is now our main focus. |
 
-Every fact here is one you gave me. There is no personal story and no photo.
+Approved as written. There is no personal story and no photo.
 
 ## 8. Final call to action
 
@@ -154,7 +151,7 @@ Every fact here is one you gave me. There is no personal story and no photo.
 |---|---|
 | Heading | Bring the data problem that costs your staff the most time. |
 | Button | Book a 20-minute data audit call |
-| Email line | Or email us at [JAKE: email address]. |
+| Email line | Or email us at ja.lerman@ignitionapg.com. |
 
 ## Footer
 
@@ -171,7 +168,7 @@ Every fact here is one you gave me. There is no personal story and no photo.
 | Heading | Your call is booked. |
 | Text | Check your email for the confirmation and the calendar invite. |
 | Text | Before the call, pick one export from one system you use. We can review it after we talk. |
-| Text | Questions before then? Email us at [JAKE: email address]. |
+| Text | Questions before then? Email us at ja.lerman@ignitionapg.com. |
 | Link | Back to the home page |
 
 ## Privacy page
@@ -181,13 +178,14 @@ Every fact here is one you gave me. There is no personal story and no photo.
 | Heading | Privacy |
 | Text | This page covers this website only. |
 | Text | This site uses no cookies. |
-| Text | We count visits and button clicks with [JAKE: Plausible or Vercel Web Analytics]. It uses no cookies and does not identify you. |
-| Text | When you book a call, [JAKE: Cal.com or Calendly] collects your name, email, role, school and sports, and your answer about your data problem. |
-| Text | We use that information to prepare for the call. We do not sell it. |
-| Text | To see or delete your information, email [JAKE: email address]. |
-| Text | Last updated: [JAKE: date at launch] |
+| Text | We count visits and button clicks with Vercel Web Analytics. It uses no cookies and does not identify you. |
+| Text | When you book a call, Calendly collects your name, email, role, school and sports, and your answer about your data problem. |
+| Text | We use that information to prepare for the call. |
+| Text | Calendly handles the booking. We do not sell your information or add you to a mailing list. |
+| Text | To see or delete your information, email ja.lerman@ignitionapg.com. |
+| Text | Last updated: [set at launch] |
 
-Before launch, Stage 3 checks that every line above is true for the tools you pick. One example: a booking embed must not set cookies on this site.
+Before launch, Stage 3 checks that every line above is true. One example: if the Calendly booking opens inside the site, Calendly may set cookies, and this page must then say so. `docs/BOOKING.md` explains this.
 
 ## 404 page
 
@@ -198,6 +196,14 @@ Before launch, Stage 3 checks that every line above is true for the tools you pi
 | Link | Go to the home page |
 
 <!-- copy:end -->
+
+## Links
+
+| Where | Goes to |
+|---|---|
+| Every "Book a 20-minute data audit call" button (header, hero, final section) | https://calendly.com/ja-lerman-ignitionapg/intro-call |
+| Every "Email us" link and email line | ja.lerman@ignitionapg.com |
+| Calendly, after a booking | the site's thank-you page. Setup steps are in `docs/BOOKING.md`. |
 
 ## Traceability: where each "What you can hand us" line comes from
 
@@ -222,21 +228,15 @@ These confirmed items are true, but they are not on the page. They show how the 
 - **Connect.** We convert every value to the same units. We record each system's definitions, so different measures are never mixed. (Row 7)
 - **Explain.** We explain what each report shows and what it cannot show. (Row 10)
 - **Explain.** We give you a written guide to your sources, definitions, and methods. (Row 12)
+- **Now on the page.** "You can remove athlete names first" moved to step 2 and the data protection answer in v4.
 - **Where to start.** Hand us your most painful data problem first. The booking question asks for it, so you know it before the call.
 
 If one of these is the thing that makes a director book, move it back to the page.
 
-## Your decisions
+## What is left for you
 
-The button and the name are settled. Four decisions are left.
-
-1. **Customer phrases.** Send 3 to 5 things directors or sport scientists have said about their data, in their words. Leave out names and schools.
-2. **Answers.**
-   - Approve or rewrite the last four question answers in section 6, using the drafts above.
-   - Approve "Who we are" in section 7.
-   - Tell me whether "We use that information to prepare for the call" is true for the privacy page.
-3. **"How it starts."** Are these the right three steps, and in this order? A call, then a review of one export, then a written summary and plan. Does any step cost money?
-4. **Links.**
-   - Your booking link, from Cal.com or Calendly.
-   - The email address for the site.
-   - If you have not set up a booking page yet, tell me which tool you prefer. I will give you the exact setup steps, including the four booking questions and the redirect to the thank-you page.
+1. **Sign off on this sheet.** If every word reads right, reply "approved" and gate 1 closes.
+2. **Set up Calendly** with the steps in `docs/BOOKING.md`.
+3. **Two questions for Stage 2:**
+   - Is Vercel connected to this project on GitHub?
+   - May I publish one preview link per design direction, so you can open each on your phone?

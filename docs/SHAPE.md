@@ -81,8 +81,8 @@ Constraints any direction must meet:
   - A click opens Jake's booking page. A later enhancement may load an embed after the click.
   - On success, the booking tool sends the visitor to `/thank-you`, which fires `booking_completed`.
 - **Missing inputs:**
-  - Until Jake supplies the booking link, email, customer phrases, and answers, their slots stay marked `[JAKE: …]`.
-  - The check script blocks a build that still contains one.
+  - Every Jake slot is filled. The only placeholder is the privacy date, set at launch.
+  - The check script blocks a build that still contains any placeholder.
 - **404:** a short message and a link home.
 
 ## 7. Constraints and open decisions
@@ -92,12 +92,5 @@ Constraints any direction must meet:
   - 16 px minimum text and 44 px tap targets at 375 px wide.
   - Reduced motion stops all motion.
   - First load under 500 KB. JavaScript under 50 KB.
-- **Open at gate 1:**
-  - the button name
-  - the customer phrases
-  - the FAQ answers and the "Who we are" text
-  - the "How it starts" steps
-  - the booking link and email address
-- **Open at Stage 3:**
-  - Plausible or Vercel Web Analytics
-  - Cal.com or Calendly, if Jake has not set one up yet
+- **Decided at gate 1:** every copy decision, Calendly for booking, and Vercel Web Analytics.
+- **Open at Stage 3:** whether Calendly redirects to the thank-you page (paid feature) or opens inside the site after a click. See `docs/BOOKING.md`.
