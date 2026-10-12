@@ -1,5 +1,5 @@
 // Full-page screenshots of the built site. Run after `npm run build`.
-//   node scripts/screenshots.mjs            -> site pages to docs/build/
+//   node scripts/screenshots.mjs            -> site pages to docs/final/
 //   node scripts/screenshots.mjs directions -> Stage 2 directions to docs/directions/
 // Serves dist/ locally (no network needed) and reports any horizontal scroll.
 import { createServer } from "node:http";
@@ -9,7 +9,7 @@ import { chromium } from "playwright-core";
 
 const SETS = {
   build: {
-    out: "docs/build",
+    out: "docs/final",
     pages: { home: "/", privacy: "/privacy/", "thank-you": "/thank-you/", "404": "/404.html" },
     widths: [1440, 390, 375],
   },

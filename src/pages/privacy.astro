@@ -5,16 +5,16 @@ import { privacy, links } from "../content/site";
 
 <Base title={`${privacy.heading} · Ignition APG`}>
   <section class="py-16 md:py-26">
-    <div class="wrap max-w-[48rem]">
+    <div class="wrap grid-12"><div class="col-span-12 md:col-span-8">
       <h1 class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{privacy.heading}</h1>
       <div class="mt-6 space-y-4 text-lead leading-[1.45]">
         {privacy.paragraphs.map((p) => <p>{p}</p>)}
         <p>
           {privacy.emailLine}{" "}
-          <a class="link link--inline break-all" href={`mailto:${links.email}`} data-event="email_click" data-section="privacy">{links.email}</a>.
+          <a class="link link--inline whitespace-nowrap" href={`mailto:${links.email}`} data-event="email_click" data-section="privacy">{links.email}</a>.
         </p>
       </div>
       <p class="mt-10 text-muted" data-claim="privacy-date">{privacy.lastUpdated}</p>
-    </div>
+    </div></div>
   </section>
 </Base>

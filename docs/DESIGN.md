@@ -17,7 +17,7 @@ The page looks like a specification: exact, ruled, and calm. A director who chec
 | `muted` | `oklch(48% 0.006 255)` | Secondary text. Passes AA on `paper`. |
 | `neutral` | `oklch(34% 0.006 255)` | Body text in long lists. |
 | `ink` | `oklch(16% 0.010 255)` | Headings, text, buttons, the dark band. Never pure black. |
-| `ink-2` | `oklch(22% 0.010 255)` | Rules inside the dark band. |
+| `ink-2` | `oklch(30% 0.010 255)` | Rules inside the dark band. (22% was invisible on ink, so Stage 4 set 30%.) |
 | `on-ink` | `oklch(96% 0.003 255)` | Text on the dark band and on buttons. |
 | `on-ink-muted` | `oklch(78% 0.006 255)` | Secondary text on the dark band. Passes AA on `ink`. |
 | `accent` | `oklch(55% 0.21 28)` | Signal red: small square markers, button hover, focus ring. At most about 5% of any screen. |
@@ -27,7 +27,7 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 ## Type
 
 - **One family:** Archivo Variable, self-hosted (Latin subset), weights 400 to 800. No serif, no mono, no font CDN.
-- **Display (hero heading):** 800 weight, `clamp(2.75rem, 7vw + 0.5rem, 7rem)`, line height 0.98, tracking -0.035em.
+- **Display (hero heading):** 800 weight, `clamp(2.75rem, 5vw + 2rem, 7rem)` (grows with browser zoom), line height 0.98, tracking -0.035em.
 - **Section heading:** 800 weight, `clamp(1.75rem, 1.8vw + 1rem, 2.5rem)`, line height 1.08, tracking -0.02em.
 - **Body:** 400 weight, 17 px. Lead text is 20 px. List items are 19 px.
 - **Small text:** 16 px minimum on every screen size, including the hero label.
@@ -51,17 +51,19 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 | Text link | Ink, underlined, red underline on hover. |
 | Hero | Ruler, label with red square, display heading across columns 1 to 11, then lead text, button, and the under-button line in columns 7 to 12 under a 2 px ink rule. |
 | Problem rows | Heading left. Symptoms as rows with hairlines on the right. The closing line in bold, between 2 px ink rules. The department message below it in neutral. |
-| Grouped list ("What you can hand us") | Heading and text left. Four groups on the right, each with the verb as a small heading and items marked by red squares. |
+| Grouped list ("What you can hand us") | Heading and text left. Four groups on the right, each under a 2 px ink rule with the verb as a small heading. No markers. It mirrors the ink band, light then dark. |
 | Ink band ("We handle the data work") | The one dark section. Heading left on ink, six items in two columns on the right, each item with a hairline above it. |
-| Step columns ("How it starts. Free.") | Three columns divided by vertical hairlines. Titles carry the order, with no numerals. The closing line sits under a rule. Stacks to rows on phones. |
-| FAQ | Heading left. Native `<details>` on the right, with question rows divided by hairlines and a CSS plus or minus marker. No script. |
+| Step columns ("How it starts. Free.") | Three columns divided by vertical hairlines. Titles carry the order, with no numerals. The closing line sits under a rule. Then the booking button: the one mid-page button, so phone visitors can book at the moment they decide. Stacks to rows on phones. |
+| Questions | Heading left. On the right, every question with its answer open, rows divided by hairlines. A director came to check these answers, so none are hidden. |
 | Who we are | Heading left, two short paragraphs right. |
 | Final call to action | A large section heading, the button, then the email line. |
-| Footer | Name, Privacy link, and Email us on one line, with a hairline above. |
-| Thank-you, privacy, and 404 pages | The same header and footer, with one column of text under a section heading. These pages carry no booking button except in the header. |
+| Footer | Name, Privacy link, and Email us on one line, with a hairline above. It sits at the bottom of short pages. |
+| Thank-you, privacy, and 404 pages | The same header and footer. One column of text in columns 1 to 8, aligned with the header. The thank-you page has no booking button, because the visitor just booked. |
 
 ## States and motion
 
+- Email addresses never break across lines.
+- "return-to-play" never breaks at its hyphens.
 - Every link and button has hover, focus-visible, and active styles. The focus ring is a 2 px red outline with a 3 px offset. It appears instantly.
 - Motion is limited to colour changes of 160 ms on hover.
 - `prefers-reduced-motion` turns off all transitions. Taste Skill dials: 6 / 3 / 4.

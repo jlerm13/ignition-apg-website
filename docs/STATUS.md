@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 3 (build): done. Waiting for Jake's look before Stage 4 (audit).** This check-in was Jake's choice at gate 2.
+**Stage 4 (audit): done. Waiting at gate ★4 for Jake.** The report is `docs/final/REPORT.md`. One check, the test booking, waits for Vercel and Calendly.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -70,12 +70,37 @@ Last updated: 2026-10-12
   - Kill AI Slop scan: no signals. Two hits in the source were confirmed false positives and marked with reasons:
     - link underline
     - the step list
-  - Screenshots in `docs/build/` with `npm run shots`. No horizontal scroll at 375, 390, or 1440 px.
+  - Screenshots with `npm run shots` (now saved in `docs/final/`). No horizontal scroll at 375, 390, or 1440 px.
   - At 375 px every button and link is 44 px or taller, except email links inside sentences. Those get a 44 px tap area through CSS, and WCAG 2.2 exempts inline links.
   - All text at 375 px is 16 px or larger.
   - The privacy page shows "Last updated: October 12, 2026." This is the one number besides "20-minute", allowed as a practical date.
   - Light mode only by design (`docs/DESIGN.md`). The Taste Skill's dark-mode rule ranks below the approved design.
   - The Stage 2 direction pages stay at `/directions/` (noindex) until launch.
+
+- Stage 4:
+  - Ran every audit in the brief. The results table is in `docs/final/REPORT.md`, the raw numbers in `docs/final/audit.json`, and the screenshots in `docs/final/`.
+  - `node scripts/audit.mjs` runs:
+    - axe-core
+    - keyboard
+    - the 375 px checks
+    - reduced motion
+    - page weight
+    - Lighthouse mobile
+  - Results:
+    - Lighthouse 100/100/100/100 on home and privacy.
+    - axe: 0 violations.
+    - First load 63 KB, JavaScript 0.5 KB.
+  - Hallmark audit and Impeccable critique ran as separate reviewers. Fixed:
+    - a booking button after "How it starts"
+    - layouts matching DESIGN.md
+    - all question answers shown open
+    - "return-to-play" kept on one line
+    - email addresses never split
+    - footer at the bottom of short pages
+    - no booking button on the thank-you page
+    - spacing, states, and underline tidy-ups
+  - DESIGN.md was updated to match. The rule colour in the dark band is now 30%.
+  - Not done: a test booking. It needs Vercel linked and the Calendly redirect set.
 
 ## Jake's decisions so far
 
@@ -109,11 +134,20 @@ Last updated: 2026-10-12
   - Stop after the Stage 3 build so Jake can look before the Stage 4 audit.
 - 2026-10-12 (Stage 2 start): the old training-business brand is not used. Start fresh. Jake may send old brand details after he assesses the directions.
 
-## Waiting on Jake
+## Waiting on Jake (gate ★4)
 
-1. **Look at the full site** in `docs/build/`, or in the Vercel preview once it is linked. Say "go" for the Stage 4 audit, or send changes.
-2. **Link Vercel** with `docs/VERCEL.md` and send the preview address. The Calendly redirect, the Lighthouse audit on a real address, and the final sitemap address need it.
-3. **Set up Calendly** with `docs/BOOKING.md`.
+1. **Review `docs/final/REPORT.md`** and approve the audit, or send changes.
+2. **Answer the four wording questions** at the end of the report (login wording, step 3 title, data storage fact, sample screenshot). All four are optional, but the first one is worth a decision.
+3. **Link Vercel** with `docs/VERCEL.md` and send the preview address.
+4. **Set up Calendly** with `docs/BOOKING.md`, then make one test booking (check 11).
+
+After approval, Stage 5:
+
+1. Set `SITE_URL`.
+2. Remove `src/pages/directions/`.
+3. Deploy a preview for Jake's phone, then production.
+4. Give Jake the DNS steps.
+5. Write `docs/LAUNCH.md`.
 
 ## The stages
 
@@ -146,7 +180,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
 4. Commit and STOP. Jake picks one direction or asks for a mix.
 5. After he picks, write `docs/DESIGN.md`: type, colour, spacing, and components.
 
-### Stage 3: Build (done, waiting for Jake's look)
+### Stage 3: Build (done, Jake approved the look)
 
 1. Build these four pages, using the Taste Skill rules and `docs/DESIGN.md`:
    - the home page
@@ -171,7 +205,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
      - every delegation item matches a confirmed row in the brief
 4. Commit.
 
-### Stage 4 ★: Audit
+### Stage 4 ★: Audit (done, waiting at gate)
 
 Run every check below and fix what fails. Then report one table to Jake: check, result, what changed.
 

@@ -18,8 +18,8 @@
         "missingRing": []
       },
       "home": {
-        "focusable": 14,
-        "reached": 14,
+        "focusable": 9,
+        "reached": 9,
         "missingRing": []
       },
       "privacy": {
@@ -28,8 +28,8 @@
         "missingRing": []
       },
       "thank-you": {
-        "focusable": 7,
-        "reached": 7,
+        "focusable": 6,
+        "reached": 6,
         "missingRing": []
       }
     },
@@ -62,13 +62,13 @@
       "thank-you": []
     },
     "weight": {
-      "firstLoadKB": 63,
+      "firstLoadKB": 63.4,
       "jsKB": 0.5,
       "files": [
-        "/ 14322",
-        "/_vercel/insights/script.js 0",
-        "/_astro/Base.Cp_05gWP.css 15060",
+        "/ 14940",
+        "/_astro/Base.yPxzAAiU.css 14882",
         "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
+        "/_vercel/insights/script.js 0",
         "/favicon.svg 168"
       ]
     },
