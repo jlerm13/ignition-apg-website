@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 0 (set up): done.** Stage 1 (message sheet) is next.
+**Stage 1 (message sheet): done. Waiting at gate ★1 for Jake.** Do not start Stage 2 until Jake approves `docs/MESSAGE.md` and answers the five decisions below.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -16,15 +16,48 @@ Last updated: 2026-10-12
   - Wrote `CLAUDE.md` with the hard rules and copy rules.
   - Saved the brief to `docs/BRIEF.md`.
   - Installed five design skills at project level and recorded them in `docs/SKILLS.md`.
+- Stage 1:
+  - Impeccable `init` (instructions-only fallback) wrote `PRODUCT.md`.
+  - Impeccable `shape` wrote `docs/SHAPE.md`. Visual direction is left for Stage 2.
+  - Wrote `docs/MESSAGE.md`: every word on the site in page order, a traceability table for the delegation lines, and Jake's five decisions.
+  - The copy check (`scripts/check-message.mjs`) passed on the page copy. It covered:
+    - sentence length
+    - contractions, semicolons, and dashes
+    - banned words and hard-rule words
+    - percentages, "X of Y" figures, and other numbers
+    - task IDs
+
+    The only items left are 14 `[JAKE:]` slots.
 
 ## Jake's decisions so far
 
 - 2026-10-12: Impeccable is installed as instructions only. Its program is never run, so nothing downloads and nothing is sent.
 - 2026-10-12: If a skill install command fails, copy the same skill from its own GitHub repo as its README describes. Never substitute a different skill.
 
-## Waiting on Jake
+## Waiting on Jake (gate ★1)
 
-Nothing yet. Stage 1 runs next and ends at gate ★1.
+Full detail is at the bottom of `docs/MESSAGE.md`.
+
+1. **Button name.** Keep "Book a 20-minute data audit call", or use "Book a 20-minute call with Jake".
+2. **Customer phrases.** 3 to 5 things directors or sport scientists say about their data. The best three fill the symptom slots in section 2.
+3. **Answers.**
+   - Approve or rewrite the five question answers. Drafts are in MESSAGE.md.
+   - Approve the founder text and add his last name.
+   - Confirm the privacy line "We use that information to prepare for the call."
+4. **"How it starts."** Confirm the three steps and their order. Say whether any step costs money.
+5. **Links.** The booking link (Cal.com or Calendly) and the email address for the site.
+
+Also needed before Stage 2:
+
+- Is Vercel linked to this GitHub repo?
+- May Stage 2 push one preview branch per direction?
+
+When Jake answers:
+
+1. Update `docs/MESSAGE.md`.
+2. Rerun the copy check: `node scripts/check-message.mjs docs/MESSAGE.md`. It must report no findings. Open `[JAKE:]` slots are counted and must reach zero before Stage 3 ships.
+3. Commit "Message sheet v2, approved by Jake".
+4. Start Stage 2.
 
 ## The stages
 
@@ -32,7 +65,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
 
 ### Stage 0: Set up (done)
 
-### Stage 1 ★: Message sheet (no design yet)
+### Stage 1 ★: Message sheet (done, waiting at gate)
 
 1. Run Impeccable `init` and `shape` with `docs/BRIEF.md` as input.
    - `init` writes `PRODUCT.md`.
