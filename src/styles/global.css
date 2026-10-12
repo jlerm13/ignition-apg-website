@@ -58,7 +58,7 @@
   }
   .btn:hover { background: var(--color-accent); border-color: var(--color-accent); }
   .btn:active { background: var(--color-neutral); border-color: var(--color-neutral); transform: translateY(1px); }
-  .btn--small { min-height: 2.75rem; padding-inline: 1rem; font-size: 0.9375rem; }
+  .btn--small { min-height: 2.75rem; padding-inline: 1rem; font-size: 1rem; }
   .btn--on-ink { background: var(--color-on-ink); color: var(--color-ink); border-color: var(--color-on-ink); }
 
   /* deslop-ignore-next-line 09: underline marks real text links only, as the fix guide recommends */
@@ -67,7 +67,7 @@
   .link:active { color: var(--color-neutral); }
   /* Inline links inside sentences get a larger invisible tap area (44 px tall) without changing the line. */
   .link--inline { position: relative; }
-  .link--inline::after { content: ""; position: absolute; inset: -0.75rem -0.25rem; }
+  .link--inline::after { content: ""; position: absolute; inset: -0.875rem -0.25rem; }
 
   /* Small red square: the one marker shape on the page. */
   .marker { position: relative; padding-left: 1.5rem; }

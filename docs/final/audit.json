@@ -1,0 +1,102 @@
+{
+  "date": "2026-10-12",
+  "results": {
+    "axe": {
+      "404@375": [],
+      "404@1440": [],
+      "home@375": [],
+      "home@1440": [],
+      "privacy@375": [],
+      "privacy@1440": [],
+      "thank-you@375": [],
+      "thank-you@1440": []
+    },
+    "keyboard": {
+      "404": {
+        "focusable": 6,
+        "reached": 6,
+        "missingRing": []
+      },
+      "home": {
+        "focusable": 14,
+        "reached": 14,
+        "missingRing": []
+      },
+      "privacy": {
+        "focusable": 6,
+        "reached": 6,
+        "missingRing": []
+      },
+      "thank-you": {
+        "focusable": 7,
+        "reached": 7,
+        "missingRing": []
+      }
+    },
+    "phone": {
+      "404": {
+        "overflow": 0,
+        "small": [],
+        "tiny": []
+      },
+      "home": {
+        "overflow": 0,
+        "small": [],
+        "tiny": []
+      },
+      "privacy": {
+        "overflow": 0,
+        "small": [],
+        "tiny": []
+      },
+      "thank-you": {
+        "overflow": 0,
+        "small": [],
+        "tiny": []
+      }
+    },
+    "reducedMotion": {
+      "404": [],
+      "home": [],
+      "privacy": [],
+      "thank-you": []
+    },
+    "weight": {
+      "firstLoadKB": 63,
+      "jsKB": 0.5,
+      "files": [
+        "/ 14322",
+        "/_vercel/insights/script.js 0",
+        "/_astro/Base.Cp_05gWP.css 15060",
+        "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
+        "/favicon.svg 168"
+      ]
+    },
+    "lighthouse": {
+      "home": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "failedAudits": []
+      },
+      "privacy": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 100,
+        "failedAudits": []
+      },
+      "thank-you": {
+        "performance": 100,
+        "accessibility": 100,
+        "best-practices": 100,
+        "seo": 66,
+        "failedAudits": [
+          "is-crawlable"
+        ]
+      }
+    }
+  },
+  "failures": []
+}
