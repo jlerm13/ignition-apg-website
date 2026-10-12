@@ -1,6 +1,6 @@
 # Shape brief: home page
 
-Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12. Updated the same day with Jake's gate 1 changes.
+Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12. Updated the same day with Jake's gate 1 changes (rounds 1 and 2). The site name is Ignition APG.
 
 - Phase 1 discovery is answered by `docs/BRIEF.md` and `PRODUCT.md`.
 - Phase 2 (visual direction) is left for Stage 2 on purpose. This brief has no visual choices.
@@ -57,7 +57,7 @@ Constraints any direction must meet:
   - a "trusted by" row
   - a testimonial slider
   - any number other than "20-minute"
-  - the software name BASIS, or Jake's name
+  - Jake's name, or BASIS anywhere but the "What do we get?" answer
   - any line that suggests software does the work on its own
 
 ## 5. Sequence and focal points
@@ -96,7 +96,6 @@ Constraints any direction must meet:
   - the button name
   - the customer phrases
   - the FAQ answers and the "Who we are" text
-  - the name on the site: Ignition or Ignition APG
   - the "How it starts" steps
   - the booking link and email address
 - **Open at Stage 3:**

@@ -22,6 +22,21 @@ These override the original text below where they conflict. The original stays b
    - The method details move to a "Save for the call" list in `docs/MESSAGE.md`.
    - Every line still traces to a confirmed row in 3.6.
 
+## Changes from Jake at gate 1, round 2 (2026-10-12)
+
+These override round 1 and the original text where they conflict.
+
+1. **Name:** the site says "Ignition APG."
+2. **Row 5 is back on the page:** "Every number links back to its source file. We review every flagged number before a report goes out."
+3. **BASIS is named once,** in the answer to "What do we get?", as "BASIS, our software." It appears nowhere else on the site.
+4. **Two answers written by Jake:**
+   - "Do you replace our software?" "No. You keep your GPS, force plates, and athlete management system. Your staff send us the exports those systems already produce."
+   - "What do we get?" "You get a data specialist from Ignition APG. They use BASIS, our software, to check and connect your data. Your staff log in to our platform to see the results. To ask a question, they message us by email, Slack, or text."
+5. **New fact:** staff log in to the Ignition APG platform to see results. Asking a question needs no login.
+6. **Wording to keep:**
+   - Say "a data specialist from Ignition APG," never "hire a person." The visitor signs up for a service, not an employee.
+   - Do not use the term "forward deployed engineer" on the site.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

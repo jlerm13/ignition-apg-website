@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 1: message sheet v2 is ready. Still at gate ★1.** Jake gave his first round of changes. Do not start Stage 2 until he approves `docs/MESSAGE.md` and answers the open decisions below.
+**Stage 1: message sheet v3 is ready. Still at gate ★1.** Jake gave two rounds of changes. Do not start Stage 2 until he approves `docs/MESSAGE.md` and answers the open decisions below.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -32,6 +32,9 @@ Last updated: 2026-10-12
     - Applied his five changes. They are listed at the top of `docs/BRIEF.md`.
     - Updated `CLAUDE.md`, `PRODUCT.md`, and `docs/SHAPE.md` to match.
     - The copy check now also flags "BASIS" and "Jake" in page copy. It passes with 13 `[JAKE:]` slots open.
+  - Message sheet v3, after round 2:
+    - Name is Ignition APG. Row 5 is back. Jake's two software answers are in.
+    - The copy check allows BASIS once, in an Answer row only. It passes with 12 `[JAKE:]` slots open.
 
 ## Jake's decisions so far
 
@@ -43,19 +46,23 @@ Last updated: 2026-10-12
   - The site says "us," not "Jake."
   - Company first. Jake leads the new vision and mission of Ignition APG and is not the founder. The founder section becomes "Who we are."
   - Keep method details for the call. Jake walks directors through them in a presentation.
+- 2026-10-12 (gate 1, round 2):
+  - The site name is Ignition APG.
+  - Row 5 is back on the page.
+  - Jake wrote "Do you replace our software?" and the new "What do we get?".
+  - BASIS is named once, in "What do we get?". Staff log in to our platform to see results.
 
 ## Waiting on Jake (gate ★1)
 
-Full detail is at the bottom of `docs/MESSAGE.md`. The button name is settled.
+Full detail is at the bottom of `docs/MESSAGE.md`. The button and the name are settled.
 
-1. **Name on the site.** Ignition, Ignition APG, or Ignition with "an Ignition APG company" in the footer.
-2. **Customer phrases.** 3 to 5 things directors or sport scientists say about their data. The best three fill the symptom slots in section 2.
-3. **Answers.**
-   - Approve or rewrite the five question answers. Drafts are in MESSAGE.md.
+1. **Customer phrases.** 3 to 5 things directors or sport scientists say about their data. The best three fill the symptom slots in section 2.
+2. **Answers.**
+   - Approve or rewrite the last four question answers. Drafts are in MESSAGE.md.
    - Approve "Who we are."
    - Confirm the privacy line "We use that information to prepare for the call."
-4. **"How it starts."** Confirm the three steps and their order. Say whether any step costs money.
-5. **Links.** The booking link (Cal.com or Calendly) and the email address for the site.
+3. **"How it starts."** Confirm the three steps and their order. Say whether any step costs money.
+4. **Links.** The booking link (Cal.com or Calendly) and the email address for the site.
 
 Also needed before Stage 2:
 

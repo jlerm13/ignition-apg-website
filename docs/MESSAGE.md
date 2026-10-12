@@ -1,4 +1,4 @@
-# Message sheet v2
+# Message sheet v3
 
 For Jake's review at gate 1. This is every word on the site, in page order. There is no design yet.
 
@@ -8,10 +8,16 @@ How to read it:
 - `[JAKE: …]` marks a slot only you can fill. The site cannot launch while any slot is open.
 - Your decisions are at the bottom.
 
-## What changed from v1
+## What changed in v3
+
+- The site name is now Ignition APG.
+- Row 5 is back in "Check": every number links back to its source file.
+- Your answer to "Do you replace our software?" is in, split into two questions. "What do we get?" is new.
+- BASIS is named once, in "What do we get?", as "BASIS, our software." It appears nowhere else.
+
+## What changed in v2
 
 - The button stays "Book a 20-minute data audit call."
-- BASIS is not named anywhere on the site.
 - The site says "us," never "Jake."
 - The founder section is gone. Section 7 is now "Who we are," about the company.
 - "What you can hand us" is now one line per verb. The method details moved to "Save for the call" below, for your walkthrough.
@@ -22,14 +28,14 @@ How to read it:
 
 | Element | Copy |
 |---|---|
-| Page title | Ignition: athlete data your staff can trust |
-| Search description | Ignition gives college athletic departments a data team. We collect, check, connect, and explain athlete data. Every decision stays with your staff. |
+| Page title | Ignition APG: athlete data your staff can trust |
+| Search description | Ignition APG gives college athletic departments a data team. We collect, check, connect, and explain athlete data. Every decision stays with your staff. |
 
 ## Header
 
 | Element | Copy |
 |---|---|
-| Name | Ignition |
+| Name | Ignition APG |
 | Button | Book a 20-minute data audit call |
 
 ## 1. Hero
@@ -38,7 +44,7 @@ How to read it:
 |---|---|
 | Label | A data team for college athletic departments |
 | Heading | Athlete data your staff can trust. |
-| Text | Ignition gives each department a data team: performance data specialists who collect, check, connect, and explain athlete data. |
+| Text | Ignition APG gives each department a data team: performance data specialists who collect, check, connect, and explain athlete data. |
 | Button | Book a 20-minute data audit call |
 | Under the button | Every decision stays with your coaches and clinicians. |
 
@@ -64,6 +70,7 @@ The symptoms appear as plain lines in the visitor's own words, with no names and
 | Item | We collect the exports your systems already produce, and we keep every original file. |
 | Group | Check |
 | Item | We find missing, duplicate, and wrong values. We find the cause and fix it with your staff. |
+| Item | Every number links back to its source file. We review every flagged number before a report goes out. |
 | Group | Connect |
 | Item | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. |
 | Group | Explain |
@@ -105,7 +112,9 @@ Step 1 sets up your walkthrough on the call.
 |---|---|
 | Heading | Questions |
 | Question | Do you replace our software? |
-| Answer | [JAKE: answer] |
+| Answer | No. You keep your GPS, force plates, and athlete management system. Your staff send us the exports those systems already produce. |
+| Question | What do we get? |
+| Answer | You get a data specialist from Ignition APG. They use BASIS, our software, to check and connect your data. Your staff log in to our platform to see the results. To ask a question, they message us by email, Slack, or text. |
 | Question | Which systems do you work with? |
 | Answer | Your staff send the exports their systems already produce. We need no new connections and no IT project. |
 | Question | Do you make decisions about athletes? |
@@ -115,11 +124,8 @@ Step 1 sets up your walkthrough on the call.
 | Question | What does it cost? |
 | Answer | [JAKE: answer] |
 
-Suggested drafts for you to approve, change, or replace. Each one uses only lines you have already approved.
+The first two answers are yours, from round 2. For the others, here are suggested drafts to approve, change, or replace. Each one uses only lines you have already approved.
 
-- **Do you replace our software?**
-  - Draft: "No. We work alongside the systems you already use."
-  - Please confirm: does a department need any new software or login from us? If yes, the answer must say so.
 - **Which systems do you work with?**
   - The answer in the table is your approved draft from the brief. Please approve it.
 - **Do you make decisions about athletes?**
@@ -154,7 +160,7 @@ Every fact here is one you gave me. There is no personal story and no photo.
 
 | Element | Copy |
 |---|---|
-| Name | Ignition |
+| Name | Ignition APG |
 | Link | Privacy |
 | Link | Email us |
 
@@ -201,10 +207,11 @@ This is for you, not for the page. Row numbers follow the table in `docs/BRIEF.m
 |---|---|---|
 | Collect | We collect the exports your systems already produce, and we keep every original file. | Row 1 (collect the exports). Row 2, first half (keep every original file). |
 | Check | We find missing, duplicate, and wrong values. We find the cause and fix it with your staff. | Row 3 (find missing, duplicate, and wrong values). Row 4, first half (find the cause, correct it with staff). |
+| Check | Every number links back to its source file. We review every flagged number before a report goes out. | Row 5, same wording. Back on the page in v3. |
 | Connect | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. | Row 6 (match each athlete). Row 8 (link GPS, testing, and other data). |
 | Explain | We build and update the reports your staff use. We answer their data questions by email, Slack, or text. | Row 9 (build and update reports). Row 11 (answer data questions by email, Slack, or text). |
 
-The page has no response time, no custom reports, no task IDs, and no software name.
+The page has no response time, no custom reports, and no task IDs. BASIS appears once, in your answer to "What do we get?"
 
 ## Save for the call
 
@@ -212,24 +219,24 @@ These confirmed items are true, but they are not on the page. They show how the 
 
 - **Collect.** We log what arrived and what is missing. (Row 2, second half)
 - **Check.** When we cannot correct a number, we exclude it and record the reason. (Row 4, second half)
-- **Check.** Every number links back to its source file. We review every flagged number before a report goes out. (Row 5)
 - **Connect.** We convert every value to the same units. We record each system's definitions, so different measures are never mixed. (Row 7)
 - **Explain.** We explain what each report shows and what it cannot show. (Row 10)
 - **Explain.** We give you a written guide to your sources, definitions, and methods. (Row 12)
-- **How the work is done.** Data specialists do the work, supported by BASIS software. You choose when to name BASIS.
+- **Where to start.** Hand us your most painful data problem first. The booking question asks for it, so you know it before the call.
 
-If one of these is the thing that makes a director book, move it back to the page. Row 5 is the strongest candidate, because it answers "can I trust this number?"
+If one of these is the thing that makes a director book, move it back to the page.
 
 ## Your decisions
 
-1. **Name on the site.** The site says "Ignition." Your company is Ignition APG. Should the site say "Ignition," "Ignition APG," or "Ignition" with "an Ignition APG company" in the footer?
-2. **Customer phrases.** Send 3 to 5 things directors or sport scientists have said about their data, in their words. Leave out names and schools.
-3. **Answers.**
-   - Approve or rewrite the five question answers in section 6, using the drafts above.
+The button and the name are settled. Four decisions are left.
+
+1. **Customer phrases.** Send 3 to 5 things directors or sport scientists have said about their data, in their words. Leave out names and schools.
+2. **Answers.**
+   - Approve or rewrite the last four question answers in section 6, using the drafts above.
    - Approve "Who we are" in section 7.
    - Tell me whether "We use that information to prepare for the call" is true for the privacy page.
-4. **"How it starts."** Are these the right three steps, and in this order? A call, then a review of one export, then a written summary and plan. Does any step cost money?
-5. **Links.**
+3. **"How it starts."** Are these the right three steps, and in this order? A call, then a review of one export, then a written summary and plan. Does any step cost money?
+4. **Links.**
    - Your booking link, from Cal.com or Calendly.
    - The email address for the site.
    - If you have not set up a booking page yet, tell me which tool you prefer. I will give you the exact setup steps, including the four booking questions and the redirect to the thank-you page.

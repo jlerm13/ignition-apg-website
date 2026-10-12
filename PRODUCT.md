@@ -30,7 +30,8 @@ Set by Jake in the build prompt:
 
 ## Product Purpose
 
-- Ignition gives each athletic department a data team: performance data specialists who collect, check, connect, and explain athlete data. BASIS software supports them, but the site does not name it for now.
+- Ignition APG gives each athletic department a data team: performance data specialists who collect, check, connect, and explain athlete data. They use BASIS, our software. The site names BASIS once, in the answer to "What do we get?"
+- Staff log in to the Ignition APG platform to see results. Asking a question needs no login: they use email, Slack, or text.
 - **The site's one job:** get a qualified college performance leader to book a 20-minute call with us. Jake takes the call. The site says "us," not "Jake."
 - **Success:** qualified bookings. Qualified means a performance staff member at a college or professional program, based on the four booking answers:
   - name
@@ -57,12 +58,12 @@ Set by Jake in the build prompt:
 ## Capabilities and Constraints
 
 - **Capabilities:** the 12 confirmed items in `docs/BRIEF.md` section 3.6, under four verbs: collect, check, connect, explain.
-  - Most are true because a person does the work with BASIS support. The site does not name BASIS for now.
+  - Most are true because a person does the work with BASIS support. Never imply software does them automatically.
   - Never imply software does them automatically.
 - **Limits** (equal weight to capabilities): the six items in `docs/BRIEF.md` section 3.6 that stay with staff. They include readiness, load, and return-to-play decisions.
 - **Terms:**
   - "Data team" always means the Ignition service.
-  - "BASIS" always means the software. It is not named on the site for now.
+  - "BASIS" always means the software. It is named once on the site, as "BASIS, our software."
 - **Banned claims:**
   - readiness score, predict, injury prevention, optimize load, real-time, integrates with, automatic sync
   - automatic data feeds
@@ -76,15 +77,14 @@ Set by Jake in the build prompt:
   - the customer phrases
   - the FAQ answers
   - the "Who we are" text
-  - the name on the site: Ignition or Ignition APG
   - the booking link
   - the email address
 
 ## Brand Commitments
 
-- **Name:** Ignition. The company is Ignition APG. Open: which name the site uses.
+- **Name:** Ignition APG, on the site and everywhere else.
 - **Company first:** Jake leads the new vision and mission. He is not the founder, and the site has no personal story.
-- **The software is BASIS.** It is not named on the site for now.
+- **The software is BASIS.** The site names it once, in the answer to "What do we get?"
 - **Voice:** Simplified Technical English (ASD-STE100 style).
   - Active voice. One idea per sentence. 25 words or fewer per sentence.
   - No contractions, semicolons, or em or en dashes.
