@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 1: message sheet v4 is ready for Jake's sign-off. Still at gate ★1.** Every copy decision is made and every slot is filled. Do not start Stage 2 until Jake replies "approved" and answers the two Vercel questions below.
+**Stage 1: done. Gate ★1 approved by Jake on 2026-10-12.** Stage 2 (directions) is in progress.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -62,21 +62,15 @@ Last updated: 2026-10-12
   - "How it starts. Free." Step 3 makes no time promise.
   - Answers on data protection and cost are Jake's. The other answers and "Who we are" are approved.
   - Booking is Calendly. Analytics is Vercel Web Analytics. The site email is ja.lerman@ignitionapg.com.
+- 2026-10-12 (gate 1 closed):
+  - Jake approved message sheet v4.
+  - Vercel: Jake has an account. It is not yet linked to this repo.
+  - Jake allows preview links for the Stage 2 directions.
 
-## Waiting on Jake (gate ★1)
+## Waiting on Jake
 
-1. **Sign off on `docs/MESSAGE.md` v4.** A reply of "approved" closes gate 1.
-2. **Set up Calendly** with `docs/BOOKING.md`. Tell us whether the redirect option is available on his plan.
-3. **Two questions for Stage 2:**
-   - Is Vercel linked to this GitHub repo?
-   - May Stage 2 push one preview branch per direction?
-
-When Jake approves:
-
-1. Rerun the copy check: `node scripts/check-message.mjs docs/MESSAGE.md`. It must report no findings and 0 `[JAKE:]` slots.
-2. Change the sheet title to "Message sheet (approved)" and log the approval here.
-3. Commit "Message sheet approved by Jake".
-4. Start Stage 2.
+- Link Vercel to this GitHub repo. Steps will be in `docs/VERCEL.md`. Until then, Jake reviews the directions as screenshots.
+- Set up Calendly with `docs/BOOKING.md`.
 
 ## The stages
 
@@ -84,7 +78,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
 
 ### Stage 0: Set up (done)
 
-### Stage 1 ★: Message sheet (done, waiting at gate)
+### Stage 1 ★: Message sheet (done, approved)
 
 1. Run Impeccable `init` and `shape` with `docs/BRIEF.md` as input.
    - `init` writes `PRODUCT.md`.

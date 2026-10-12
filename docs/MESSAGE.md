@@ -1,6 +1,6 @@
-# Message sheet v4
+# Message sheet (approved)
 
-For Jake's sign-off at gate 1. This is every word on the site, in page order. There is no design yet.
+Version 4, approved by Jake at gate 1 on 2026-10-12. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
