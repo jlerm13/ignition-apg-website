@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 2: four directions are ready. Waiting at gate ★2 for Jake to pick one.** Gate ★1 was approved on 2026-10-12.
+**Stage 3 (build) in progress.** Gate ★2 closed on 2026-10-12: Jake picked Spec sheet. `docs/DESIGN.md` holds the design rules. Stop after the build so Jake can look before Stage 4.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -81,20 +81,17 @@ Last updated: 2026-10-12
   - Jake approved message sheet v4.
   - Vercel: Jake has an account. It is not yet linked to this repo.
   - Jake allows preview links for the Stage 2 directions.
+- 2026-10-12 (gate 2 closed):
+  - Jake picked direction 3, Spec sheet.
+  - He shared reference screenshots from another company's site. They stay out of the repo, and we never name the company (hard rule 8). The decisions are in `docs/DESIGN.md`.
+  - Analytics: launch on the free Vercel plan. Visits and the thank-you page view (`booking_completed`) are counted. The click events are built in and switch on if Jake upgrades to Vercel Pro.
+  - Stop after the Stage 3 build so Jake can look before the Stage 4 audit.
 - 2026-10-12 (Stage 2 start): the old training-business brand is not used. Start fresh. Jake may send old brand details after he assesses the directions.
 
-## Waiting on Jake (gate ★2)
+## Waiting on Jake
 
-1. **Pick a direction, or ask for a mix.** See `docs/directions/README.md` and the screenshots.
-   - If he picks Ledger, he also approves the table labels named in the README.
-2. **Link Vercel** with `docs/VERCEL.md`. Then push any update to the working branch to trigger a preview, and send Jake the `/directions/` link.
-3. **Set up Calendly** with `docs/BOOKING.md`. The redirect address waits for the preview link.
-
-When Jake picks:
-
-1. Write `docs/DESIGN.md` for that direction: type, colour, spacing, and components. Include the fix for the small label text (16 px or larger on phones).
-2. Commit "Design direction picked: <name>".
-3. Start Stage 3.
+- Link Vercel with `docs/VERCEL.md`, then send the preview address. The Calendly redirect and the sitemap address need it.
+- Set up Calendly with `docs/BOOKING.md`.
 
 ## The stages
 
@@ -117,7 +114,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
    - his booking link and email address
 4. Commit and STOP.
 
-### Stage 2 ★: Directions (done, waiting at gate)
+### Stage 2 ★: Directions (done, Jake picked Spec sheet)
 
 1. Make four distinct directions. Unslop-UI has no directions feature, so use Hallmark themes. Each direction shows the hero and the problem section with real copy from the approved MESSAGE.md.
 2. Take screenshots at 1440 px and 390 px wide for each. Save them in `docs/directions/`.

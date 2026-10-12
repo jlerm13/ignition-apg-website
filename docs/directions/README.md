@@ -45,3 +45,7 @@ Warm grey paper, one clean sans serif, rounded buttons, and one soft panel for t
 ## Your choice
 
 Pick one, or ask for a mix. A mix example: "Ledger's who-does-what table on the Briefing's warm paper." After you pick, I write `docs/DESIGN.md` for that direction.
+
+## Jake's pick (gate 2, 2026-10-12)
+
+Jake picked **3. Spec sheet**. He also shared reference screenshots from another company's site. What we took from them and what we left out is recorded in `docs/DESIGN.md`. The screenshots are not stored in this repo.
