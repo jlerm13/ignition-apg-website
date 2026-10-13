@@ -6,7 +6,7 @@ const file = process.argv[2];
 const all = readFileSync(file, "utf8");
 const m = all.match(/<!-- copy:start -->([\s\S]*?)<!-- copy:end -->/);
 if (!m) { console.error("no copy markers"); process.exit(1); }
-const SHORT = /^(Heading|Button|Label|Name|Link|Group|Step \d title|Page title|Question)$/;
+const SHORT = /^(Heading|Subheading|Button|Role button|Prompt|Label|Name|Link|Group|Step \d title|Page title|Question)$/;
 const findings = []; let jake = 0; let rows = 0; let basisCount = 0;
 for (const line of m[1].split("\n")) {
   const r = line.match(/^\|\s*([^|]+?)\s*\|\s*([^|]*?)\s*\|$/);

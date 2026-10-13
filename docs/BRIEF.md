@@ -57,6 +57,18 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 1. The closing line of "How it starts" is now: "Staff ask questions by email, Slack, or text. They see results on our platform." It replaces the original "Your staff reach us by email, Slack, or text. No new login is needed to ask a question." The old line could read as a contradiction of "Your staff log in to our platform to see the results."
 2. Jake approved the Stage 4 audit.
 
+## Changes from Jake, 2026-10-13 (review of the preview)
+
+1. **Data specialist section** (option A: a role, with no name, no photo, and no personal story; company first stays; the only number stays "20-minute"). It sits after "What you can hand us" and before "We handle the data work. Your staff keep the judgment." The words are in `docs/MESSAGE.md` section 3b.
+2. **Role picker in the hero.**
+   - The prompt "What best describes your role?" with five buttons: Director of High Performance, Director of Sports Science, Director of Strength and Conditioning, Sport scientist, Athletic trainer.
+   - Then the link "Other role? Book a 20-minute data audit call".
+   - Each button opens Calendly with the role filled in (`a1`). "Every decision stays with your coaches and clinicians." stays under the picker.
+   - The `cta_click` event carries section "hero" and the role. Every other booking button stays as it is.
+3. **"Explain" restores rows 10 and 12:** "We explain what each report shows and what it cannot show." and "We give you a written guide to your sources, definitions, and methods."
+4. **Approved wording for wrong numbers, in both places:** "We find the cause. We correct it with your staff, or we exclude it and record the reason." Nowhere on the site may we say we "fix" a value. BASIS never edits a value in place.
+5. **Questions open and close on click or tap,** using native details and summary. All are closed when the page loads. The answers do not change.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

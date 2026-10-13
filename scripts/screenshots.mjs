@@ -46,6 +46,8 @@ for (const [name, path] of Object.entries(set.pages)) {
     const page = await browser.newPage({ viewport: { width, height: width < 500 ? 844 : 900 }, deviceScaleFactor: width < 500 ? 2 : 1 });
     await page.goto(base + path, { waitUntil: "networkidle" });
     await page.evaluate(() => document.fonts.ready);
+    // Show one question open, as it looks after a tap.
+    await page.evaluate(() => { const d = document.querySelector(".faq details"); if (d) d.open = true; });
     const overflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
     if (overflow > 0) problems.push(`${name} @ ${width}px: horizontal scroll of ${overflow}px`);
     if (width !== 375) {

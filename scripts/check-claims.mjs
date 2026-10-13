@@ -40,6 +40,10 @@ for (const f of files) {
     if (/%/.test(line)) findings.push(`${page}: percentage: "${line}"`);
     if (X_OF_Y.test(line)) findings.push(`${page}: "X of Y" figure: "${line}"`);
     if (TASK_ID.test(line)) findings.push(`${page}: task ID on the page: "${line}"`);
+    // Jake, 2026-10-13: we never say we "fix" a value. "Your staff should coach, not fix spreadsheets." is about staff, so it is allowed.
+    for (const sentence of line.split(/(?<=[.?!])\s+/)) {
+      if (/\b(we|our|your specialist|they)\b/i.test(sentence) && /\bfix(es|ing)?\b|\bfixed\b(?! monthly)/i.test(sentence)) findings.push(`${page}: says we "fix" a value: "${sentence}"`);
+    }
     const digits = line.replace(/20-minute/g, "").replace(/ja\.lerman@ignitionapg\.com/g, "");
     if (/\d/.test(digits) && !/^Last updated: [A-Z][a-z]+ \d{1,2}, \d{4}$/.test(line)) findings.push(`${page}: number not allowed: "${line}"`);
   }

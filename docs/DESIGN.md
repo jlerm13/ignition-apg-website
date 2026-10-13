@@ -49,12 +49,14 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 | Header | Sticky, paper background, 2 px ink rule below. Name on the left, booking button on the right. On phones the header button hides, because the hero button sits directly below. |
 | Button | Ink fill, on-ink text, 2 px ink border, square corners, 48 px tall (header button 44 px). Red on hover, neutral on press, red focus ring. The label never wraps. |
 | Text link | Ink, underlined, red underline on hover. |
-| Hero | Ruler, label with red square, display heading across columns 1 to 11, then lead text, button, and the under-button line in columns 7 to 12 under a 2 px ink rule. |
+| Hero | Ruler, label with red square, display heading across columns 1 to 11, then lead text, the role picker, and the under-button line in columns 7 to 12 under a 2 px ink rule. |
+| Role picker (hero, 2026-10-13) | The prompt in bold, then five full-width outlined choices (2 px ink border, paper fill, left-aligned label, 48 px tall) that fill with ink on hover. Then a text link for other roles. Each choice opens Calendly with the role prefilled. Labels stay on one line down to 320 px. |
 | Problem rows | Heading left. Symptoms as rows with hairlines on the right. The closing line in bold, between 2 px ink rules. The department message below it in neutral. |
 | Grouped list ("What you can hand us") | Heading and text left. Four groups on the right, each under a 2 px ink rule with the verb as a small heading. No markers. It mirrors the ink band, light then dark. |
+| Specialist section (2026-10-13) | Heading and text left. On the right, two groups under 2 px ink rules: "Who your data specialist is" (plain list) and "A week with your data specialist" (ordered list, hairline between rows, no visible numerals). No photos, avatars, faces, or icons. |
 | Ink band ("We handle the data work") | The one dark section. Heading left on ink, six items in two columns on the right, each item with a hairline above it. |
 | Step columns ("How it starts. Free.") | Three columns divided by vertical hairlines. Titles carry the order, with no numerals. The closing line sits under a rule. Then the booking button: the one mid-page button, so phone visitors can book at the moment they decide. Stacks to rows on phones. |
-| Questions | Heading left. On the right, every question with its answer open, rows divided by hairlines. A director came to check these answers, so none are hidden. |
+| Questions | Heading left. On the right, native `<details>` rows divided by hairlines, all closed on load (Jake, 2026-10-13). Each summary is at least 56 px tall with a "+" or "−" marker as text, the red focus ring, and hover and press styles. Answers stay in the page HTML. |
 | Who we are | Heading left, two short paragraphs right. |
 | Final call to action | A large section heading, the button, then the email line. |
 | Footer | Name, Privacy link, and Email us on one line, with a hairline above. It sits at the bottom of short pages. |

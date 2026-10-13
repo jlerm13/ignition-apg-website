@@ -52,6 +52,7 @@ const ogImage = new URL("/og.png", Astro.site);
         if (!el) return;
         var name = el.getAttribute("data-event");
         var data = { section: el.getAttribute("data-section") || "" };
+        if (el.hasAttribute("data-role")) data.role = el.getAttribute("data-role");
         window.va("event", { name: name, data: data });
         if (name === "cta_click") window.va("event", { name: "booking_opened", data: data });
       });

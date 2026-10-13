@@ -29,6 +29,31 @@ Calendly always asks for **Name** and **Email**. Add three more questions. Each 
 
 The last question is the one you prepare the call from. It is also the "most painful problem first" idea, so you know the problem before you talk.
 
+## 2b. Role prefill (added 2026-10-13)
+
+The hero now asks "What best describes your role?" and shows five buttons. Each button opens your Calendly page with the role already typed into the role question. Calendly does this from the link: `?a1=` fills the **first question you added** to the booking form. Name and email do not count, because Calendly adds those itself.
+
+For this to work, check two things in Calendly, under the event's **Booking form** (or **Invitee Questions**):
+
+1. **"What is your role?" must be the first question you added**, directly under Name and Email. If it is not first, drag it to the top. If you want it somewhere else, tell me its position (second is `a2`, third is `a3`) and I will change the links.
+2. **Its answer type must be "One line"**, as step 2 above says. With One line, any text fills in. If you changed it to multiple choice (radio buttons or a drop-down), the five options must match the button text exactly, letter for letter:
+   - Director of High Performance
+   - Director of Sports Science
+   - Director of Strength and Conditioning
+   - Sport scientist
+   - Athletic trainer
+
+   One line is simpler. With it, "Other role?" visitors can type anything.
+
+**Test it** (I cannot open calendly.com from my environment, so this is yours):
+
+1. Open this link: https://calendly.com/ja-lerman-ignitionapg/intro-call?a1=Sport%20scientist
+2. Pick any time.
+3. On the form, "What is your role?" should already say **Sport scientist**. Visitors can still change it.
+4. Close the page without booking.
+
+If the role box is empty, tell me what the question's position and type are, and I will fix the links.
+
 ## 3. Send people to the thank-you page after they book
 
 The site counts a booking when someone lands on its thank-you page. Calendly must send them there.

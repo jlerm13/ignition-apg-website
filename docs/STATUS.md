@@ -104,6 +104,14 @@ Last updated: 2026-10-12
 
 ## Jake's decisions so far
 
+- 2026-10-13 (review of the preview; not a launch):
+  - New data specialist section after "What you can hand us". It is a role with no person.
+  - A hero role picker of five roles plus "Other role?", with Calendly role prefill through `a1`.
+  - "Explain" restores rows 10 and 12.
+  - The approved wording for wrong numbers is used everywhere, and the site never says we "fix" a value.
+  - Questions collapse with native details.
+  - Live address: the free Vercel address for now. Jake clicks merge on PR #1 himself. This session watches PR #1.
+
 - 2026-10-13 (gate 4 closed): Jake approved the audit and the new closing line for "How it starts": "Staff ask questions by email, Slack, or text. They see results on our platform."
 - 2026-10-13: Vercel project created (Hobby plan, Astro preset, build `npm run build`, output `dist`). The first deploy from `main` failed (no package.json on `main`), which is expected.
 
@@ -139,10 +147,16 @@ Last updated: 2026-10-12
 
 ## Waiting on Jake
 
-1. **Review the copy on the preview**, then approve it. The preview works: https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/ (branch `claude/clever-ride-f3mrjh`; private, needs Vercel sign-in).
-2. **Decide the live address:** ignitionapg.com, a subdomain such as data.ignitionapg.com, or the free Vercel address for now.
-3. **Decide who publishes:** Claude merges after his approval, or Jake clicks merge.
-4. **Set up Calendly** with `docs/BOOKING.md`, then make one test booking (audit check 11).
+1. **Review the preview** on PR #1 (https://github.com/jlerm13/ignition-apg-website/pull/1). The branch preview is https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/
+2. **Calendly role prefill:** follow `docs/BOOKING.md` step 2b.
+   - "What is your role?" must be the first added question and of type One line.
+   - Then test the `?a1=Sport%20scientist` link.
+3. **Two wording flags** (his words kept as written until he decides):
+   - "One person owns your data." could read as us owning athlete data. A possible alternative: "One person owns your data work."
+   - "Our software does the repeat checks." sits close to the rule against implying software works on its own.
+4. **Privacy line** (from earlier): change "We count visits and button clicks" to "We count visits", because the free plan counts visits only?
+5. **Set the Calendly redirect** and make one test booking (audit check 11).
+6. **When ready:** Jake clicks merge on PR #1 to publish. Never merge for him.
 
 ## The stages
 

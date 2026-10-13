@@ -1,12 +1,20 @@
 # Message sheet (approved)
 
-Version 4, approved by Jake at gate 1 on 2026-10-12. This is every word on the site, in page order. There is no design yet.
+Version 4, approved by Jake at gate 1 on 2026-10-12. Version 5 adds Jake's review changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
 - The **Copy** column is what visitors will see.
 - Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
 - What is left for you is at the bottom.
+
+## What changed in v5 (Jake, 2026-10-13)
+
+- Hero: a role picker replaces the single button. "What best describes your role?" with five role buttons, then the link "Other role? Book a 20-minute data audit call". Each role button opens Calendly with the role already filled in.
+- New section 3b, "One person owns your data.", about the data specialist. It is a role, with no name, no photo, and no personal story.
+- "Explain" gets back two confirmed items: rows 10 and 12.
+- Fixing wrong numbers now uses the approved wording in both places: "We find the cause. We correct it with your staff, or we exclude it and record the reason." The site never says we "fix" a value. BASIS never edits a value in place.
+- Questions open and close on click or tap. All are closed when the page loads. The answers do not change.
 
 ## What changed in v4
 
@@ -53,8 +61,16 @@ How to read it:
 | Label | A data team for college athletic departments |
 | Heading | Athlete data your staff can trust. |
 | Text | Ignition APG gives each department a data team: performance data specialists who collect, check, connect, and explain athlete data. |
-| Button | Book a 20-minute data audit call |
+| Prompt | What best describes your role? |
+| Role button | Director of High Performance |
+| Role button | Director of Sports Science |
+| Role button | Director of Strength and Conditioning |
+| Role button | Sport scientist |
+| Role button | Athletic trainer |
+| Link | Other role? Book a 20-minute data audit call |
 | Under the button | Every decision stays with your coaches and clinicians. |
+
+Each role button opens Calendly with that role filled in. The "Other role?" link opens Calendly with no role filled in. Setup: `docs/BOOKING.md`, "Role prefill".
 
 ## 2. The problem
 
@@ -65,7 +81,7 @@ How to read it:
 | Symptom 2 | The report arrives after the meeting where the coaches needed it. |
 | Symptom 3 | One person runs the GPS, the force plates, and the AMS, and the systems do not connect. |
 | Closing line | Each new system adds work when nobody owns the workflow. |
-| Department message | Your staff should coach, not fix spreadsheets. We work alongside the systems you already use. When a number looks wrong, we find the cause and fix it. |
+| Department message | Your staff should coach, not fix spreadsheets. We work alongside the systems you already use. When a number looks wrong, we find the cause. We correct it with your staff, or we exclude it and record the reason. |
 
 The symptoms appear as plain lines, with no names and no quote marks. That way they read as the problem, not as testimonials. The department message turns the page from the problem to the offer.
 
@@ -78,12 +94,32 @@ The symptoms appear as plain lines, with no names and no quote marks. That way t
 | Group | Collect |
 | Item | We collect the exports your systems already produce, and we keep every original file. |
 | Group | Check |
-| Item | We find missing, duplicate, and wrong values. We find the cause and fix it with your staff. |
+| Item | We find missing, duplicate, and wrong values. We find the cause. We correct it with your staff, or we exclude it and record the reason. |
 | Item | Every number links back to its source file. We review every flagged number before a report goes out. |
 | Group | Connect |
 | Item | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. |
 | Group | Explain |
 | Item | We build and update the reports your staff use. We answer their data questions by email, Slack, or text. |
+| Item | We explain what each report shows and what it cannot show. |
+| Item | We give you a written guide to your sources, definitions, and methods. |
+
+## 3b. Your data specialist (Jake, 2026-10-13)
+
+| Element | Copy |
+|---|---|
+| Heading | One person owns your data. |
+| Text | Your data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue. |
+| Subheading | Who your data specialist is |
+| Point | Every data specialist has worked in sports performance and in data. |
+| Point | They work with your staff by email, Slack, or text. |
+| Subheading | A week with your data specialist |
+| Week item | After each session, your staff send the exports. Your specialist checks them. |
+| Week item | When a number looks wrong, your specialist finds the cause. They correct it with your staff, or exclude it and record the reason. |
+| Week item | Your staff get checked reports on the schedule you agree. |
+| Week item | Any day, your staff message your specialist with data questions. |
+| Week item | Each month, your specialist updates your data guide. |
+
+A role, not a person: no name, no photo, no avatar, no icon. The week is an ordered list with no visible numbers.
 
 ## 4. What stays with your staff
 
@@ -133,7 +169,7 @@ None of these steps cost money. Step 3 makes no time promise, so "20-minute" sta
 | Question | What does it cost? |
 | Answer | The call, the export review, and the written summary are free. After that, the price depends on your sports and systems. You get a fixed monthly price before you commit. |
 
-All six answers are yours or approved by you. None names a compliance standard.
+All six answers are yours or approved by you. None names a compliance standard. Since 2026-10-13 each question opens and closes on click or tap, and all are closed when the page loads.
 
 ## 7. Who we are
 
@@ -212,10 +248,12 @@ This is for you, not for the page. Row numbers follow the table in `docs/BRIEF.m
 | Group | Line on the page | Confirmed rows it comes from |
 |---|---|---|
 | Collect | We collect the exports your systems already produce, and we keep every original file. | Row 1 (collect the exports). Row 2, first half (keep every original file). |
-| Check | We find missing, duplicate, and wrong values. We find the cause and fix it with your staff. | Row 3 (find missing, duplicate, and wrong values). Row 4, first half (find the cause, correct it with staff). |
+| Check | We find missing, duplicate, and wrong values. We find the cause. We correct it with your staff, or we exclude it and record the reason. | Row 3 (find missing, duplicate, and wrong values). Row 4, full wording (2026-10-13). |
 | Check | Every number links back to its source file. We review every flagged number before a report goes out. | Row 5, same wording. Back on the page in v3. |
 | Connect | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. | Row 6 (match each athlete). Row 8 (link GPS, testing, and other data). |
 | Explain | We build and update the reports your staff use. We answer their data questions by email, Slack, or text. | Row 9 (build and update reports). Row 11 (answer data questions by email, Slack, or text). |
+| Explain | We explain what each report shows and what it cannot show. | Row 10, same wording. Restored 2026-10-13. |
+| Explain | We give you a written guide to your sources, definitions, and methods. | Row 12, same wording. Restored 2026-10-13. |
 
 The page has no response time, no custom reports, and no task IDs. BASIS appears once, in your answer to "What do we get?"
 
@@ -224,10 +262,7 @@ The page has no response time, no custom reports, and no task IDs. BASIS appears
 These confirmed items are true, but they are not on the page. They show how the data team works, so they make good material for your walkthrough.
 
 - **Collect.** We log what arrived and what is missing. (Row 2, second half)
-- **Check.** When we cannot correct a number, we exclude it and record the reason. (Row 4, second half)
 - **Connect.** We convert every value to the same units. We record each system's definitions, so different measures are never mixed. (Row 7)
-- **Explain.** We explain what each report shows and what it cannot show. (Row 10)
-- **Explain.** We give you a written guide to your sources, definitions, and methods. (Row 12)
 - **Now on the page.** "You can remove athlete names first" moved to step 2 and the data protection answer in v4.
 - **Where to start.** Hand us your most painful data problem first. The booking question asks for it, so you know it before the call.
 

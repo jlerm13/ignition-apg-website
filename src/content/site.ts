@@ -23,6 +23,19 @@ export const hero = {
   underButton: "Every decision stays with your coaches and clinicians.",
 };
 
+// Hero role picker (Jake, 2026-10-13). Each role opens Calendly with the role question prefilled (a1).
+export const rolePicker = {
+  prompt: "What best describes your role?",
+  roles: [
+    "Director of High Performance",
+    "Director of Sports Science",
+    "Director of Strength and Conditioning",
+    "Sport scientist",
+    "Athletic trainer",
+  ],
+  otherLink: "Other role? Book a 20-minute data audit call",
+};
+
 export const problem = {
   heading: "Performance staff cannot trust their numbers, and nobody owns fixing them.",
   symptoms: [
@@ -34,7 +47,7 @@ export const problem = {
   departmentMessage: [
     "Your staff should coach, not fix spreadsheets.",
     "We work alongside the systems you already use.",
-    "When a number looks wrong, we find the cause and fix it.",
+    "When a number looks wrong, we find the cause. We correct it with your staff, or we exclude it and record the reason.",
   ],
 };
 
@@ -49,7 +62,7 @@ export const handUs = {
     {
       verb: "Check",
       items: [
-        "We find missing, duplicate, and wrong values. We find the cause and fix it with your staff.",
+        "We find missing, duplicate, and wrong values. We find the cause. We correct it with your staff, or we exclude it and record the reason.",
         "Every number links back to its source file. We review every flagged number before a report goes out.",
       ],
     },
@@ -59,9 +72,36 @@ export const handUs = {
     },
     {
       verb: "Explain",
-      items: ["We build and update the reports your staff use. We answer their data questions by email, Slack, or text."],
+      items: [
+        "We build and update the reports your staff use. We answer their data questions by email, Slack, or text.",
+        "We explain what each report shows and what it cannot show.",
+        "We give you a written guide to your sources, definitions, and methods.",
+      ],
     },
   ],
+};
+
+// Data specialist section (Jake, 2026-10-13). A role, with no name, no photo, and no personal story.
+export const specialist = {
+  heading: "One person owns your data.",
+  text: "Your data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue.",
+  who: {
+    heading: "Who your data specialist is",
+    items: [
+      "Every data specialist has worked in sports performance and in data.",
+      "They work with your staff by email, Slack, or text.",
+    ],
+  },
+  week: {
+    heading: "A week with your data specialist",
+    items: [
+      "After each session, your staff send the exports. Your specialist checks them.",
+      "When a number looks wrong, your specialist finds the cause. They correct it with your staff, or exclude it and record the reason.",
+      "Your staff get checked reports on the schedule you agree.",
+      "Any day, your staff message your specialist with data questions.",
+      "Each month, your specialist updates your data guide.",
+    ],
+  },
 };
 
 export const staysWithStaff = {

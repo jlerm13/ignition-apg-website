@@ -69,6 +69,23 @@
   .link--inline { position: relative; }
   .link--inline::after { content: ""; position: absolute; inset: -0.875rem -0.25rem; }
 
+  /* Hero role picker: outlined choices that fill with ink on hover. */
+  .btn--choice { justify-content: flex-start; background: var(--color-paper); color: var(--color-ink); }
+  .btn--choice:hover { background: var(--color-ink); color: var(--color-on-ink); border-color: var(--color-ink); }
+  .btn--choice:active { background: var(--color-neutral); color: var(--color-on-ink); border-color: var(--color-neutral); }
+
+  /* A week with your data specialist: ordered in the HTML, no visible numerals. */
+  .week li { padding-block: 0.75rem; border-bottom: 1px solid var(--color-rule-2); }
+  .week li:last-child { border-bottom: 0; }
+
+  /* Questions: native details, closed on load, plus and minus marker, 56 px rows. */
+  .faq summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 1rem; min-height: 3.5rem; padding-block: 1rem; font-weight: 700; font-size: var(--text-item); line-height: 1.35; transition: color 160ms ease; }
+  .faq summary::-webkit-details-marker { display: none; }
+  .faq summary::after { content: "+"; flex: none; width: 1.5rem; text-align: center; font-weight: 400; font-size: 1.5rem; line-height: 1; }
+  .faq details[open] summary::after { content: "\2212"; }
+  .faq summary:hover { color: var(--color-neutral); }
+  .faq summary:active { color: var(--color-muted); }
+
   /* Small red square: the one marker shape on the page. */
   .marker { position: relative; padding-left: 1.5rem; }
   .marker::before { content: ""; position: absolute; left: 0; top: 0.55em; width: 0.5rem; height: 0.5rem; background: var(--color-accent); }
