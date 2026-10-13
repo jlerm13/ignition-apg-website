@@ -1,12 +1,18 @@
 # Message sheet (approved)
 
-Version 4, approved by Jake at gate 1 on 2026-10-12. Version 5 adds Jake's review changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
+Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 7 add Jake's changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
 - The **Copy** column is what visitors will see.
 - Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
 - What is left for you is at the bottom.
+
+## What changed in v7 (Jake, 2026-10-13, round 3)
+
+- Ignition APG is one performance data specialist plus our software, one to one with each department. "Data team" is gone from the site and is now a banned phrase.
+- "Performance data specialist" is the full name for the person. "Your specialist" is the short form after it. Lines that suggested several people are now singular.
+- The call is 30 minutes. Every booking button says "Book a 30-minute workflow review", and step 1 is "A 30-minute call".
 
 ## What changed in v6 (Jake, 2026-10-13, round 2)
 
@@ -52,29 +58,29 @@ How to read it:
 | Element | Copy |
 |---|---|
 | Page title | Ignition APG: athlete data your staff can trust |
-| Search description | Ignition APG gives college athletic departments a data team. We collect, check, connect, and explain athlete data. Every decision stays with your staff. |
+| Search description | Ignition APG gives each college athletic department its own performance data specialist. We collect, check, connect, and explain athlete data. Every decision stays with your staff. |
 
 ## Header
 
 | Element | Copy |
 |---|---|
 | Name | Ignition APG |
-| Button | Book a 20-minute workflow review |
+| Button | Book a 30-minute workflow review |
 
 ## 1. Hero
 
 | Element | Copy |
 |---|---|
-| Label | A data team for college athletic departments |
+| Label | A performance data specialist for your athletic department |
 | Heading | Athlete data your staff can trust. |
-| Text | Ignition APG gives each department a data team: performance data specialists who collect, check, connect, and explain athlete data. |
+| Text | Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist collects, checks, connects, and explains athlete data. |
 | Prompt | What best describes your role? |
 | Role button | Director of High Performance |
 | Role button | Director of Sports Science |
 | Role button | Director of Strength and Conditioning |
 | Role button | Sport scientist |
 | Role button | Athletic trainer |
-| Link | Other role? Book a 20-minute workflow review |
+| Link | Other role? Book a 30-minute workflow review |
 | Under the button | Every decision stays with your coaches and clinicians. |
 
 Each role button opens Calendly with that role filled in. The "Other role?" link opens Calendly with no role filled in. Setup: `docs/BOOKING.md`, "Role prefill".
@@ -88,20 +94,20 @@ Each role button opens Calendly with that role filled in. The "Other role?" link
 | Symptom | The report arrives after coaches needed the information. |
 | Symptom | One person manages data from GPS, force plates, and the AMS, but the systems do not work together. |
 | Symptom | Each new system adds work when nobody owns the workflow. |
-| Solution | Ignition APG gives your staff a sport science data specialist. |
+| Solution | Ignition APG gives your staff a performance data specialist. |
 | Solution | The specialist works across the systems you already use. |
 | Solution | We monitor incoming data, investigate problems, maintain the workflow, and deliver current information before coaches need it. |
 | Solution | Your staff add context, interpret the information, and make the decisions. |
-| Button | Book a 20-minute workflow review |
+| Button | Book a 30-minute workflow review |
 
-The symptoms appear as plain lines, with no names and no quote marks. Jake's draft said "Ignition", "a dedicated sport science data operator", and "Your staff adds". With his approval these became "Ignition APG", "a sport science data specialist" ("dedicated" is a banned word, and "data specialist" is the site's one term), and "Your staff add".
+The symptoms appear as plain lines, with no names and no quote marks. Jake's draft said "Ignition", "a dedicated sport science data operator", and "Your staff adds". With his approval these became "Ignition APG", "a sport science data specialist" ("dedicated" is a banned word, and "data specialist" is the site's one term), and "Your staff add". In v7 the line became "a performance data specialist".
 
 ## 3. What you can hand us
 
 | Element | Copy |
 |---|---|
 | Heading | What you can hand us |
-| Text | Our data specialists do this work for your staff. On the call, we show you how. |
+| Text | Your performance data specialist does this work for your staff. On the call, we show you how. |
 | Group | Collect |
 | Item | We collect the exports your systems already produce, and we keep every original file. |
 | Group | Check |
@@ -114,16 +120,16 @@ The symptoms appear as plain lines, with no names and no quote marks. Jake's dra
 | Item | We explain what each report shows and what it cannot show. |
 | Item | We give you a written guide to your sources, definitions, and methods. |
 
-## 3b. Your data specialist (Jake, 2026-10-13)
+## 3b. Your performance data specialist (Jake, 2026-10-13)
 
 | Element | Copy |
 |---|---|
 | Heading | One person owns your data work. |
-| Text | Your data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue. |
-| Subheading | Who your data specialist is |
-| Point | Every data specialist has worked in sports performance and in data. |
+| Text | Your performance data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue. |
+| Subheading | Who your performance data specialist is |
+| Point | Your performance data specialist has worked in sports performance and in data. |
 | Point | They work with your staff by email, Slack, or text. |
-| Subheading | A week with your data specialist |
+| Subheading | A week with your performance data specialist |
 | Week item | After each session, your staff send the exports. Your specialist checks them. |
 | Week item | When a number looks wrong, your specialist finds the cause. They correct it with your staff, or exclude it and record the reason. |
 | Week item | Your staff get checked reports on the schedule you agree. |
@@ -152,7 +158,7 @@ This list gets the same visual weight as section 3. The six items use the confir
 | Element | Copy |
 |---|---|
 | Heading | How it starts. Free. |
-| Step 1 title | A 20-minute call |
+| Step 1 title | A 30-minute call |
 | Step 1 text | You tell us about your systems and the data problem that costs your staff the most time. |
 | Step 2 title | A review of one export |
 | Step 2 text | You send one export from one system you use. You can remove athlete names first. We check every value. |
@@ -160,7 +166,7 @@ This list gets the same visual weight as section 3. The six items use the confir
 | Step 3 text | We walk you through what we found on a short call. You get a written summary and a plan for your data. |
 | Closing line | Staff ask questions by email, Slack, or text. They see results on our platform. |
 
-None of these steps cost money. Step 3 makes no time promise, so "20-minute" stays the only number on the site.
+None of these steps cost money. Step 3 makes no time promise, so "30-minute" stays the only number on the site.
 
 ## 6. Questions
 
@@ -170,7 +176,7 @@ None of these steps cost money. Step 3 makes no time promise, so "20-minute" sta
 | Question | Do you replace our software? |
 | Answer | No. You keep your GPS, force plates, and athlete management system. Your staff send us the exports those systems already produce. |
 | Question | What do we get? |
-| Answer | You get a data specialist from Ignition APG. They use BASIS, our software, to check and connect your data. Your staff log in to our platform to see the results. To ask a question, they message us by email, Slack, or text. |
+| Answer | You get a performance data specialist from Ignition APG. They use BASIS, our software, to check and connect your data. Your staff log in to our platform to see the results. To ask a question, they message us by email, Slack, or text. |
 | Question | Which systems do you work with? |
 | Answer | Your staff send the exports their systems already produce. We need no new connections and no IT project. |
 | Question | Do you make decisions about athletes? |
@@ -188,7 +194,7 @@ All six answers are yours or approved by you. None names a compliance standard. 
 |---|---|
 | Heading | Who we are |
 | Text | We began as a sports performance training company. We trained athletes of all ages and solved performance problems for our partners. |
-| Text | Our data team is the next step in that work. It is now our main focus. |
+| Text | A performance data specialist for each department is the next step in that work. It is now our main focus. |
 
 Approved as written. There is no personal story and no photo.
 
@@ -197,7 +203,7 @@ Approved as written. There is no personal story and no photo.
 | Element | Copy |
 |---|---|
 | Heading | Bring the data problem that costs your staff the most time. |
-| Button | Book a 20-minute workflow review |
+| Button | Book a 30-minute workflow review |
 | Email line | Or email us at ja.lerman@ignitionapg.com. |
 
 ## Footer
@@ -248,7 +254,7 @@ Before launch, Stage 3 checks that every line above is true. One example: if the
 
 | Where | Goes to |
 |---|---|
-| Every "Book a 20-minute workflow review" button (header, section 2, How it starts, final section) and the "Other role?" link | https://calendly.com/ja-lerman-ignitionapg/intro-call |
+| Every "Book a 30-minute workflow review" button (header, section 2, How it starts, final section) and the "Other role?" link | https://calendly.com/ja-lerman-ignitionapg/intro-call |
 | Every "Email us" link and email line | ja.lerman@ignitionapg.com |
 | Calendly, after a booking | the site's thank-you page. Setup steps are in `docs/BOOKING.md`. |
 
@@ -270,7 +276,7 @@ The page has no response time, no custom reports, and no task IDs. BASIS appears
 
 ## Save for the call
 
-These confirmed items are true, but they are not on the page. They show how the data team works, so they make good material for your walkthrough.
+These confirmed items are true, but they are not on the page. They show how your specialist works, so they make good material for your walkthrough.
 
 - **Collect.** We log what arrived and what is missing. (Row 2, second half)
 - **Connect.** We convert every value to the same units. We record each system's definitions, so different measures are never mixed. (Row 7)

@@ -1,6 +1,6 @@
 // Checks claims on the built site (dist/). Run after `npm run build`.
 // 1. No percentages and no "X of Y" figures.
-// 2. No digits except "20-minute" and the privacy page's "Last updated" date.
+// 2. No digits except "30-minute" and the privacy page's "Last updated" date.
 // 3. Every "What you can hand us" line on the page matches an approved Item in docs/MESSAGE.md section 3.
 // 4. Every "What stays with your staff" line matches the confirmed rows in docs/BRIEF.md section 3.6, and all six appear.
 import { readFileSync, readdirSync, statSync } from "node:fs";
@@ -44,7 +44,7 @@ for (const f of files) {
     for (const sentence of line.split(/(?<=[.?!])\s+/)) {
       if (/\b(we|our|your specialist|they)\b/i.test(sentence) && /\bfix(es|ing)?\b|\bfixed\b(?! monthly)/i.test(sentence)) findings.push(`${page}: says we "fix" a value: "${sentence}"`);
     }
-    const digits = line.replace(/20-minute/g, "").replace(/ja\.lerman@ignitionapg\.com/g, "");
+    const digits = line.replace(/30-minute/g, "").replace(/ja\.lerman@ignitionapg\.com/g, "");
     if (/\d/.test(digits) && !/^Last updated: [A-Z][a-z]+ \d{1,2}, \d{4}$/.test(line)) findings.push(`${page}: number not allowed: "${line}"`);
   }
   handUsSeen = handUsSeen.concat(claims(html, "hand-us"));

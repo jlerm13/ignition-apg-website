@@ -16,7 +16,7 @@ Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12. Update
 
 ## 2. Outcome and proof
 
-- **Primary action:** "Book a 20-minute workflow review" (renamed by Jake on 2026-10-13). It is a link to Jake's booking page.
+- **Primary action:** "Book a 30-minute workflow review" (renamed by Jake on 2026-10-13, 30 minutes since round 3). It is a link to Jake's booking page.
 - **Secondary action:** email us. The site says "us," not "Jake."
 - **Success:** a qualified booking.
 - **What only Ignition can show:** a written limit with equal weight to the offer.
@@ -24,8 +24,8 @@ Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12. Update
   - Most vendors hide their limits. Ignition shows them as a reason to trust it.
 - **Evidence on hand:** the company's own history only.
   - No testimonials, logos, statistics, or screenshots.
-  - The page must persuade with specifics: what the data team does, what it never does, and how the first step works.
-- **Strategic depth (Jake, gate 1):** the page says what the data team does. The call shows how, with Jake's walkthrough. The page must give enough to book, and no more.
+  - The page must persuade with specifics: what we do, what we never do, and how the first step works.
+- **Strategic depth (Jake, gate 1):** the page says what we do. The call shows how, with Jake's walkthrough. The page must give enough to book, and no more.
 
 ## 3. Direction
 
@@ -56,7 +56,7 @@ Constraints any direction must meet:
   - a stats strip
   - a "trusted by" row
   - a testimonial slider
-  - any number other than "20-minute"
+  - any number other than "30-minute"
   - Jake's name, or BASIS anywhere but the "What do we get?" answer
   - any line that suggests software does the work on its own
 

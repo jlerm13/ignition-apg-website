@@ -11,15 +11,15 @@ export const site = {
   name: "Ignition APG",
   pageTitle: "Ignition APG: athlete data your staff can trust",
   description:
-    "Ignition APG gives college athletic departments a data team. We collect, check, connect, and explain athlete data. Every decision stays with your staff.",
-  bookButton: "Book a 20-minute workflow review",
+    "Ignition APG gives each college athletic department its own performance data specialist. We collect, check, connect, and explain athlete data. Every decision stays with your staff.",
+  bookButton: "Book a 30-minute workflow review",
   emailLink: "Email us",
 };
 
 export const hero = {
-  label: "A data team for college athletic departments",
+  label: "A performance data specialist for your athletic department",
   heading: "Athlete data your staff can trust.",
-  text: "Ignition APG gives each department a data team: performance data specialists who collect, check, connect, and explain athlete data.",
+  text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist collects, checks, connects, and explains athlete data.",
   underButton: "Every decision stays with your coaches and clinicians.",
 };
 
@@ -33,7 +33,7 @@ export const rolePicker = {
     "Sport scientist",
     "Athletic trainer",
   ],
-  otherLink: "Other role? Book a 20-minute workflow review",
+  otherLink: "Other role? Book a 30-minute workflow review",
 };
 
 // Section 2, rewritten by Jake on 2026-10-13.
@@ -46,7 +46,7 @@ export const problem = {
     "Each new system adds work when nobody owns the workflow.",
   ],
   solution: [
-    "Ignition APG gives your staff a sport science data specialist.",
+    "Ignition APG gives your staff a performance data specialist.",
     "The specialist works across the systems you already use.",
     "We monitor incoming data, investigate problems, maintain the workflow, and deliver current information before coaches need it.",
     "Your staff add context, interpret the information, and make the decisions.",
@@ -55,7 +55,7 @@ export const problem = {
 
 export const handUs = {
   heading: "What you can hand us",
-  text: "Our data specialists do this work for your staff. On the call, we show you how.",
+  text: "Your performance data specialist does this work for your staff. On the call, we show you how.",
   groups: [
     {
       verb: "Collect",
@@ -86,16 +86,16 @@ export const handUs = {
 // Data specialist section (Jake, 2026-10-13). A role, with no name, no photo, and no personal story.
 export const specialist = {
   heading: "One person owns your data work.",
-  text: "Your data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue.",
+  text: "Your performance data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue.",
   who: {
-    heading: "Who your data specialist is",
+    heading: "Who your performance data specialist is",
     items: [
-      "Every data specialist has worked in sports performance and in data.",
+      "Your performance data specialist has worked in sports performance and in data.",
       "They work with your staff by email, Slack, or text.",
     ],
   },
   week: {
-    heading: "A week with your data specialist",
+    heading: "A week with your performance data specialist",
     items: [
       "After each session, your staff send the exports. Your specialist checks them.",
       "When a number looks wrong, your specialist finds the cause. They correct it with your staff, or exclude it and record the reason.",
@@ -123,7 +123,7 @@ export const howItStarts = {
   heading: "How it starts. Free.",
   steps: [
     {
-      title: "A 20-minute call",
+      title: "A 30-minute call",
       text: "You tell us about your systems and the data problem that costs your staff the most time.",
     },
     {
@@ -147,7 +147,7 @@ export const questions = {
     },
     {
       q: "What do we get?",
-      a: "You get a data specialist from Ignition APG. They use BASIS, our software, to check and connect your data. Your staff log in to our platform to see the results. To ask a question, they message us by email, Slack, or text.",
+      a: "You get a performance data specialist from Ignition APG. They use BASIS, our software, to check and connect your data. Your staff log in to our platform to see the results. To ask a question, they message us by email, Slack, or text.",
     },
     {
       q: "Which systems do you work with?",
@@ -172,7 +172,7 @@ export const whoWeAre = {
   heading: "Who we are",
   paragraphs: [
     "We began as a sports performance training company. We trained athletes of all ages and solved performance problems for our partners.",
-    "Our data team is the next step in that work. It is now our main focus.",
+    "A performance data specialist for each department is the next step in that work. It is now our main focus.",
   ],
 };
 

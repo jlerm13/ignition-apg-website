@@ -10,9 +10,9 @@ Each direction shows the hero and the problem section with the approved words fr
 
 Hallmark theme Almanac, split layout. Screenshots: `ledger-1440.png`, `ledger-390.png`.
 
-Cool blue-grey paper, a plain sans serif, and a monospaced label face. Next to the heading, a small table shows who does what. The data team collects, checks, connects, and explains. A heavy rule separates the last row: every decision stays with coaches and clinicians. A Director of Sports Science judging trust sees the limit before reading a word of copy. The look is an audit record: careful, checked, and calm.
+Cool blue-grey paper, a plain sans serif, and a monospaced label face. Next to the heading, a small table shows who does what. Your specialist collects, checks, connects, and explains. A heavy rule separates the last row: every decision stays with coaches and clinicians. A Director of Sports Science judging trust sees the limit before reading a word of copy. The look is an audit record: careful, checked, and calm.
 
-New words to approve: the table uses short labels taken from approved lines ("Work", "Owner", "Data team", "Every decision", "Coaches and clinicians"). If you pick this direction, approve these labels or tell me to change them.
+New words to approve: the table uses short labels taken from approved lines ("Work", "Owner", "Your specialist" (was "Data team" until 2026-10-13), "Every decision", "Coaches and clinicians"). If you pick this direction, approve these labels or tell me to change them.
 
 ## 2. Briefing
 

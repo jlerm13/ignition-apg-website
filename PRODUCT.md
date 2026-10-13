@@ -30,9 +30,9 @@ Set by Jake in the build prompt:
 
 ## Product Purpose
 
-- Ignition APG gives each athletic department a data team: performance data specialists who collect, check, connect, and explain athlete data. They use BASIS, our software. The site names BASIS once, in the answer to "What do we get?"
+- Ignition APG gives each athletic department its own performance data specialist, one to one. The specialist collects, checks, connects, and explains athlete data, using BASIS, our software. The site names BASIS once, in the answer to "What do we get?"
 - Staff log in to the Ignition APG platform to see results. Asking a question needs no login: they use email, Slack, or text.
-- **The site's one job:** get a qualified college performance leader to book a 20-minute call with us. Jake takes the call. The site says "us," not "Jake."
+- **The site's one job:** get a qualified college performance leader to book a 30-minute call with us. Jake takes the call. The site says "us," not "Jake."
 - **Success:** qualified bookings. Qualified means a performance staff member at a college or professional program, based on the four booking answers:
   - name
   - role
@@ -48,10 +48,10 @@ Set by Jake in the build prompt:
 ## Operating Context
 
 - Staff send the exports their systems already produce. Examples: GPS and testing data.
-- Staff reach the data team by email, Slack, or text.
+- Staff reach their specialist by email, Slack, or text.
 - Ignition keeps every original file, records definitions and methods, and writes a guide to the department's sources.
 - **How it starts** (Jake confirms at gate 1):
-  1. a 20-minute call
+  1. a 30-minute call
   2. a review of one export from one system
   3. a written summary and plan
 
@@ -62,7 +62,7 @@ Set by Jake in the build prompt:
   - Never imply software does them automatically.
 - **Limits** (equal weight to capabilities): the six items in `docs/BRIEF.md` section 3.6 that stay with staff. They include readiness, load, and return-to-play decisions.
 - **Terms:**
-  - "Data team" always means the Ignition service.
+  - "Performance data specialist" always means the Ignition person. Never say "data team" or "team" for the service until Jake says there are two or more specialists.
   - "BASIS" always means the software. It is named once on the site, as "BASIS, our software."
 - **Banned claims:**
   - readiness score, predict, injury prevention, optimize load, real-time, integrates with, automatic sync
@@ -71,7 +71,7 @@ Set by Jake in the build prompt:
   - any compliance claim (FERPA, HIPAA, SOC 2, GDPR, or other) without proof from Jake
   - Athena or Palantir by name
   - job posting text, employer names, school names, posting IDs
-- **No research statistics in version 1.** No percentages and no "X of Y" figures. The only number allowed is "20-minute."
+- **No research statistics in version 1.** No percentages and no "X of Y" figures. The only number allowed is "30-minute."
 - **Commercial facts (Jake, gate 1):**
   - The first call, the export review, and the written summary are free.
   - After that, the price depends on the department's sports and systems. The department gets a fixed monthly price before it commits.
@@ -107,15 +107,15 @@ None yet. Future work must not fabricate any of these:
 - **Real facts on hand about the company:**
   - Ignition APG began as a sports performance training company.
   - It trained athletes of all ages and solved sports performance problems for its partners.
-  - The data team is the next evolution of that work, and it is now the main focus.
+  - The performance data specialist service is the next evolution of that work, and it is now the main focus.
 
 ## Product Principles
 
 1. The limit is part of the offer. What stays with staff gets the same weight as what Ignition does.
 2. Show the work, not effects. Every claim traces to a confirmed task, and every number on the page is practical.
 3. Fit around the department. Use the exports it already has and the channels it already uses.
-4. One clear next step: a 20-minute call with us.
-5. Say what, show how on the call. The page names what the data team does. The method is for the call walkthrough.
+4. One clear next step: a 30-minute call with us.
+5. Say what, show how on the call. The page names what we do. The method is for the call walkthrough.
 
 ## Accessibility & Inclusion
 

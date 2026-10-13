@@ -7,7 +7,7 @@ export const BANNED = [
   "readiness score", "predict", "predicts", "prediction", "injury prevention", "optimize load", "optimise load", "real-time", "real time",
   "integrates with", "automatic sync", "automatic", "automatically",
   "athena", "palantir", "ferpa", "hipaa", "soc 2", "gdpr", "compliant", "compliance", "wellness", "questionnaire", "questionnaires",
-  "custom report", "custom reports", "trusted by", "testimonial", "testimonials", "forward deployed", "hire",
+  "custom report", "custom reports", "trusted by", "testimonial", "testimonials", "forward deployed", "hire", "data team",
 ];
 
 export const CONTRACTION = /\b(\w+n['’]t|\w+['’](re|ve|ll|d|m)|(it|that|there|what|here|let|he|she|who|where|how)['’]s)\b/i;

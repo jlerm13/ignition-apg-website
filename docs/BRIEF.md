@@ -14,10 +14,10 @@ These override the original text below where they conflict. The original stays b
    - Facts Jake has stated about the company:
      - Ignition APG began as a sports performance training company.
      - It trained athletes of all ages and solved sports performance problems for its partners.
-     - The data team is the next evolution of that work, and it is now the main focus.
-   - Jake's analogy: Ignition APG is like Google, and the data team is like Waymo, a new project that Jake leads.
+     - The performance data specialist service is the next evolution of that work, and it is now the main focus.
+   - Jake's analogy: Ignition APG is like Google, and the performance data specialist service is like Waymo, a new project that Jake leads.
    - Jake's own years of experience no longer appear on the page.
-5. **Keep some detail for the call.** The page says what the data team does. The call shows how, with a walkthrough Jake presents.
+5. **Keep some detail for the call.** The page says what we do. The call shows how, with a walkthrough Jake presents.
    - "What you can hand us" shows one short line per verb: collect, check, connect, explain.
    - The method details move to a "Save for the call" list in `docs/MESSAGE.md`.
    - Every line still traces to a confirmed row in 3.6.
@@ -77,6 +77,19 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 4. **The specialist heading** is "One person owns your data work."
 5. **The privacy line** says "We count visits with Vercel Web Analytics", because the free plan counts visits only.
 
+## Changes from Jake, 2026-10-13 (round 3)
+
+These override everything above and below where they conflict.
+
+1. **One to one.** Ignition APG is one performance data specialist plus our software, one to one with each department.
+2. **No "data team".** The site never says "data team", or "team" for the service, until Jake says there are two or more specialists. Every earlier "data team" in this brief now reads "performance data specialist" or "we". The approved vision in 3.4 was edited the same way.
+3. **The term.** "Performance data specialist" always means the Ignition person. "Your specialist" is the short form. "Our software" means BASIS.
+4. **New words:**
+   - Hero label: "A performance data specialist for your athletic department".
+   - Hero text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist collects, checks, connects, and explains athlete data."
+   - Site description: "Ignition APG gives each college athletic department its own performance data specialist. We collect, check, connect, and explain athlete data. Every decision stays with your staff."
+5. **The call is 30 minutes.** The button is "Book a 30-minute workflow review" everywhere. Step 1 of "How it starts" is "A 30-minute call". "30-minute" is now the only number on the site. Earlier "20-minute" lines in this brief are history.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 
@@ -92,7 +105,7 @@ Get a qualified college performance leader to book a 20-minute call with Jake.
 - Secondary action: email Jake. Jake supplies the address.
 
 ## 3.4 Message (approved by Jake)
-- Vision: "Every athletic department deserves numbers it can trust. Ignition gives each department a data team: performance data specialists, supported by BASIS software, who collect, check, connect, and explain athlete data. When a number looks wrong, we find the cause and fix it. Every decision stays with coaches and clinicians."
+- Vision: "Every athletic department deserves numbers it can trust. Ignition gives each department its own performance data specialist, supported by BASIS software, who collects, checks, connects, and explains athlete data. When a number looks wrong, we find the cause and fix it. Every decision stays with coaches and clinicians."
 - Subtitle (hero heading): "Athlete data your staff can trust."
 - Problem: "Performance staff cannot trust their numbers, and nobody owns fixing them."
 - Department message (rebuild in full at gate 1 from these approved parts): "Your staff should coach, not fix spreadsheets." "We work alongside the systems you already use."

@@ -21,7 +21,7 @@ for (const line of m[1].split("\n")) {
   if (contraction.test(copy)) findings.push(`contraction  ${where}`);
   if (/%/.test(copy)) findings.push(`percent  ${where}`);
   if (xOfY.test(copy)) findings.push(`X of Y  ${where}`);
-  for (const d of copy.match(/\d+(?:[-\s]\w+)?/g) || []) if (!/^20-minute$/.test(d) && !/^Last updated:/.test(copy)) findings.push(`number "${d}"  ${where}`);
+  for (const d of copy.match(/\d+(?:[-\s]\w+)?/g) || []) if (!/^30-minute$/.test(d) && !/^Last updated:/.test(copy)) findings.push(`number "${d}"  ${where}`);
   // Gate 1 (Jake, 2026-10-12): no personal name on the site. BASIS appears once, in an Answer row only.
   if (/\bJake\b/.test(copy)) findings.push(`name "Jake" in page copy  ${where}`);
   const basis = (copy.match(/\bBASIS\b/g) || []).length;

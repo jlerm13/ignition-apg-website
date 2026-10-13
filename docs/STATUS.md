@@ -1,6 +1,6 @@
 # Status
 
-Last updated: 2026-10-12
+Last updated: 2026-10-13
 
 ## Where we are
 
@@ -104,6 +104,12 @@ Last updated: 2026-10-12
 
 ## Jake's decisions so far
 
+- 2026-10-13 (round 3):
+  - Ignition APG is one performance data specialist plus our software, one to one with each department.
+  - "Data team" is removed from the site and the docs, and it is now a banned phrase in `scripts/rules.mjs`.
+  - The full term is "performance data specialist". The short form is "your specialist". Plural lines are now singular.
+  - The call is 30 minutes. Every button says "Book a 30-minute workflow review", and "30-minute" is the only number on the site.
+
 - 2026-10-13 (round 2):
   - Section 2 rewritten. Every booking button now says "Book a 20-minute workflow review".
   - "Data specialist" stays the one term. "Dedicated" was dropped.
@@ -155,7 +161,7 @@ Last updated: 2026-10-12
 
 1. **Review the preview** on PR #1 (https://github.com/jlerm13/ignition-apg-website/pull/1). The branch preview is https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/
 2. **In Calendly:**
-   - Rename the event to "20-minute workflow review".
+   - Set Duration to 30 min and rename the event to "30-minute workflow review".
    - Check the role prefill (`docs/BOOKING.md` step 2b).
    - Set the redirect to the thank-you page.
    - Make one test booking (audit check 11).

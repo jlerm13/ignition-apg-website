@@ -7,8 +7,8 @@ Do these steps in Calendly on a computer. Calendly sometimes moves or renames it
 ## 1. Set the length and the name
 
 1. In Calendly, open **Scheduling** (or **Event Types**). Click the "intro-call" event to edit it.
-2. Set **Duration** to **20 min**.
-3. Set **Event name** to **20-minute workflow review**. This matches the button on the site (renamed 2026-10-13; if you already named it "20-minute data audit call", rename it).
+2. Set **Duration** to **30 min**.
+3. Set **Event name** to **30-minute workflow review**. This matches the button on the site (changed 2026-10-13). If the event has an older name, rename it.
 4. In **Location**, pick how you meet: Zoom, Google Meet, or phone.
 5. Leave the event link as `intro-call`. If you change it, tell me, so I can update the site.
 
@@ -72,7 +72,7 @@ The site counts a booking when someone lands on its thank-you page. Calendly mus
 
 After the redirect is set and the site is live:
 
-1. Open the site on your phone. Tap **Book a 20-minute workflow review**.
+1. Open the site on your phone. Tap **Book a 30-minute workflow review**.
 2. Book a time with test answers.
 3. Check that you land on the page that says **Your call is booked.**
 4. Cancel the test booking in Calendly.

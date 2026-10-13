@@ -19,7 +19,7 @@ This repo is the public website for Ignition. Jake owns it. He has 20 years in s
 1. Work only in this repo. Never change code in `basis-workspace`, `hpi-workspace`, or any other repo. Do not read `hpi-workspace`. `docs/BRIEF.md` holds everything needed from it.
 2. Never publish job posting text, employer names, school names, or posting IDs.
 3. Never invent proof. No testimonials, client logos, "trusted by" rows, case studies, user counts, quotes, or stock photos of people. If real proof does not exist yet, leave that section out. Do not ship placeholders.
-4. No research statistics on the site in version 1. No percentages and no "X of Y" figures. The only numbers allowed are practical ones, such as "20-minute call," and Jake's years of experience in the founder section.
+4. No research statistics on the site in version 1. No percentages and no "X of Y" figures. The only numbers allowed are practical ones, such as "30-minute call." Since the founder section was removed, "30-minute" is the only number on the site.
 5. Ignition and BASIS never make readiness, load, or return-to-play decisions. Never imply that they do. Do not use these words: readiness score, predict, injury prevention, optimize load, real-time, integrates with, automatic sync.
 6. Do not claim automatic data feeds from providers. Say "the exports your systems produce."
 7. Do not list wellness or questionnaire data as something Ignition handles.
@@ -37,21 +37,22 @@ Task IDs from the brief (for example `PDS-W1-T1`) are for traceability only. The
 These sit on top of the hard rules. Full text is at the top of `docs/BRIEF.md`.
 
 - The site name is Ignition APG (round 2).
-- The booking button says "Book a 20-minute workflow review" everywhere (Jake, 2026-10-13). The person is always "data specialist", never "data operator".
+- The booking button says "Book a 30-minute workflow review" everywhere (Jake, 2026-10-13, round 3). The person is always "performance data specialist" (short form "your specialist"), never "data operator".
+- Ignition APG is one performance data specialist plus our software, one to one with each department (Jake, 2026-10-13). Never say "data team".
 - BASIS appears once on the site, in the answer to "What do we get?", as "BASIS, our software." Nowhere else (round 2).
-- Say "a data specialist from Ignition APG," never "hire." Do not use "forward deployed engineer" on the site.
+- Say "a performance data specialist from Ignition APG," never "hire." Do not use "forward deployed engineer" on the site.
 - Do not quote Athena's founder or any Athena material anywhere, on the site or in repo docs.
 - Say "us" on the site, never "Jake."
 - Company first. Jake leads the new vision and mission of Ignition APG. He is not the founder. There is no founder section and no personal story.
-- With no founder section, the only number allowed on the site is "20-minute."
-- The page says what the data team does. The call shows how. Keep method details for the call. `docs/MESSAGE.md` has a "Save for the call" list.
+- With no founder section, the only number allowed on the site is "30-minute."
+- The page says what we do. The call shows how. Keep method details for the call. `docs/MESSAGE.md` has a "Save for the call" list.
 
 ## Copy rules (Simplified Technical English, ASD-STE100 style)
 
 - Active voice. One idea per sentence.
 - 25 words or fewer per sentence. 20 or fewer in headings and buttons.
 - No contractions, no semicolons, no em or en dashes in page copy.
-- One word, one meaning. "Data team" always means the Ignition service. "BASIS" always means the software.
+- One word, one meaning. "Performance data specialist" always means the Ignition person. "Our software" means BASIS. Never use "data team" or "team" for the service until Jake says there are two or more specialists.
 - No marketing adjectives or slogans. Banned: unlock, revolutionize, cutting-edge, seamless, game-changer, elevate, empower, next-level, world-class, best-in-class, powerful, robust, leverage, insights (as a noun on its own), AI-powered (in headings), dedicated.
 - Write for a Director of Sports Science or a Director of High Performance. Use the words they use about their own work.
 - Do not promise a response time. Do not promise custom reports.

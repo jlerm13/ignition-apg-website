@@ -90,4 +90,4 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 - A label above every section heading.
 
 **Later, needs new copy and Jake's approval:**
-- A comparison table: our data team against hiring an analyst or buying more software.
+- A comparison table: our performance data specialist against hiring an analyst or buying more software.
