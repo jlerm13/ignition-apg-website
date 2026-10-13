@@ -1,0 +1,70 @@
+---
+// Shared frame for every public page: meta tags, font, analytics, header, footer.
+import "../styles/global.css";
+import archivoUrl from "@fontsource-variable/archivo/files/archivo-latin-wght-normal.woff2?url";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { site } from "../content/site";
+
+interface Props {
+  title?: string;
+  description?: string;
+  noindex?: boolean;
+  headerButton?: boolean;
+}
+const { title = site.pageTitle, description = site.description, noindex = false, headerButton = true } = Astro.props;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL("/og.png", Astro.site);
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- Matches --color-paper; a meta tag cannot read CSS variables. -->
+    <meta name="theme-color" content="#fbfcfd" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content={site.pageTitle} />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preload" href={archivoUrl} as="font" type="font/woff2" crossorigin />
+    <style is:inline set:html={`@font-face{font-family:"Archivo";font-style:normal;font-display:swap;font-weight:100 900;src:url(${archivoUrl}) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;}`} />
+
+    <!-- Vercel Web Analytics: cookieless page views. Click events need Vercel Pro and are ignored until then. -->
+    <script is:inline>
+      window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+      document.addEventListener("click", function (e) {
+        var el = e.target instanceof Element ? e.target.closest("[data-event]") : null;
+        if (!el) return;
+        var name = el.getAttribute("data-event");
+        var data = { section: el.getAttribute("data-section") || "" };
+        if (el.hasAttribute("data-role")) data.role = el.getAttribute("data-role");
+        window.va("event", { name: name, data: data });
+        if (name === "cta_click") window.va("event", { name: "booking_opened", data: data });
+      });
+    </script>
+    <script defer is:inline src="/_vercel/insights/script.js"></script>
+  </head>
+  <body class="flex min-h-dvh flex-col">
+    <a href="#main" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:bg-paper focus:px-4 focus:py-3 focus:font-bold">Skip to content</a>
+    <Header button={headerButton} />
+    <main id="main" class="flex-1">
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

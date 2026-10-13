@@ -1,0 +1,177 @@
+---
+// The Ignition APG home page. Design: docs/DESIGN.md. Words: src/content/site.ts.
+import Base from "../layouts/Base.astro";
+import {
+  site, links, hero, rolePicker, problem, handUs, specialist, staysWithStaff, howItStarts, questions, whoWeAre, finalCall,
+} from "../content/site";
+
+// Keep "return-to-play" on one line wherever it appears (the words stay as approved).
+const TERM = "return-to-play";
+const split = (text: string) => text.split(TERM);
+
+// Calendly fills the first booking question (the role, a1) from the link. See docs/BOOKING.md.
+const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(role)}`;
+---
+
+<Base>
+  <!-- 1. Hero: marquee heading over the column ruler. -->
+  <section class="border-b border-rule-2 pt-10 pb-16 md:pt-16 md:pb-26" aria-labelledby="hero-title">
+    <div class="wrap grid-12 gap-y-10">
+      <div class="ruler max-md:hidden" aria-hidden="true">{Array.from({ length: 12 }, () => <span />)}</div>
+      <p class="marker col-span-12 font-bold md:col-span-6">{hero.label}</p>
+      <h1 id="hero-title" class="col-span-12 text-display leading-[0.98] font-extrabold tracking-[-0.035em] md:col-span-11">{hero.heading}</h1>
+      <!-- Wide screens: the explanation left, the role picker right, both on a 2 px rule. Same order in the code as on phones. -->
+      <div class="col-span-12 border-t-2 border-ink pt-4 lg:col-span-5">
+        <p class="max-w-[46ch] text-lead leading-[1.45] lg:max-w-[30ch] lg:text-[clamp(1.25rem,0.6vw+1rem,1.5rem)]">{hero.text}</p>
+      </div>
+      <div class="col-span-12 flex flex-col items-start gap-4 lg:col-start-7 lg:col-span-6 lg:border-t-2 lg:border-ink lg:pt-4">
+        <div class="w-full">
+          <p id="role-prompt" class="font-bold">{rolePicker.prompt}</p>
+          <ul class="mt-3 grid gap-2" aria-labelledby="role-prompt">
+            {rolePicker.roles.map((role) => (
+              <li><a class="btn btn--choice w-full" href={roleLink(role)} data-event="cta_click" data-section="hero" data-role={role}>{role}</a></li>
+            ))}
+          </ul>
+          <p class="mt-3"><a class="link inline-flex min-h-11 items-center" href={links.booking} data-event="cta_click" data-section="hero" data-role="other">{rolePicker.otherLink}</a></p>
+        </div>
+        <p class="text-muted">{hero.underButton}</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Problem: heading left, symptom rows right, then the answer and a booking button. -->
+  <section class="py-16 md:py-26" aria-labelledby="problem-title">
+    <div class="wrap grid-12 gap-y-10">
+      <h2 id="problem-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:sticky lg:top-24 lg:col-span-5 lg:self-start">{problem.heading}</h2>
+      <div class="col-span-12 lg:col-start-7 lg:col-span-6">
+        <ul class="border-y-2 border-ink">
+          {problem.symptoms.map((s) => <li class="border-b border-rule-2 py-4 text-item leading-[1.4] last:border-b-0">{s}</li>)}
+        </ul>
+        <div class="mt-10 space-y-3 text-lead leading-[1.45]">
+          {problem.solution.map((line, i) => <p class={i < 2 ? "font-bold" : "text-neutral"}>{line}</p>)}
+        </div>
+        <a class="btn mt-10 max-[30rem]:w-full" href={links.booking} data-event="cta_click" data-section="problem">{site.bookButton}</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. What you can hand us: heading left, the four verb groups right. It mirrors section 4, light then dark. -->
+  <section class="border-t border-rule-2 bg-paper-2 py-16 md:py-26" aria-labelledby="hand-title">
+    <div class="wrap grid-12 gap-y-10">
+      <div class="col-span-12 lg:sticky lg:top-24 lg:col-span-5 lg:self-start">
+        <h2 id="hand-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{handUs.heading}</h2>
+        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-neutral">{handUs.text}</p>
+      </div>
+      <div class="col-span-12 lg:col-start-7 lg:col-span-6">
+        {handUs.groups.map((g) => (
+          <div class="border-t-2 border-ink pt-4 pb-6 last:pb-0">
+            <h3 class="text-lead font-extrabold tracking-[-0.01em]">{g.verb}</h3>
+            <ul class="mt-2 space-y-3">
+              {g.items.map((item) => <li class="text-item leading-[1.4]" data-claim="hand-us">{item}</li>)}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 3b. Performance data specialist: a role, no person. Heading left, who and a week right. -->
+  <section class="py-16 md:py-26" aria-labelledby="specialist-title">
+    <div class="wrap grid-12 gap-y-10">
+      <div class="col-span-12 lg:sticky lg:top-24 lg:col-span-5 lg:self-start">
+        <h2 id="specialist-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{specialist.heading}</h2>
+        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-neutral">{specialist.text}</p>
+      </div>
+      <div class="col-span-12 space-y-10 lg:col-start-7 lg:col-span-6">
+        <div class="border-t-2 border-ink pt-4">
+          <h3 class="text-lead font-extrabold tracking-[-0.01em]">{specialist.who.heading}</h3>
+          <ul class="mt-2 space-y-3">
+            {specialist.who.items.map((item) => <li class="text-item leading-[1.4]">{item}</li>)}
+          </ul>
+        </div>
+        <div class="border-t-2 border-ink pt-4">
+          <h3 class="text-lead font-extrabold tracking-[-0.01em]">{specialist.week.heading}</h3>
+          <ol class="week mt-2">
+            {specialist.week.items.map((item) => <li class="text-item leading-[1.4]">{item}</li>)}
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. What stays with your staff: the one ink band. -->
+  <section class="bg-ink py-16 text-on-ink md:py-26" aria-labelledby="stays-title">
+    <div class="wrap grid-12 gap-y-10">
+      <div class="col-span-12 lg:col-span-5">
+        <h2 id="stays-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{staysWithStaff.heading}</h2>
+        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-on-ink-muted">{staysWithStaff.text}</p>
+      </div>
+      <ul class="col-span-12 grid gap-x-10 sm:grid-cols-2 lg:col-start-7 lg:col-span-6">
+        {staysWithStaff.items.map((item) => (
+          <li class="border-t border-ink-2 py-4 text-item leading-[1.4]" data-claim="stays">
+            {split(item).map((part, i, all) => <>{part}{i < all.length - 1 && <span class="whitespace-nowrap">{TERM}</span>}</>)}
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <!-- 5. How it starts: three steps in columns divided by hairlines. -->
+  <section class="py-16 md:py-26" aria-labelledby="start-title">
+    <div class="wrap">
+      <h2 id="start-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{howItStarts.heading}</h2>
+      <!-- deslop-ignore-next-line 28: three plain text steps in sentence case, not an all-caps card grid -->
+      <ol class="mt-10 grid border-y-2 border-ink md:grid-cols-3">
+        {howItStarts.steps.map((step) => (
+          <li class="border-rule-2 py-6 max-md:not-last:border-b md:px-6 md:first:pl-0 md:not-last:border-r">
+            <h3 class="text-lead font-extrabold tracking-[-0.01em]">{step.title}</h3>
+            <p class="mt-3 text-neutral">{step.text}</p>
+          </li>
+        ))}
+      </ol>
+      <p class="mt-6 max-w-[60ch] font-bold">{howItStarts.closingLine}</p>
+      <a class="btn mt-10 max-[30rem]:w-full" href={links.booking} data-event="cta_click" data-section="how-it-starts">{site.bookButton}</a>
+    </div>
+  </section>
+
+  <!-- 6. Questions: heading left, native details right, all closed on load. -->
+  <section class="border-t border-rule-2 bg-paper-2 py-16 md:py-26" aria-labelledby="faq-title">
+    <div class="wrap grid-12 gap-y-10">
+      <h2 id="faq-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:col-span-5">{questions.heading}</h2>
+      <div class="faq col-span-12 border-t-2 border-ink lg:col-start-7 lg:col-span-6">
+        {questions.items.map((item) => (
+          <details class="border-b border-rule-2">
+            <summary>{item.q}</summary>
+            <p class="pb-6 text-neutral">
+              {split(item.a).map((part, i, all) => <>{part}{i < all.length - 1 && <span class="whitespace-nowrap">{TERM}</span>}</>)}
+            </p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Who we are: heading left (sticky on wide screens), five paragraphs right. -->
+  <section class="py-16 md:py-26" aria-labelledby="who-title">
+    <div class="wrap grid-12 gap-y-10">
+      <h2 id="who-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:sticky lg:top-24 lg:col-span-5 lg:self-start">{whoWeAre.heading}</h2>
+      <div class="col-span-12 space-y-4 text-lead leading-[1.45] lg:col-start-7 lg:col-span-6">
+        {whoWeAre.paragraphs.map((p) => <p>{p}</p>)}
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. Final call to action. -->
+  <section class="border-t-2 border-ink py-16 md:py-26" aria-labelledby="final-title">
+    <div class="wrap">
+      <h2 id="final-title" class="max-w-[18ch] text-final leading-[1.02] font-extrabold tracking-[-0.03em]">{finalCall.heading}</h2>
+      <div class="mt-10 flex flex-col items-start gap-4">
+        <a class="btn max-[30rem]:w-full" href={links.booking} data-event="cta_click" data-section="final">{site.bookButton}</a>
+        <p class="text-neutral">
+          {finalCall.emailLine}{" "}
+          <a class="link link--inline whitespace-nowrap" href={`mailto:${links.email}`} data-event="email_click" data-section="final">{links.email}</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+</Base>

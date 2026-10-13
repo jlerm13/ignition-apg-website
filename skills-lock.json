@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "skills": {
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "01866407343be7129247b5582c179599bdfdcabd2e7697a3097414cc37b7f9f9"
+    },
+    "hallmark": {
+      "source": "nutlope/hallmark",
+      "sourceType": "github",
+      "skillPath": "skills/hallmark/SKILL.md",
+      "computedHash": "579f86b27cdd7eb972107f7aecedd537f472891c5fd7c7c821bea15f64e0fe86"
+    },
+    "kill-ai-slop": {
+      "source": "yetone/kill-ai-slop",
+      "sourceType": "github",
+      "skillPath": "skill/SKILL.md",
+      "computedHash": "459c60c76a498a08096117c9735ee5b1dccfaa72838b8de58c18cb667abdd2c0"
+    },
+    "unslop-ui": {
+      "source": "yuwen-lu/unslop-ui",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "7fc36c1837ed76c8bef6b086857dae0f0d1a8a6daee415fa305bc6993699c993"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+---
+import { site, footer, links } from "../content/site";
+---
+
+<footer class="border-t border-rule-2">
+  <div class="wrap flex min-h-24 flex-wrap items-center justify-between gap-x-10 gap-y-2 py-6">
+    <span class="font-extrabold tracking-tight">{site.name}</span>
+    <ul class="flex flex-wrap gap-x-10 gap-y-2">
+      <li><a class="link inline-flex min-h-11 items-center" href="/privacy/">{footer.privacyLink}</a></li>
+      <li><a class="link inline-flex min-h-11 items-center" href={`mailto:${links.email}`} data-event="email_click" data-section="footer">{site.emailLink}</a></li>
+    </ul>
+  </div>
+</footer>
