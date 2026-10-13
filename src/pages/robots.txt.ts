@@ -2,6 +2,6 @@ import type { APIRoute } from "astro";
 
 export const GET: APIRoute = ({ site }) =>
   new Response(
-    ["User-agent: *", "Disallow: /directions/", "Disallow: /thank-you/", "", `Sitemap: ${new URL("sitemap-index.xml", site)}`, ""].join("\n"),
+    ["User-agent: *", "Disallow: /thank-you/", "", `Sitemap: ${new URL("sitemap-index.xml", site)}`, ""].join("\n"),
     { headers: { "Content-Type": "text/plain; charset=utf-8" } },
   );

@@ -62,12 +62,12 @@
       "thank-you": []
     },
     "weight": {
-      "firstLoadKB": 69.3,
+      "firstLoadKB": 69.1,
       "jsKB": 0.6,
       "files": [
+        "/ 20078",
+        "/_astro/Base.HhlIHR7h.css 15596",
         "/_vercel/insights/script.js 0",
-        "/_astro/Base.BypDEEks.css 16411",
-        "/ 19433",
         "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
         "/favicon.svg 168"
       ]

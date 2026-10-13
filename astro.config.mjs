@@ -13,8 +13,8 @@ export default defineConfig({
   trailingSlash: "ignore",
   integrations: [
     sitemap({
-      // Review pages and the thank-you page stay out of search.
-      filter: (page) => !page.includes("/directions") && !page.includes("/thank-you"),
+      // The thank-you page stays out of search.
+      filter: (page) => !page.includes("/thank-you"),
     }),
   ],
   vite: {

@@ -171,8 +171,11 @@ export const questions = {
 export const whoWeAre = {
   heading: "Who we are",
   paragraphs: [
-    "We began as a sports performance training company. We trained athletes of all ages and solved performance problems for our partners.",
-    "A performance data specialist for each department is the next step in that work. It is now our main focus.",
+    "Ignition APG began with a simple mission: help every athlete train like a pro.",
+    "For over 20 years, we have brought the principles, standards, and problem-solving approach of elite performance programs to athletes at every level.",
+    "Along the way, we saw another gap. Well-resourced sports organizations often have specialized technical staff supporting performance and sport-science data. In many other programs, that work falls to coaches, sport scientists, graduate assistants, and interns alongside their primary responsibilities.",
+    "Today, our focus is giving each of those departments its own performance data specialist. That specialist works across the systems already in place and keeps the recurring data workflow running.",
+    "Our focus has evolved, but the principle remains the same: make professional-level support more accessible.",
   ],
 };
 

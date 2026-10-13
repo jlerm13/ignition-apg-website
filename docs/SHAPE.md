@@ -56,7 +56,7 @@ Constraints any direction must meet:
   - a stats strip
   - a "trusted by" row
   - a testimonial slider
-  - any number other than "30-minute"
+  - any number other than "30-minute" and "over 20 years"
   - Jake's name, or BASIS anywhere but the "What do we get?" answer
   - any line that suggests software does the work on its own
 

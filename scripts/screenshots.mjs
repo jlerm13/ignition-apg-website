@@ -1,6 +1,5 @@
 // Full-page screenshots of the built site. Run after `npm run build`.
-//   node scripts/screenshots.mjs            -> site pages to docs/final/
-//   node scripts/screenshots.mjs directions -> Stage 2 directions to docs/directions/
+//   node scripts/screenshots.mjs -> site pages to docs/final/
 // Serves dist/ locally (no network needed) and reports any horizontal scroll.
 import { createServer } from "node:http";
 import { readFile, mkdir } from "node:fs/promises";
@@ -12,11 +11,6 @@ const SETS = {
     out: "docs/final",
     pages: { home: "/", privacy: "/privacy/", "thank-you": "/thank-you/", "404": "/404.html" },
     widths: [1440, 390, 375],
-  },
-  directions: {
-    out: "docs/directions",
-    pages: { ledger: "/directions/ledger/", briefing: "/directions/briefing/", "spec-sheet": "/directions/spec-sheet/", service: "/directions/service/" },
-    widths: [1440, 390],
   },
 };
 const set = SETS[process.argv[2] || "build"];

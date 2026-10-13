@@ -90,6 +90,15 @@ These override everything above and below where they conflict.
    - Site description: "Ignition APG gives each college athletic department its own performance data specialist. We collect, check, connect, and explain athlete data. Every decision stays with your staff."
 5. **The call is 30 minutes.** The button is "Book a 30-minute workflow review" everywhere. Step 1 of "How it starts" is "A 30-minute call". "30-minute" is now the only number on the site. Earlier "20-minute" lines in this brief are history.
 
+## Changes from Jake, 2026-10-13 (round 4)
+
+1. **"Who we are" is Jake's new text.** The words are in `docs/MESSAGE.md` section 7. New facts from Jake:
+   - Ignition APG began with a simple mission: help every athlete train like a pro.
+   - The company has over 20 years of history bringing the principles, standards, and problem-solving approach of elite performance programs to athletes at every level.
+   - Well-resourced organizations often have specialized technical staff for performance data. In many other programs, coaches, sport scientists, graduate assistants, and interns do that work alongside their main jobs.
+2. **A second allowed number:** "over 20 years", the company's history. With "30-minute", these are the only numbers on the site.
+3. **The Stage 2 design pages are removed** from the site. Their screenshots stay in `docs/directions/` as a record.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

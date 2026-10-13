@@ -1,12 +1,17 @@
 # Message sheet (approved)
 
-Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 7 add Jake's changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
+Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 8 add Jake's changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
 - The **Copy** column is what visitors will see.
 - Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
 - What is left for you is at the bottom.
+
+## What changed in v8 (Jake, 2026-10-13, round 4)
+
+- "Who we are" is Jake's new five-paragraph text. Three words changed to fit the rules: "Ignition" became "Ignition APG", "a dedicated performance data operator" became "its own performance data specialist", and "That operator" became "That specialist".
+- "over 20 years" (the company's history) is now allowed on the site, next to "30-minute".
 
 ## What changed in v7 (Jake, 2026-10-13, round 3)
 
@@ -193,8 +198,11 @@ All six answers are yours or approved by you. None names a compliance standard. 
 | Element | Copy |
 |---|---|
 | Heading | Who we are |
-| Text | We began as a sports performance training company. We trained athletes of all ages and solved performance problems for our partners. |
-| Text | A performance data specialist for each department is the next step in that work. It is now our main focus. |
+| Text | Ignition APG began with a simple mission: help every athlete train like a pro. |
+| Text | For over 20 years, we have brought the principles, standards, and problem-solving approach of elite performance programs to athletes at every level. |
+| Text | Along the way, we saw another gap. Well-resourced sports organizations often have specialized technical staff supporting performance and sport-science data. In many other programs, that work falls to coaches, sport scientists, graduate assistants, and interns alongside their primary responsibilities. |
+| Text | Today, our focus is giving each of those departments its own performance data specialist. That specialist works across the systems already in place and keeps the recurring data workflow running. |
+| Text | Our focus has evolved, but the principle remains the same: make professional-level support more accessible. |
 
 Approved as written. There is no personal story and no photo.
 

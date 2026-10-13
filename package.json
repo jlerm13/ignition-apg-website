@@ -13,17 +13,11 @@
     "check": "astro build && node scripts/check-copy.mjs && node scripts/check-claims.mjs",
     "check:message": "node scripts/check-message.mjs docs/MESSAGE.md",
     "og": "node scripts/make-og.mjs",
-    "shots": "node scripts/screenshots.mjs",
-    "shots:directions": "node scripts/screenshots.mjs directions"
+    "shots": "node scripts/screenshots.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "3.7.4",
     "@fontsource-variable/archivo": "5.3.0",
-    "@fontsource-variable/fraunces": "5.3.0",
-    "@fontsource-variable/geist": "5.3.0",
-    "@fontsource-variable/geist-mono": "5.3.0",
-    "@fontsource-variable/hanken-grotesk": "5.3.0",
-    "@fontsource/ibm-plex-mono": "5.3.0",
     "@tailwindcss/vite": "4.3.3",
     "astro": "7.3.8",
     "tailwindcss": "4.3.3"

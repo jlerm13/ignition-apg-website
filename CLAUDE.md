@@ -19,7 +19,7 @@ This repo is the public website for Ignition. Jake owns it. He has 20 years in s
 1. Work only in this repo. Never change code in `basis-workspace`, `hpi-workspace`, or any other repo. Do not read `hpi-workspace`. `docs/BRIEF.md` holds everything needed from it.
 2. Never publish job posting text, employer names, school names, or posting IDs.
 3. Never invent proof. No testimonials, client logos, "trusted by" rows, case studies, user counts, quotes, or stock photos of people. If real proof does not exist yet, leave that section out. Do not ship placeholders.
-4. No research statistics on the site in version 1. No percentages and no "X of Y" figures. The only numbers allowed are practical ones, such as "30-minute call." Since the founder section was removed, "30-minute" is the only number on the site.
+4. No research statistics on the site in version 1. No percentages and no "X of Y" figures. The only numbers allowed are practical ones, such as "30-minute call." The only numbers on the site are "30-minute" and "over 20 years" (the company's history, Jake 2026-10-13, in "Who we are").
 5. Ignition and BASIS never make readiness, load, or return-to-play decisions. Never imply that they do. Do not use these words: readiness score, predict, injury prevention, optimize load, real-time, integrates with, automatic sync.
 6. Do not claim automatic data feeds from providers. Say "the exports your systems produce."
 7. Do not list wellness or questionnaire data as something Ignition handles.
@@ -44,7 +44,7 @@ These sit on top of the hard rules. Full text is at the top of `docs/BRIEF.md`.
 - Do not quote Athena's founder or any Athena material anywhere, on the site or in repo docs.
 - Say "us" on the site, never "Jake."
 - Company first. Jake leads the new vision and mission of Ignition APG. He is not the founder. There is no founder section and no personal story.
-- With no founder section, the only number allowed on the site is "30-minute."
+- The only numbers allowed on the site are "30-minute" and "over 20 years" (the company's history).
 - The page says what we do. The call shows how. Keep method details for the call. `docs/MESSAGE.md` has a "Save for the call" list.
 
 ## Copy rules (Simplified Technical English, ASD-STE100 style)

@@ -12,7 +12,7 @@ const files = [];
 (function walk(dir) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
-    if (statSync(p).isDirectory()) { if (name !== "directions") walk(p); }
+    if (statSync(p).isDirectory()) { walk(p); }
     else if (name.endsWith(".html")) files.push(p);
   }
 })(DIST);
@@ -44,7 +44,7 @@ for (const f of files) {
     for (const sentence of line.split(/(?<=[.?!])\s+/)) {
       if (/\b(we|our|your specialist|they)\b/i.test(sentence) && /\bfix(es|ing)?\b|\bfixed\b(?! monthly)/i.test(sentence)) findings.push(`${page}: says we "fix" a value: "${sentence}"`);
     }
-    const digits = line.replace(/30-minute/g, "").replace(/ja\.lerman@ignitionapg\.com/g, "");
+    const digits = line.replace(/30-minute/g, "").replace(/\bover 20 years\b/g, "").replace(/ja\.lerman@ignitionapg\.com/g, "");
     if (/\d/.test(digits) && !/^Last updated: [A-Z][a-z]+ \d{1,2}, \d{4}$/.test(line)) findings.push(`${page}: number not allowed: "${line}"`);
   }
   handUsSeen = handUsSeen.concat(claims(html, "hand-us"));

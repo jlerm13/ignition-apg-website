@@ -104,6 +104,11 @@ Last updated: 2026-10-13
 
 ## Jake's decisions so far
 
+- 2026-10-13 (round 4):
+  - New "Who we are" text (five paragraphs). "Over 20 years" of company history is allowed as a second number.
+  - "Data operator" is now a banned phrase.
+  - The Stage 2 design pages and their fonts are removed from the site. The screenshots stay in `docs/directions/`.
+
 - 2026-10-13 (layout check):
   - Impeccable layout audit (instructions only), then a second opinion weighed point by point. Jake approved the revised plan.
   - Hero: text left, role picker right on wide screens. Sticky headings only in the three long sections. Home page split sections are one column below 1024 px. Results are in `docs/final/REPORT.md`.

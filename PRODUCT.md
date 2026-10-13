@@ -71,7 +71,7 @@ Set by Jake in the build prompt:
   - any compliance claim (FERPA, HIPAA, SOC 2, GDPR, or other) without proof from Jake
   - Athena or Palantir by name
   - job posting text, employer names, school names, posting IDs
-- **No research statistics in version 1.** No percentages and no "X of Y" figures. The only number allowed is "30-minute."
+- **No research statistics in version 1.** No percentages and no "X of Y" figures. The only numbers allowed are "30-minute" and "over 20 years" (the company's history).
 - **Commercial facts (Jake, gate 1):**
   - The first call, the export review, and the written summary are free.
   - After that, the price depends on the department's sports and systems. The department gets a fixed monthly price before it commits.
@@ -105,7 +105,8 @@ None yet. Future work must not fabricate any of these:
 - No product screenshots yet. Use only screenshots Jake supplies from the BASIS demo school (synthetic data), each labelled "Sample data." Never draw a dashboard with invented numbers. Abstract illustrations with no numbers are allowed, labelled "Illustration."
 - No photos of athletes yet. No stock photos of people.
 - **Real facts on hand about the company:**
-  - Ignition APG began as a sports performance training company.
+  - Ignition APG began as a sports performance training company, with a simple mission: help every athlete train like a pro.
+  - For over 20 years, it has brought the principles, standards, and problem-solving approach of elite performance programs to athletes at every level.
   - It trained athletes of all ages and solved sports performance problems for its partners.
   - The performance data specialist service is the next evolution of that work, and it is now the main focus.
 

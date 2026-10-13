@@ -1,5 +1,5 @@
 // Checks the copy rules on the built site (dist/). Run after `npm run build`.
-// Skips the Stage 2 review pages in dist/directions/. Exit code 2 means findings.
+// Exit code 2 means findings.
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { join, relative } from "node:path";
 import { styleFindings } from "./rules.mjs";
@@ -9,7 +9,7 @@ const files = [];
 (function walk(dir) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
-    if (statSync(p).isDirectory()) { if (name !== "directions") walk(p); }
+    if (statSync(p).isDirectory()) { walk(p); }
     else if (name.endsWith(".html")) files.push(p);
   }
 })(DIST);
