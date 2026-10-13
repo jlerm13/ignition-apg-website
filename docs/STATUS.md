@@ -4,7 +4,7 @@ Last updated: 2026-10-13
 
 ## Where we are
 
-**Stage 5 (launch) in progress.** Gate ★4 approved on 2026-10-13. Vercel is linked: its first build from `main` failed as expected, because `main` has no site yet.
+**Stage 5 (launch): the site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -168,13 +168,9 @@ Last updated: 2026-10-13
 
 ## Waiting on Jake
 
-1. **Review the preview** on PR #1 (https://github.com/jlerm13/ignition-apg-website/pull/1). The branch preview is https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/
-2. **In Calendly:**
-   - Set Duration to 30 min and rename the event to "30-minute workflow review".
-   - Check the role prefill (`docs/BOOKING.md` step 2b).
-   - Set the redirect to the thank-you page.
-   - Make one test booking (audit check 11).
-3. **When ready:** Jake clicks merge on PR #1 to publish. Never merge for him.
+1. **The launch checklist** in `docs/LAUNCH.md`, section 1: check the live site, turn on Web Analytics, set the Calendly redirect to `https://ignition-apg-website.vercel.app/thank-you/`, confirm the 30-minute event, and make one test booking (audit check 11).
+2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
+3. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
 
 ## The stages
 
