@@ -17,7 +17,7 @@ The site went live on 2026-10-13, when Jake merged PR #1. Address: https://ignit
 | Visits | Vercel, Analytics tab | Are people opening the link? |
 | Bookings | Calendly, Scheduled events | The site's one job. |
 | Qualified bookings | Calendly answers: role, school and sports, data problem | A performance staff member with a real data problem. |
-| Thank-you page views | Vercel, Analytics, Pages | Should match bookings. If lower, check the redirect. |
+| Thank-you page views | Vercel, Analytics, Pages | Close to bookings, but lower is normal: Calendly shows a "You are leaving Calendly" step, and some visitors close it. Calendly is the true booking count. |
 
 The click events (`cta_click`, `booking_opened`, `email_click`) are built in, but the free Vercel plan does not record them. They switch on if you move to Vercel Pro.
 

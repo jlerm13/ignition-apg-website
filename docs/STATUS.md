@@ -168,7 +168,7 @@ Last updated: 2026-10-13
 
 ## Waiting on Jake
 
-1. **The launch checklist** in `docs/LAUNCH.md`, section 1: check the live site, turn on Web Analytics, set the Calendly redirect to `https://ignition-apg-website.vercel.app/thank-you/`, confirm the 30-minute event, and make one test booking (audit check 11).
+1. **The launch checklist** in `docs/LAUNCH.md`, section 1. Done on 2026-10-13: the Calendly redirect and a test booking on the live site (audit check 11 passes). Calendly shows a "You are leaving Calendly" step before the thank-you page, so thank-you views can undercount bookings. Count bookings in Calendly. Still to check: Web Analytics is turned on in Vercel.
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
 3. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
 

@@ -14,7 +14,7 @@ Date: 2026-10-12. Raw numbers are in `docs/final/audit.json` (made by `node scri
 | 8 | Reduced motion | **Pass.** No transitions or animations remain when the visitor asks for reduced motion. | None needed. |
 | 9 | Page weight | **Pass.** First load is 63 KB (limit 500 KB). JavaScript is 0.5 KB (limit 50 KB). | Tailwind limited to the site's own files (the stylesheet went from 41 KB to 15 KB). |
 | 10 | `check-copy.mjs` and `check-claims.mjs` | **Pass.** 0 findings. All 5 "What you can hand us" lines match the approved sheet. All 6 "stays with your staff" lines match the brief. Both scripts were tested on planted errors and caught them. | Added plural forms to the banned-word list. |
-| 11 | Test booking reaches the thank-you page and fires `booking_completed` | **Not done yet.** Vercel is not linked, so there is no live address for Calendly's redirect, and this work environment cannot reach Calendly. | Jake runs the test after linking Vercel and setting the redirect (`docs/BOOKING.md`, step 4). |
+| 11 | Test booking reaches the thank-you page and fires `booking_completed` | **Pass (2026-10-13, Jake, live site).** Calendly first shows a "You are leaving Calendly" page with a Continue button, then opens the thank-you page. Visitors who close that page are booked but not counted as `booking_completed`. Earlier note: Vercel is not linked, so there is no live address for Calendly's redirect, and this work environment cannot reach Calendly. | Jake runs the test after linking Vercel and setting the redirect (`docs/BOOKING.md`, step 4). |
 
 ## Not tested here
 
