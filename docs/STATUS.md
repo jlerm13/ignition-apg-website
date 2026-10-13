@@ -139,7 +139,7 @@ Last updated: 2026-10-12
 
 ## Waiting on Jake
 
-1. **Open the branch preview** in Vercel (Deployments, newest from `claude/clever-ride-f3mrjh`), check it on his phone, and send the address.
+1. **Review the copy on the preview**, then approve it. The preview works: https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/ (branch `claude/clever-ride-f3mrjh`; private, needs Vercel sign-in).
 2. **Decide the live address:** ignitionapg.com, a subdomain such as data.ignitionapg.com, or the free Vercel address for now.
 3. **Decide who publishes:** Claude merges after his approval, or Jake clicks merge.
 4. **Set up Calendly** with `docs/BOOKING.md`, then make one test booking (audit check 11).

@@ -36,7 +36,7 @@ The site counts a booking when someone lands on its thank-you page. Calendly mus
 1. In the event, open **Confirmation page** (it may sit under **Notifications and Cancellation Policy** or **Booking page options**).
 2. Choose **Redirect to an external site**.
 3. Enter the thank-you page address:
-   - **Now:** leave this step until the site has an address. I will give you the exact address when the first preview is live (Stage 2 or 3).
+   - **Now, for your test booking:** `https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/thank-you/`. This preview address is private, so only you, signed in to Vercel, will see the page after booking.
    - **After launch:** `https://<your site address>/thank-you`.
 4. Leave **Pass event details to your redirected page** turned **off**. The thank-you page does not need the visitor's details.
 5. Click **Save**.
