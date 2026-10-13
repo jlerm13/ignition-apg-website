@@ -4,7 +4,7 @@ Last updated: 2026-10-13
 
 ## Where we are
 
-**Stage 5 (launch): the site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
+**Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -168,7 +168,7 @@ Last updated: 2026-10-13
 
 ## Waiting on Jake
 
-1. **The launch checklist** in `docs/LAUNCH.md`, section 1. Done on 2026-10-13: the Calendly redirect and a test booking on the live site (audit check 11 passes). Calendly shows a "You are leaving Calendly" step before the thank-you page, so thank-you views can undercount bookings. Count bookings in Calendly. Still to check: Web Analytics is turned on in Vercel.
+1. **The launch checklist** in `docs/LAUNCH.md`, section 1. Done on 2026-10-13: the Calendly redirect and a test booking on the live site (audit check 11 passes). Calendly shows a "You are leaving Calendly" step before the thank-you page, so thank-you views can undercount bookings. Count bookings in Calendly. Web Analytics is turned on in Vercel (Jake, 2026-10-13). The launch checklist is complete.
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
 3. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
 
