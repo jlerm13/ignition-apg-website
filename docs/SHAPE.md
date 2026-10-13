@@ -16,7 +16,7 @@ Written by Impeccable `shape` (instructions-only fallback) on 2026-10-12. Update
 
 ## 2. Outcome and proof
 
-- **Primary action:** "Book a 20-minute data audit call." The name is open until gate 1. It is a link to Jake's booking page.
+- **Primary action:** "Book a 20-minute workflow review" (renamed by Jake on 2026-10-13). It is a link to Jake's booking page.
 - **Secondary action:** email us. The site says "us," not "Jake."
 - **Success:** a qualified booking.
 - **What only Ignition can show:** a written limit with equal weight to the offer.

@@ -38,9 +38,8 @@ import { site, hero, problem, links } from "../../content/site";
           <ul class="panel">
             {problem.symptoms.map((s) => <li>{s}</li>)}
           </ul>
-          <p class="closing">{problem.closingLine}</p>
           <div class="message">
-            {problem.departmentMessage.map((line) => <p>{line}</p>)}
+            {problem.solution.map((line) => <p>{line}</p>)}
           </div>
         </div>
       </div>

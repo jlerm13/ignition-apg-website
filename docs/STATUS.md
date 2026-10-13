@@ -104,6 +104,12 @@ Last updated: 2026-10-12
 
 ## Jake's decisions so far
 
+- 2026-10-13 (round 2):
+  - Section 2 rewritten. Every booking button now says "Book a 20-minute workflow review".
+  - "Data specialist" stays the one term. "Dedicated" was dropped.
+  - Specialist heading: "One person owns your data work."
+  - Privacy: "We count visits".
+
 - 2026-10-13 (review of the preview; not a launch):
   - New data specialist section after "What you can hand us". It is a role with no person.
   - A hero role picker of five roles plus "Other role?", with Calendly role prefill through `a1`.
@@ -148,15 +154,12 @@ Last updated: 2026-10-12
 ## Waiting on Jake
 
 1. **Review the preview** on PR #1 (https://github.com/jlerm13/ignition-apg-website/pull/1). The branch preview is https://ignition-apg-website-git-claude-clever-526011-jlerm13s-projects.vercel.app/
-2. **Calendly role prefill:** follow `docs/BOOKING.md` step 2b.
-   - "What is your role?" must be the first added question and of type One line.
-   - Then test the `?a1=Sport%20scientist` link.
-3. **Two wording flags** (his words kept as written until he decides):
-   - "One person owns your data." could read as us owning athlete data. A possible alternative: "One person owns your data work."
-   - "Our software does the repeat checks." sits close to the rule against implying software works on its own.
-4. **Privacy line** (from earlier): change "We count visits and button clicks" to "We count visits", because the free plan counts visits only?
-5. **Set the Calendly redirect** and make one test booking (audit check 11).
-6. **When ready:** Jake clicks merge on PR #1 to publish. Never merge for him.
+2. **In Calendly:**
+   - Rename the event to "20-minute workflow review".
+   - Check the role prefill (`docs/BOOKING.md` step 2b).
+   - Set the redirect to the thank-you page.
+   - Make one test booking (audit check 11).
+3. **When ready:** Jake clicks merge on PR #1 to publish. Never merge for him.
 
 ## The stages
 

@@ -32,10 +32,9 @@ import { site, hero, problem, links } from "../../content/site";
         <h2 id="problem-title" class="problem__title">{problem.heading}</h2>
         <ol class="rows" role="list">
           {problem.symptoms.map((s) => <li class="row">{s}</li>)}
-          <li class="row row--strong">{problem.closingLine}</li>
         </ol>
         <div class="message">
-          {problem.departmentMessage.map((line) => <p>{line}</p>)}
+          {problem.solution.map((line) => <p>{line}</p>)}
         </div>
       </div>
     </section>

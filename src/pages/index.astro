@@ -36,18 +36,18 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     </div>
   </section>
 
-  <!-- 2. Problem: heading left, symptom rows right. -->
+  <!-- 2. Problem: heading left, symptom rows right, then the answer and a booking button. -->
   <section class="py-16 md:py-26" aria-labelledby="problem-title">
     <div class="wrap grid-12 gap-y-10">
       <h2 id="problem-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] md:col-span-5">{problem.heading}</h2>
       <div class="col-span-12 md:col-start-7 md:col-span-6">
-        <ul class="border-t-2 border-ink">
-          {problem.symptoms.map((s) => <li class="border-b border-rule-2 py-4 text-item leading-[1.4]">{s}</li>)}
+        <ul class="border-y-2 border-ink">
+          {problem.symptoms.map((s) => <li class="border-b border-rule-2 py-4 text-item leading-[1.4] last:border-b-0">{s}</li>)}
         </ul>
-        <p class="border-b-2 border-ink py-4 text-item leading-[1.4] font-bold">{problem.closingLine}</p>
-        <div class="mt-10 space-y-2 text-lead leading-[1.45] text-neutral">
-          {problem.departmentMessage.map((line) => <p>{line}</p>)}
+        <div class="mt-10 space-y-3 text-lead leading-[1.45]">
+          {problem.solution.map((line, i) => <p class={i < 2 ? "font-bold" : "text-neutral"}>{line}</p>)}
         </div>
+        <a class="btn mt-10 max-[30rem]:w-full" href={links.booking} data-event="cta_click" data-section="problem">{site.bookButton}</a>
       </div>
     </div>
   </section>

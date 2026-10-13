@@ -8,6 +8,13 @@ How to read it:
 - Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
 - What is left for you is at the bottom.
 
+## What changed in v6 (Jake, 2026-10-13, round 2)
+
+- Section 2 is rewritten: a new heading, four symptoms, a four-line answer, and a booking button.
+- Every booking button now says "Book a 20-minute workflow review". This replaces "Book a 20-minute data audit call".
+- The specialist heading is "One person owns your data work."
+- The privacy page says "We count visits", because the free Vercel plan counts visits only.
+
 ## What changed in v5 (Jake, 2026-10-13)
 
 - Hero: a role picker replaces the single button. "What best describes your role?" with five role buttons, then the link "Other role? Book a 20-minute data audit call". Each role button opens Calendly with the role already filled in.
@@ -52,7 +59,7 @@ How to read it:
 | Element | Copy |
 |---|---|
 | Name | Ignition APG |
-| Button | Book a 20-minute data audit call |
+| Button | Book a 20-minute workflow review |
 
 ## 1. Hero
 
@@ -67,23 +74,27 @@ How to read it:
 | Role button | Director of Strength and Conditioning |
 | Role button | Sport scientist |
 | Role button | Athletic trainer |
-| Link | Other role? Book a 20-minute data audit call |
+| Link | Other role? Book a 20-minute workflow review |
 | Under the button | Every decision stays with your coaches and clinicians. |
 
 Each role button opens Calendly with that role filled in. The "Other role?" link opens Calendly with no role filled in. Setup: `docs/BOOKING.md`, "Role prefill".
 
-## 2. The problem
+## 2. The problem (rewritten by Jake, 2026-10-13)
 
 | Element | Copy |
 |---|---|
-| Heading | Performance staff cannot trust their numbers, and nobody owns fixing them. |
-| Symptom 1 | Your sport scientist cleans exports when they should be with athletes and coaches. |
-| Symptom 2 | The report arrives after the meeting where the coaches needed it. |
-| Symptom 3 | One person runs the GPS, the force plates, and the AMS, and the systems do not connect. |
-| Closing line | Each new system adds work when nobody owns the workflow. |
-| Department message | Your staff should coach, not fix spreadsheets. We work alongside the systems you already use. When a number looks wrong, we find the cause. We correct it with your staff, or we exclude it and record the reason. |
+| Heading | Performance staff have the data. Nobody owns the work between collection and decision. |
+| Symptom | High-value staff spend time cleaning files and refreshing reports. |
+| Symptom | The report arrives after coaches needed the information. |
+| Symptom | One person manages data from GPS, force plates, and the AMS, but the systems do not work together. |
+| Symptom | Each new system adds work when nobody owns the workflow. |
+| Solution | Ignition APG gives your staff a sport science data specialist. |
+| Solution | The specialist works across the systems you already use. |
+| Solution | We monitor incoming data, investigate problems, maintain the workflow, and deliver current information before coaches need it. |
+| Solution | Your staff add context, interpret the information, and make the decisions. |
+| Button | Book a 20-minute workflow review |
 
-The symptoms appear as plain lines, with no names and no quote marks. That way they read as the problem, not as testimonials. The department message turns the page from the problem to the offer.
+The symptoms appear as plain lines, with no names and no quote marks. Jake's draft said "Ignition", "a dedicated sport science data operator", and "Your staff adds". With his approval these became "Ignition APG", "a sport science data specialist" ("dedicated" is a banned word, and "data specialist" is the site's one term), and "Your staff add".
 
 ## 3. What you can hand us
 
@@ -107,7 +118,7 @@ The symptoms appear as plain lines, with no names and no quote marks. That way t
 
 | Element | Copy |
 |---|---|
-| Heading | One person owns your data. |
+| Heading | One person owns your data work. |
 | Text | Your data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue. |
 | Subheading | Who your data specialist is |
 | Point | Every data specialist has worked in sports performance and in data. |
@@ -186,7 +197,7 @@ Approved as written. There is no personal story and no photo.
 | Element | Copy |
 |---|---|
 | Heading | Bring the data problem that costs your staff the most time. |
-| Button | Book a 20-minute data audit call |
+| Button | Book a 20-minute workflow review |
 | Email line | Or email us at ja.lerman@ignitionapg.com. |
 
 ## Footer
@@ -214,7 +225,7 @@ Approved as written. There is no personal story and no photo.
 | Heading | Privacy |
 | Text | This page covers this website only. |
 | Text | This site uses no cookies. |
-| Text | We count visits and button clicks with Vercel Web Analytics. It uses no cookies and does not identify you. |
+| Text | We count visits with Vercel Web Analytics. It uses no cookies and does not identify you. |
 | Text | When you book a call, Calendly collects your name, email, role, school and sports, and your answer about your data problem. |
 | Text | We use that information to prepare for the call. |
 | Text | Calendly handles the booking. We do not sell your information or add you to a mailing list. |
@@ -237,7 +248,7 @@ Before launch, Stage 3 checks that every line above is true. One example: if the
 
 | Where | Goes to |
 |---|---|
-| Every "Book a 20-minute data audit call" button (header, hero, final section) | https://calendly.com/ja-lerman-ignitionapg/intro-call |
+| Every "Book a 20-minute workflow review" button (header, section 2, How it starts, final section) and the "Other role?" link | https://calendly.com/ja-lerman-ignitionapg/intro-call |
 | Every "Email us" link and email line | ja.lerman@ignitionapg.com |
 | Calendly, after a booking | the site's thank-you page. Setup steps are in `docs/BOOKING.md`. |
 

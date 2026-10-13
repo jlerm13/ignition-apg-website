@@ -37,6 +37,7 @@ Task IDs from the brief (for example `PDS-W1-T1`) are for traceability only. The
 These sit on top of the hard rules. Full text is at the top of `docs/BRIEF.md`.
 
 - The site name is Ignition APG (round 2).
+- The booking button says "Book a 20-minute workflow review" everywhere (Jake, 2026-10-13). The person is always "data specialist", never "data operator".
 - BASIS appears once on the site, in the answer to "What do we get?", as "BASIS, our software." Nowhere else (round 2).
 - Say "a data specialist from Ignition APG," never "hire." Do not use "forward deployed engineer" on the site.
 - Do not quote Athena's founder or any Athena material anywhere, on the site or in repo docs.

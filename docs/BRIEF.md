@@ -69,6 +69,14 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 4. **Approved wording for wrong numbers, in both places:** "We find the cause. We correct it with your staff, or we exclude it and record the reason." Nowhere on the site may we say we "fix" a value. BASIS never edits a value in place.
 5. **Questions open and close on click or tap,** using native details and summary. All are closed when the page loads. The answers do not change.
 
+## Changes from Jake, 2026-10-13 (round 2)
+
+1. **Section 2 is rewritten.** The problem line in 3.4 is replaced by "Performance staff have the data. Nobody owns the work between collection and decision." The full section is in `docs/MESSAGE.md` section 2.
+2. **The booking button is renamed** to "Book a 20-minute workflow review" everywhere. This replaces the gate 1 decision "Book a 20-minute data audit call".
+3. **"Data specialist" is the site's one term** for the person. "Data operator" is not used. "Dedicated" stays banned.
+4. **The specialist heading** is "One person owns your data work."
+5. **The privacy line** says "We count visits with Vercel Web Analytics", because the free plan counts visits only.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

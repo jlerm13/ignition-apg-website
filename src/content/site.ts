@@ -12,7 +12,7 @@ export const site = {
   pageTitle: "Ignition APG: athlete data your staff can trust",
   description:
     "Ignition APG gives college athletic departments a data team. We collect, check, connect, and explain athlete data. Every decision stays with your staff.",
-  bookButton: "Book a 20-minute data audit call",
+  bookButton: "Book a 20-minute workflow review",
   emailLink: "Email us",
 };
 
@@ -33,21 +33,23 @@ export const rolePicker = {
     "Sport scientist",
     "Athletic trainer",
   ],
-  otherLink: "Other role? Book a 20-minute data audit call",
+  otherLink: "Other role? Book a 20-minute workflow review",
 };
 
+// Section 2, rewritten by Jake on 2026-10-13.
 export const problem = {
-  heading: "Performance staff cannot trust their numbers, and nobody owns fixing them.",
+  heading: "Performance staff have the data. Nobody owns the work between collection and decision.",
   symptoms: [
-    "Your sport scientist cleans exports when they should be with athletes and coaches.",
-    "The report arrives after the meeting where the coaches needed it.",
-    "One person runs the GPS, the force plates, and the AMS, and the systems do not connect.",
+    "High-value staff spend time cleaning files and refreshing reports.",
+    "The report arrives after coaches needed the information.",
+    "One person manages data from GPS, force plates, and the AMS, but the systems do not work together.",
+    "Each new system adds work when nobody owns the workflow.",
   ],
-  closingLine: "Each new system adds work when nobody owns the workflow.",
-  departmentMessage: [
-    "Your staff should coach, not fix spreadsheets.",
-    "We work alongside the systems you already use.",
-    "When a number looks wrong, we find the cause. We correct it with your staff, or we exclude it and record the reason.",
+  solution: [
+    "Ignition APG gives your staff a sport science data specialist.",
+    "The specialist works across the systems you already use.",
+    "We monitor incoming data, investigate problems, maintain the workflow, and deliver current information before coaches need it.",
+    "Your staff add context, interpret the information, and make the decisions.",
   ],
 };
 
@@ -83,7 +85,7 @@ export const handUs = {
 
 // Data specialist section (Jake, 2026-10-13). A role, with no name, no photo, and no personal story.
 export const specialist = {
-  heading: "One person owns your data.",
+  heading: "One person owns your data work.",
   text: "Your data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue.",
   who: {
     heading: "Who your data specialist is",
@@ -198,7 +200,7 @@ export const privacy = {
   paragraphs: [
     "This page covers this website only.",
     "This site uses no cookies.",
-    "We count visits and button clicks with Vercel Web Analytics. It uses no cookies and does not identify you.",
+    "We count visits with Vercel Web Analytics. It uses no cookies and does not identify you.",
     "When you book a call, Calendly collects your name, email, role, school and sports, and your answer about your data problem.",
     "We use that information to prepare for the call.",
     "Calendly handles the booking. We do not sell your information or add you to a mailing list.",
