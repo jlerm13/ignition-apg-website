@@ -27,3 +27,17 @@ Date: 2026-10-12. Raw numbers are in `docs/final/audit.json` (made by `node scri
 2. **Step 3 title.** The steps are "A 20-minute call" and "A review of one export", then "What we found." A matching title would be "A written summary."
 3. **Data storage.** Is there one plain fact about where athlete files are stored that you can state? It would strengthen "How do you protect athlete data?" No compliance names without proof.
 4. **Sample data screenshot.** A screenshot from the BASIS demo school, labelled "Sample data", would show directors what they get. Send one if you want it on the page.
+
+## Layout check (Impeccable audit and layout guides, 2026-10-13)
+
+Asked by Jake after his review of the preview. Impeccable was used as instructions only. Its detector was not run. A second opinion from another reviewer was weighed, and Jake approved the revised plan. Measured in Chromium.
+
+| Finding | Before | After |
+|---|---|---|
+| Hero left half empty under the heading | All text and buttons in the right half. Hero 1,066 px tall at 1440 px. | Text left, role picker right. Hero 955 px tall at 1440 px (about 110 px shorter at every size). |
+| Role buttons on the first screen | Last button below the fold at 1440 × 900. | All five show at 1440 × 900 and 1680 × 1000. At 1366 × 768 and 1280 × 720 the last one or two still sit just below the fold. |
+| Long sections leave the left column empty | Heading scrolls away while its list is read. | In Problem, What you can hand us, and One person owns your data work, the heading stays in view from 1024 px up. It stays clear of the header and lets go inside its own section (checked at 1440 × 900, 1366 × 768, 1280 × 720, 1024 × 768). |
+| Tablet squeeze | Two columns of 312 px and 377 px at 834 px. Page 7,170 px tall. | One column below 1024 px. Page 6,857 px tall at 834 px. Other pages unchanged. |
+| Uneven section end | 24 px extra under "What you can hand us". | Removed. |
+
+Checks after the change: copy, claims, and message checks pass. axe 0 violations, keyboard pass, no sideways scroll (1440, 390, 375 px, and 720 px for 200% zoom), reduced motion pass, Lighthouse 100 on home and privacy, first load 69 KB.

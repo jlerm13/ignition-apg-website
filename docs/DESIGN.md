@@ -38,7 +38,7 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 
 - **Spacing scale:** 8, 12, 16, 24, 40, 64, and 104 px (`--space-xs` to `--space-3xl`). No other values.
 - **Page width:** 80rem, with a gutter of `clamp(1rem, 4vw, 3rem)`.
-- **Grid:** 12 columns, gap `clamp(0.75rem, 1.6vw, 1.5rem)`. Sections use the grid as "heading in columns 1 to 5, content in columns 7 to 12." Below 52rem everything is one column.
+- **Grid:** 12 columns, gap `clamp(0.75rem, 1.6vw, 1.5rem)`. Sections use the grid as "heading in columns 1 to 5, content in columns 7 to 12." On the home page, split sections are one column below 64rem (1024 px) and two columns from 64rem (layout check, 2026-10-13). Other pages and the How it starts steps switch at 52rem.
 - **Ruler:** a 12-cell ruler at the top of the hero shows the grid. It appears once, in the hero only, and hides on phones.
 - **Section padding:** 104 px top and bottom on desktop, 64 px on phones. In the hero, the bottom padding is at least 1.3 times the top padding.
 
@@ -49,11 +49,12 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 | Header | Sticky, paper background, 2 px ink rule below. Name on the left, booking button on the right. On phones the header button hides, because the hero button sits directly below. |
 | Button | Ink fill, on-ink text, 2 px ink border, square corners, 48 px tall (header button 44 px). Red on hover, neutral on press, red focus ring. The label never wraps. |
 | Text link | Ink, underlined, red underline on hover. |
-| Hero | Ruler, label with red square, display heading across columns 1 to 11, then lead text, the role picker, and the under-button line in columns 7 to 12 under a 2 px ink rule. |
+| Hero | Ruler, label with red square, display heading across columns 1 to 11. From 64rem: lead text in columns 1 to 5 (up to 1.5rem) and the role picker with the under-button line in columns 7 to 12, each under its own 2 px ink rule (2026-10-13). Below 64rem: one rule, then text, then picker. The code order is text, prompt, choices, other link, under-button line. |
 | Role picker (hero, 2026-10-13) | The prompt in bold, then five full-width outlined choices (2 px ink border, paper fill, left-aligned label, 48 px tall) that fill with ink on hover. Then a text link for other roles. Each choice opens Calendly with the role prefilled. Labels stay on one line down to 320 px. |
 | Problem rows | Heading left. Symptoms as rows with hairlines on the right. The closing line in bold, between 2 px ink rules. The department message below it in neutral. |
+| Sticky headings (2026-10-13) | From 64rem only, and only in Problem, What you can hand us, and One person owns your data work, where the right column is much longer. The left block pins 96 px from the top, under the header, and lets go at its section end. No script. |
 | Grouped list ("What you can hand us") | Heading and text left. Four groups on the right, each under a 2 px ink rule with the verb as a small heading. No markers. It mirrors the ink band, light then dark. |
-| Specialist section (2026-10-13) | Heading and text left. On the right, two groups under 2 px ink rules: "Who your data specialist is" (plain list) and "A week with your data specialist" (ordered list, hairline between rows, no visible numerals). No photos, avatars, faces, or icons. |
+| Specialist section (2026-10-13) | Heading and text left. On the right, two groups under 2 px ink rules: "Who your performance data specialist is" (plain list) and "A week with your performance data specialist" (ordered list, hairline between rows, no visible numerals). No photos, avatars, faces, or icons. |
 | Ink band ("We handle the data work") | The one dark section. Heading left on ink, six items in two columns on the right, each item with a hairline above it. |
 | Step columns ("How it starts. Free.") | Three columns divided by vertical hairlines. Titles carry the order, with no numerals. The closing line sits under a rule. Then the booking button: the one mid-page button, so phone visitors can book at the moment they decide. Stacks to rows on phones. |
 | Questions | Heading left. On the right, native `<details>` rows divided by hairlines, all closed on load (Jake, 2026-10-13). Each summary is at least 56 px tall with a "+" or "−" marker as text, the red focus ring, and hover and press styles. Answers stay in the page HTML. |

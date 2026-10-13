@@ -104,6 +104,10 @@ Last updated: 2026-10-13
 
 ## Jake's decisions so far
 
+- 2026-10-13 (layout check):
+  - Impeccable layout audit (instructions only), then a second opinion weighed point by point. Jake approved the revised plan.
+  - Hero: text left, role picker right on wide screens. Sticky headings only in the three long sections. Home page split sections are one column below 1024 px. Results are in `docs/final/REPORT.md`.
+
 - 2026-10-13 (round 3):
   - Ignition APG is one performance data specialist plus our software, one to one with each department.
   - "Data team" is removed from the site and the docs, and it is now a banned phrase in `scripts/rules.mjs`.
