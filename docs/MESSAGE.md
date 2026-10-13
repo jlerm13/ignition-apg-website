@@ -111,7 +111,7 @@ This list gets the same visual weight as section 3. The six items use the confir
 | Step 2 text | You send one export from one system you use. You can remove athlete names first. We check every value. |
 | Step 3 title | What we found |
 | Step 3 text | We walk you through what we found on a short call. You get a written summary and a plan for your data. |
-| Closing line | Your staff reach us by email, Slack, or text. No new login is needed to ask a question. |
+| Closing line | Staff ask questions by email, Slack, or text. They see results on our platform. |
 
 None of these steps cost money. Step 3 makes no time promise, so "20-minute" stays the only number on the site.
 

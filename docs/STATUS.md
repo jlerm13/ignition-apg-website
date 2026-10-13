@@ -4,7 +4,7 @@ Last updated: 2026-10-12
 
 ## Where we are
 
-**Stage 4 (audit): done. Waiting at gate ★4 for Jake.** The report is `docs/final/REPORT.md`. One check, the test booking, waits for Vercel and Calendly.
+**Stage 5 (launch) in progress.** Gate ★4 approved on 2026-10-13. Vercel is linked: its first build from `main` failed as expected, because `main` has no site yet.
 
 - Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
@@ -104,6 +104,9 @@ Last updated: 2026-10-12
 
 ## Jake's decisions so far
 
+- 2026-10-13 (gate 4 closed): Jake approved the audit and the new closing line for "How it starts": "Staff ask questions by email, Slack, or text. They see results on our platform."
+- 2026-10-13: Vercel project created (Hobby plan, Astro preset, build `npm run build`, output `dist`). The first deploy from `main` failed (no package.json on `main`), which is expected.
+
 - 2026-10-12: Impeccable is installed as instructions only. Its program is never run, so nothing downloads and nothing is sent.
 - 2026-10-12: If a skill install command fails, copy the same skill from its own GitHub repo as its README describes. Never substitute a different skill.
 - 2026-10-12 (gate 1, round 1):
@@ -134,20 +137,12 @@ Last updated: 2026-10-12
   - Stop after the Stage 3 build so Jake can look before the Stage 4 audit.
 - 2026-10-12 (Stage 2 start): the old training-business brand is not used. Start fresh. Jake may send old brand details after he assesses the directions.
 
-## Waiting on Jake (gate ★4)
+## Waiting on Jake
 
-1. **Review `docs/final/REPORT.md`** and approve the audit, or send changes.
-2. **Answer the four wording questions** at the end of the report (login wording, step 3 title, data storage fact, sample screenshot). All four are optional, but the first one is worth a decision.
-3. **Link Vercel** with `docs/VERCEL.md` and send the preview address.
-4. **Set up Calendly** with `docs/BOOKING.md`, then make one test booking (check 11).
-
-After approval, Stage 5:
-
-1. Set `SITE_URL`.
-2. Remove `src/pages/directions/`.
-3. Deploy a preview for Jake's phone, then production.
-4. Give Jake the DNS steps.
-5. Write `docs/LAUNCH.md`.
+1. **Open the branch preview** in Vercel (Deployments, newest from `claude/clever-ride-f3mrjh`), check it on his phone, and send the address.
+2. **Decide the live address:** ignitionapg.com, a subdomain such as data.ignitionapg.com, or the free Vercel address for now.
+3. **Decide who publishes:** Claude merges after his approval, or Jake clicks merge.
+4. **Set up Calendly** with `docs/BOOKING.md`, then make one test booking (audit check 11).
 
 ## The stages
 
@@ -205,7 +200,7 @@ Each stage commits when done. Stop at every ★ and wait for Jake.
      - every delegation item matches a confirmed row in the brief
 4. Commit.
 
-### Stage 4 ★: Audit (done, waiting at gate)
+### Stage 4 ★: Audit (done, approved)
 
 Run every check below and fix what fails. Then report one table to Jake: check, result, what changed.
 

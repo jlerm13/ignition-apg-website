@@ -93,7 +93,7 @@ export const howItStarts = {
       text: "We walk you through what we found on a short call. You get a written summary and a plan for your data.",
     },
   ],
-  closingLine: "Your staff reach us by email, Slack, or text. No new login is needed to ask a question.",
+  closingLine: "Staff ask questions by email, Slack, or text. They see results on our platform.",
 };
 
 export const questions = {

@@ -52,6 +52,11 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
   - "What stays with your staff" has a new heading: "We handle the data work. Your staff keep the judgment."
   - A new closing line ends the problem symptoms: "Each new system adds work when nobody owns the workflow."
 
+## Changes from Jake at gate 4 (2026-10-13)
+
+1. The closing line of "How it starts" is now: "Staff ask questions by email, Slack, or text. They see results on our platform." It replaces the original "Your staff reach us by email, Slack, or text. No new login is needed to ask a question." The old line could read as a contradiction of "Your staff log in to our platform to see the results."
+2. Jake approved the Stage 4 audit.
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 
