@@ -99,6 +99,11 @@ These override everything above and below where they conflict.
 2. **A second allowed number:** "over 20 years", the company's history. With "30-minute", these are the only numbers on the site.
 3. **The Stage 2 design pages are removed** from the site. Their screenshots stay in `docs/directions/` as a record.
 
+## Changes from Jake, 2026-10-15 (logo)
+
+1. **The company logo is on the site** (Option D, approved by Jake): the flame and "Ignition Athletic Performance Group" in the header and footer, so visitors learn what APG stands for. The lettering is recoloured to the site's ink. The flame is the browser-tab icon.
+2. **Not used:** the navy "IGNITION" lettering, and any logo under "Who we are".
+
 ## 3.1 Job of the site
 Get a qualified college performance leader to book a 20-minute call with Jake.
 

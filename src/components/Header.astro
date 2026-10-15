@@ -5,8 +5,10 @@ const { button = true } = Astro.props;
 ---
 
 <header class="sticky top-0 z-40 border-b-2 border-ink bg-paper">
-  <div class="wrap flex min-h-16 items-center justify-between gap-4">
-    <a href="/" class="inline-flex min-h-11 items-center text-lg font-extrabold tracking-tight whitespace-nowrap text-ink no-underline transition-colors duration-150 hover:text-neutral active:text-muted">{site.name}</a>
+  <div class="wrap flex min-h-18 items-center justify-between gap-4">
+    <a href="/" class="inline-flex min-h-11 shrink-0 items-center transition-opacity duration-150 hover:opacity-80 active:opacity-60">
+      <img src="/logo-ignition-apg.png" alt={site.logoAlt} width="224" height="44" class="block h-11 w-auto" />
+    </a>
     {button && (
       <a class="btn btn--small max-[30rem]:hidden" href={links.booking} data-event="cta_click" data-section="header">{site.bookButton}</a>
     )}

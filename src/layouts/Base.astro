@@ -26,7 +26,8 @@ const ogImage = new URL("/og.png", Astro.site);
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
     <link rel="canonical" href={canonical} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <!-- Matches --color-paper; a meta tag cannot read CSS variables. -->
     <meta name="theme-color" content="#fbfcfd" />
 

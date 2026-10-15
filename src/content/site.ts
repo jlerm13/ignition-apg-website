@@ -9,6 +9,8 @@ export const links = {
 
 export const site = {
   name: "Ignition APG",
+  // The logo spells out the full name, so visitors learn what APG stands for (Jake, 2026-10-15).
+  logoAlt: "Ignition Athletic Performance Group",
   pageTitle: "Ignition APG: athlete data your staff can trust",
   description:
     "Ignition APG gives each college athletic department its own performance data specialist. We collect, check, connect, and explain athlete data. Every decision stays with your staff.",
