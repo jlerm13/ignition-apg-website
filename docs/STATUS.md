@@ -104,6 +104,11 @@ Last updated: 2026-10-13
 
 ## Jake's decisions so far
 
+- 2026-10-15 (logo):
+  - Three logo mock-ups shown: the flame beside the name in the header and footer, the full logo in the header, and the stacked logo under "Who we are".
+  - No logo under "Who we are". The navy "IGNITION" lettering does not fit the site.
+  - Jake will look for a logo version that spells out "Ignition Athletic Performance Group", so visitors learn what APG stands for. Placement is decided when that file arrives. Mock it up again before building.
+
 - 2026-10-13 (round 4):
   - New "Who we are" text (five paragraphs). "Over 20 years" of company history is allowed as a second number.
   - "Data operator" is now a banned phrase.
@@ -170,7 +175,8 @@ Last updated: 2026-10-13
 
 1. **The launch checklist** in `docs/LAUNCH.md`, section 1. Done on 2026-10-13: the Calendly redirect and a test booking on the live site (audit check 11 passes). Calendly shows a "You are leaving Calendly" step before the thank-you page, so thank-you views can undercount bookings. Count bookings in Calendly. Web Analytics is turned on in Vercel (Jake, 2026-10-13). The launch checklist is complete.
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
-3. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
+3. **Logo:** send a version that spells out "Ignition Athletic Performance Group", as SVG or a large PNG.
+4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
 
 ## The stages
 
