@@ -1,6 +1,6 @@
 # Status
 
-Last updated: 2026-10-13
+Last updated: 2026-10-15
 
 ## Where we are
 
@@ -104,6 +104,12 @@ Last updated: 2026-10-13
 
 ## Jake's decisions so far
 
+- 2026-10-15 (BASIS database updates, outside this site):
+  - Jake asked for this one change in `basis-workspace` by name. It is a one-time exception to hard rule 1. Nothing on this site changed.
+  - "Cloud: set up database" now updates every school in one run when the target is left empty. It goes one school at a time: demo first, then xavier. If one fails, the run stops before the next.
+  - Jake merged basis-workspace PR #81. He tested it the same day. "Cloud: set up database" run #47 updated demo, then xavier. "Cloud: health check" run #60 passed for both. Both runs were green.
+  - From now on, after a merge that changes the database: run "Cloud: set up database" once with the target empty, then "Cloud: health check" once with the target empty. `docs/CLOUD_OPERATIONS.md` in basis-workspace says the same.
+
 - 2026-10-15 (logo):
   - Three logo mock-ups shown: the flame beside the name in the header and footer, the full logo in the header, and the stacked logo under "Who we are".
   - No logo under "Who we are". The navy "IGNITION" lettering does not fit the site.
@@ -176,7 +182,7 @@ Last updated: 2026-10-13
 
 1. **The launch checklist** in `docs/LAUNCH.md`, section 1. Done on 2026-10-13: the Calendly redirect and a test booking on the live site (audit check 11 passes). Calendly shows a "You are leaving Calendly" step before the thank-you page, so thank-you views can undercount bookings. Count bookings in Calendly. Web Analytics is turned on in Vercel (Jake, 2026-10-13). The launch checklist is complete.
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
-3. **Logo:** review Option D on the PR #2 preview, then merge. An SVG of the logo would make it sharper later. Not required.
+3. **Logo:** done. Jake merged PR #2 (Option D). An SVG of the logo would make it sharper later. Not required.
 4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
 
 ## The stages
