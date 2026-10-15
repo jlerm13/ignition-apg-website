@@ -46,7 +46,8 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 
 | Component | Rules |
 |---|---|
-| Header | Sticky, paper background, 2 px ink rule below. Name on the left, booking button on the right. On phones the header button hides, because the hero button sits directly below. |
+| Logo (Jake, 2026-10-15) | The Ignition Athletic Performance Group logo: the flame in its own red, yellow, and blue, and the lettering in site ink, not white or navy. It appears only in the header (44 px tall) and footer (48 px tall). The flame alone is the browser-tab and home-screen icon. The logo colours stay inside the logo and add nothing to the site palette. File: `public/logo-ignition-apg.png`, built from Jake's stacked logo. Swap in an SVG when Jake has one. |
+| Header | Sticky, paper background, 2 px ink rule below, 72 px tall. Logo on the left, booking button on the right. On phones the header button hides, because the hero button sits directly below. |
 | Button | Ink fill, on-ink text, 2 px ink border, square corners, 48 px tall (header button 44 px). Red on hover, neutral on press, red focus ring. The label never wraps. |
 | Text link | Ink, underlined, red underline on hover. |
 | Hero | Ruler, label with red square, display heading across columns 1 to 11. From 64rem: lead text in columns 1 to 5 (up to 1.5rem) and the role picker with the under-button line in columns 7 to 12, each under its own 2 px ink rule (2026-10-13). Below 64rem: one rule, then text, then picker. The code order is text, prompt, choices, other link, under-button line. |
@@ -60,7 +61,7 @@ There is one accent. There are no gradients, no shadows, and no rounded corners.
 | Questions | Heading left. On the right, native `<details>` rows divided by hairlines, all closed on load (Jake, 2026-10-13). Each summary is at least 56 px tall with a "+" or "−" marker as text, the red focus ring, and hover and press styles. Answers stay in the page HTML. |
 | Who we are | Heading left (sticky from 64rem), five short paragraphs right (Jake, 2026-10-13). |
 | Final call to action | A large section heading, the button, then the email line. |
-| Footer | Name, Privacy link, and Email us on one line, with a hairline above. It sits at the bottom of short pages. |
+| Footer | Logo, Privacy link, and Email us on one line, with a hairline above. It sits at the bottom of short pages. |
 | Thank-you, privacy, and 404 pages | The same header and footer. One column of text in columns 1 to 8, aligned with the header. The thank-you page has no booking button, because the visitor just booked. |
 
 ## States and motion

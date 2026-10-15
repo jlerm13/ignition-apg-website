@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-13",
+  "date": "2026-10-15",
   "results": {
     "axe": {
       "404@375": [],
@@ -62,14 +62,15 @@
       "thank-you": []
     },
     "weight": {
-      "firstLoadKB": 69.1,
+      "firstLoadKB": 100.5,
       "jsKB": 0.6,
       "files": [
-        "/ 20078",
-        "/_astro/Base.HhlIHR7h.css 15596",
+        "/ 20254",
         "/_vercel/insights/script.js 0",
+        "/_astro/Base.DRhwZSvn.css 15237",
         "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
-        "/favicon.svg 168"
+        "/logo-ignition-apg.png 27815",
+        "/favicon.png 4647"
       ]
     },
     "lighthouse": {
@@ -91,7 +92,7 @@
         "performance": 100,
         "accessibility": 100,
         "best-practices": 100,
-        "seo": 66,
+        "seo": 69,
         "failedAudits": [
           "is-crawlable"
         ]
