@@ -74,8 +74,8 @@
   .btn--choice:hover { background: var(--color-ink); color: var(--color-on-ink); border-color: var(--color-ink); }
   .btn--choice:active { background: var(--color-neutral); color: var(--color-on-ink); border-color: var(--color-neutral); }
 
-  /* Hero picker progress: two 2 px rules, like the rule over the lead text. No numbers. */
-  .progress { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  /* Hero picker progress: three 2 px rules, like the rule over the lead text. No numbers. */
+  .progress { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem; }
   .progress span { height: 2px; background: var(--color-rule-2); }
   .progress span[data-on] { background: var(--color-ink); }
   [data-step] > p[tabindex="-1"]:focus { outline: none; }

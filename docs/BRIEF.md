@@ -57,17 +57,21 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 1. The closing line of "How it starts" is now: "Staff ask questions by email, Slack, or text. They see results on our platform." It replaces the original "Your staff reach us by email, Slack, or text. No new login is needed to ask a question." The old line could read as a contradiction of "Your staff log in to our platform to see the results."
 2. Jake approved the Stage 4 audit.
 
-## Changes from Jake, 2026-10-16 (two-step hero picker)
+## Changes from Jake, 2026-10-16 (hero picker, "How it starts", hero words)
 
-These override the role picker lines in the 2026-10-13 section below.
+These override the role picker lines in the 2026-10-13 section below, and the "How it starts" and hero text further down.
 
-1. **Two taps in the hero.** The role, then "What takes the most time each week?". Then Calendly opens with both answers filled in (`a1` role, `a3` problem). A two-segment bar shows the step. It has no numbers.
+1. **Three taps in the hero.** The role, then "What takes the most time each week?", then "Who handles that work today?". Then Calendly opens with the answers filled in (`a1` role, `a3` problem, `a4` who handles it). A three-segment bar shows the step. It has no numbers.
 2. **Role buttons:** Performance director, Sport science director, Strength and conditioning director, Sport scientist or performance analyst, Sport coach. Then the link "Other role? Book a 30-minute workflow review".
 3. **Problem choices:** Exporting files and refreshing reports. Finding missing or wrong data. Connecting data from different systems. Getting reports ready before coaches need them. Something else. ("Fixing" is not used. This site never says we fix a value.)
-4. **Lines:** "Your answers fill in the booking form for you." under the role question. "Choose the closest answer. Next, you choose a time." under the problem question.
+4. **Lines:** "Your answers fill in the booking form for you." under the role question. "Choose the closest answer." under the problem question. "Choose the closest answer. Next, you choose a time." under the last question.
 5. **Under the picker:** "Your staff keep the context, interpretation, and decisions." It replaces "Every decision stays with your coaches and clinicians."
 6. **Events:** `cta_click` and `booking_opened` fire on the last tap, with section "hero" and the role. Tapping a role alone does not open the booking.
-7. **Waiting on Jake:** a third question, "Who handles that work today?", and new copy for "How it starts", the hero heading and text, and the later ownership text. Some of the proposed words break the hard rules. See `docs/STATUS.md`.
+7. **Who handles that work today?** Choices: A strength or performance coach. A sport scientist. A graduate assistant or intern. A data or technology specialist. Several people share it. Nobody consistently owns it. "Something else" has no match here: the visitor can still type anything in Calendly.
+8. **"How it starts" rewritten.** Heading "Find the first workflow we could own. Free." Steps: "Map one recurring workflow", "Review the real handoffs", "Get a practical next-step plan". Closing line: "If the problem fits, we will explain what it looks like when a performance data specialist owns that work. If your systems and staff already cover it reliably, we will say so." It replaces the old closing line, "Staff ask questions by email, Slack, or text. They see results on our platform." That meaning stays in "One person owns your data work" and in "What do we get?".
+9. **Hero rewritten.** Heading "Performance data your staff can trust." Text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist organizes, checks, connects, and delivers information across the systems your staff already use." The site description and page title follow it. "Dedicated" stays banned, so Jake's words were changed to "its own".
+10. **Not built:** the later "What working with Ignition looks like" text. It used "operator", which is not the approved word.
+11. **Still says "explain":** the "What you can hand us" group and the answer to "Do you make decisions about athletes?". Those lines are in the confirmed delegation list. Jake decides whether they change too.
 
 ## Changes from Jake, 2026-10-13 (review of the preview)
 

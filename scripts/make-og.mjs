@@ -6,7 +6,7 @@ import { chromium } from "playwright-core";
 const src = await readFile("src/content/site.ts", "utf8");
 const pick = (re) => (src.match(re) || [])[1];
 const name = pick(/name: "([^"]+)"/);
-const heading = pick(/heading: "(Athlete data[^"]+)"/);
+const heading = pick(/heading: "(Performance data[^"]+)"/);
 const label = pick(/label: "([^"]+)"/);
 const font = (await readFile("node_modules/@fontsource-variable/archivo/files/archivo-latin-wght-normal.woff2")).toString("base64");
 

@@ -104,16 +104,20 @@ Last updated: 2026-10-16 (evening)
 
 ## Jake's decisions so far
 
-- 2026-10-16 (two-step hero picker, on its own branch, for Jake to review):
-  - Jake saw a clickable example and said it looks right. Built on the real site.
-  - Tap one is the role. Tap two is "What takes the most time each week?". Calendly then opens with the role (`a1`) and the problem (`a3`) filled in. "Something else" fills only the role.
+- 2026-10-16 (hero picker, "How it starts", and hero words; one branch, for Jake to review):
+  - Jake saw a clickable example of the picker and said it looks right. Built on the real site.
+  - Three taps: the role, "What takes the most time each week?", then "Who handles that work today?". Calendly opens with the role (`a1`), problem (`a3`), and owner (`a4`) filled in. "Something else" fills nothing for the problem.
   - Role buttons are now Performance director, Sport science director, Strength and conditioning director, Sport scientist or performance analyst, Sport coach. "Athletic trainer" is no longer a button. Athletic trainers use "Other role?".
-  - New lines: "Your answers fill in the booking form for you." and "Choose the closest answer. Next, you choose a time." The line under the picker is now "Your staff keep the context, interpretation, and decisions."
-  - "Fixing missing or incorrect data" became "Finding missing or wrong data", because this site never says we "fix" a value (`docs/BRIEF.md`). "Combining" became "Connecting", the site's word.
-  - Checks: `npm run check` passes (copy and claims). Tested at 320, 375, 390, and 1440 px: no sideways scroll, tap targets 44 px or taller, text 16 px or larger, focus moves to the new question, Back works, and without script a role opens Calendly at once.
+  - The line under the picker is now "Your staff keep the context, interpretation, and decisions."
+  - Jake pasted new copy. Jake approved the third question and the rewrite of "How it starts" and the hero, with banned words swapped out:
+    - "Dedicated" became "its own". "Operator" is not used. "Ignition" became "Ignition APG" or "we".
+    - "Fixing missing or incorrect data" became "Finding missing or wrong data", because this site never says we "fix" a value. "Combining" became "Connecting".
+    - "How it starts" heading: "Find the first workflow we could own. Free." Its old closing line (email, Slack, text) is gone from there. The specialist section and "What do we get?" still say it.
+    - Hero heading: "Performance data your staff can trust." The page title, site description, and share image follow it.
+  - Privacy page: Calendly also collects the new answers, so the text says so. Its date is now October 16, 2026.
+  - Checks: `npm run check` passes (copy and claims). Tested at 320, 375, 390, and 1440 px: no sideways scroll, tap targets 44 px or taller, text 16 px or larger, focus moves to each new question, Back works at each step, and without script a role opens Calendly at once.
   - `cta_click` and `booking_opened` fire on the last tap only, with the role.
-  - Jake must check Calendly before the merge. See `docs/BOOKING.md` section 2b: the problem question must be the third question, and it must be a text question.
-
+  - Jake must check Calendly before the merge. See `docs/BOOKING.md`: there must be a fourth question, "Who handles that work today?", as a text question.
 
 - 2026-10-15 (BASIS database updates, outside this site):
   - Jake asked for this one change in `basis-workspace` by name. It is a one-time exception to hard rule 1. Nothing on this site changed.
@@ -204,12 +208,11 @@ Last updated: 2026-10-16 (evening)
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
 3. **Logo:** done. Jake merged PR #2 (Option D). An SVG of the logo would make it sharper later. Not required.
 4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
-5. **Hero picker pull request.** Check Calendly (`docs/BOOKING.md` section 2b) and test the prefill link. Then merge when happy.
-6. **Pasted copy not built yet.** Jake pasted new copy on 2026-10-16. Some of it breaks his own rules, so it waits for his answers:
-   - **A third question, "Who handles that work today?"** Needs a fourth Calendly question and one more tap. Choices proposed: a strength or performance coach, a sport scientist, a GA or intern, a data or technology specialist, several people share it, nobody consistently owns it.
-   - **New "How it starts" text.** It uses "dedicated", "one or two" (number words), and "operator". It also adds promises that are not in the brief: a review of "real handoffs", a summary of "recommended improvements", and "if your systems already cover the work, we will say so". The approved written summary stays.
-   - **New hero heading and left text.** The two versions in the paste disagree. Both say "dedicated", which is banned. One drops "performance data", and "performance data specialist" is the one term. Changing "explains" to "delivers" also changes the approved verbs: collect, check, connect, explain.
-   - **"Ignition operator" text for a later section.** "Operator" is not the approved term. It would use "performance data specialist".
+5. **Hero picker pull request (PR #4).** Add the fourth Calendly question and check the order (`docs/BOOKING.md`, section 2b). Test the prefill link. Then merge when happy.
+6. **Decisions left:**
+   - The later "What working with Ignition looks like" text is not built. It said "operator". Jake can say where it goes and that it uses "performance data specialist".
+   - "Explain" still appears in "What you can hand us" and in one answer. The hero no longer uses it. Jake decides if those change too.
+   - The thank-you page still says "pick one export from one system you use". The new step two says "exports, reports, or examples of the process". Jake decides if the thank-you page should match.
 
 ## The stages
 
