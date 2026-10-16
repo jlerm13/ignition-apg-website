@@ -210,7 +210,7 @@ Last updated: 2026-10-16 (evening)
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
 3. **Logo:** done. Jake merged PR #2 (Option D). An SVG of the logo would make it sharper later. Not required.
 4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
-5. **Hero picker pull request (PR #4).** Add the fourth Calendly question and check the order (`docs/BOOKING.md`, section 2b). Test the prefill link. Then merge when happy.
+5. **Hero picker pull request (PR #4).** Jake added the fourth Calendly question on 2026-10-16. Left for Jake: open the test link in `docs/BOOKING.md` section 2b and check that the role, problem, and owner boxes arrive filled in. Then merge when happy.
 6. **Decisions left:**
    - "Explain" still appears in "What you can hand us" and in one answer. The hero no longer uses it. Jake decides if those change too.
 
