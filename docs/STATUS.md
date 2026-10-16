@@ -114,6 +114,7 @@ Last updated: 2026-10-16 (evening)
     - "Fixing missing or incorrect data" became "Finding missing or wrong data", because this site never says we "fix" a value. "Combining" became "Connecting".
     - "How it starts" heading: "Find the first workflow we could own. Free." Its old closing line (email, Slack, text) is gone from there. The specialist section and "What do we get?" still say it.
     - Hero heading: "Performance data your staff can trust." The page title, site description, and share image follow it.
+  - The later "what working with us looks like" text sits in the specialist section, under "One person owns your data work." Words changed: "operator" became "performance data specialist", and "provides its own software when a unifying workspace is needed" became "Our software does the repeat checks and shows your staff the results". The old "They work with your staff by email, Slack, or text." line left the "who" list because the new text says it.
   - Privacy page: Calendly also collects the new answers, so the text says so. Its date is now October 16, 2026.
   - Checks: `npm run check` passes (copy and claims). Tested at 320, 375, 390, and 1440 px: no sideways scroll, tap targets 44 px or taller, text 16 px or larger, focus moves to each new question, Back works at each step, and without script a role opens Calendly at once.
   - `cta_click` and `booking_opened` fire on the last tap only, with the role.
@@ -210,7 +211,6 @@ Last updated: 2026-10-16 (evening)
 4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
 5. **Hero picker pull request (PR #4).** Add the fourth Calendly question and check the order (`docs/BOOKING.md`, section 2b). Test the prefill link. Then merge when happy.
 6. **Decisions left:**
-   - The later "What working with Ignition looks like" text is not built. It said "operator". Jake can say where it goes and that it uses "performance data specialist".
    - "Explain" still appears in "What you can hand us" and in one answer. The hero no longer uses it. Jake decides if those change too.
    - The thank-you page still says "pick one export from one system you use". The new step two says "exports, reports, or examples of the process". Jake decides if the thank-you page should match.
 

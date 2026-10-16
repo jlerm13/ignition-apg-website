@@ -116,12 +116,16 @@ export const handUs = {
 // Data specialist section (Jake, 2026-10-13). A role, with no name, no photo, and no personal story.
 export const specialist = {
   heading: "One person owns your data work.",
-  text: "Your performance data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue.",
+  // Jake's "what working with us looks like" text (2026-10-16), in the approved words. "Operator" became "performance data specialist".
+  text: [
+    "Your performance data specialist becomes an extension of your staff. Send a text, email, or Slack message, whichever your team already uses.",
+    "Your specialist learns your systems, your sports, and your weekly rhythm, and owns the recurring data work.",
+    "We work across the systems already in place. Our software does the repeat checks and shows your staff the results. Your specialist reviews every flagged number. You do not get a support queue.",
+  ],
   who: {
     heading: "Who your performance data specialist is",
     items: [
       "Your performance data specialist has worked in sports performance and in data.",
-      "They work with your staff by email, Slack, or text.",
     ],
   },
   week: {
