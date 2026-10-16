@@ -1,12 +1,12 @@
 # Status
 
-Last updated: 2026-10-16
+Last updated: 2026-10-16 (evening)
 
 ## Where we are
 
 **Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
-- Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
+- Working branch for the hero picker change: `claude/adoring-ritchie-41urmh` (new, from `main`). Every earlier branch is merged. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
 
 ## Done
@@ -104,6 +104,17 @@ Last updated: 2026-10-16
 
 ## Jake's decisions so far
 
+- 2026-10-16 (two-step hero picker, on its own branch, for Jake to review):
+  - Jake saw a clickable example and said it looks right. Built on the real site.
+  - Tap one is the role. Tap two is "What takes the most time each week?". Calendly then opens with the role (`a1`) and the problem (`a3`) filled in. "Something else" fills only the role.
+  - Role buttons are now Performance director, Sport science director, Strength and conditioning director, Sport scientist or performance analyst, Sport coach. "Athletic trainer" is no longer a button. Athletic trainers use "Other role?".
+  - New lines: "Your answers fill in the booking form for you." and "Choose the closest answer. Next, you choose a time." The line under the picker is now "Your staff keep the context, interpretation, and decisions."
+  - "Fixing missing or incorrect data" became "Finding missing or wrong data", because this site never says we "fix" a value (`docs/BRIEF.md`). "Combining" became "Connecting", the site's word.
+  - Checks: `npm run check` passes (copy and claims). Tested at 320, 375, 390, and 1440 px: no sideways scroll, tap targets 44 px or taller, text 16 px or larger, focus moves to the new question, Back works, and without script a role opens Calendly at once.
+  - `cta_click` and `booking_opened` fire on the last tap only, with the role.
+  - Jake must check Calendly before the merge. See `docs/BOOKING.md` section 2b: the problem question must be the third question, and it must be a text question.
+
+
 - 2026-10-15 (BASIS database updates, outside this site):
   - Jake asked for this one change in `basis-workspace` by name. It is a one-time exception to hard rule 1. Nothing on this site changed.
   - "Cloud: set up database" now updates every school in one run when the target is left empty. It goes one school at a time: demo first, then xavier. If one fails, the run stops before the next.
@@ -193,6 +204,12 @@ Last updated: 2026-10-16
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
 3. **Logo:** done. Jake merged PR #2 (Option D). An SVG of the logo would make it sharper later. Not required.
 4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
+5. **Hero picker pull request.** Check Calendly (`docs/BOOKING.md` section 2b) and test the prefill link. Then merge when happy.
+6. **Pasted copy not built yet.** Jake pasted new copy on 2026-10-16. Some of it breaks his own rules, so it waits for his answers:
+   - **A third question, "Who handles that work today?"** Needs a fourth Calendly question and one more tap. Choices proposed: a strength or performance coach, a sport scientist, a GA or intern, a data or technology specialist, several people share it, nobody consistently owns it.
+   - **New "How it starts" text.** It uses "dedicated", "one or two" (number words), and "operator". It also adds promises that are not in the brief: a review of "real handoffs", a summary of "recommended improvements", and "if your systems already cover the work, we will say so". The approved written summary stays.
+   - **New hero heading and left text.** The two versions in the paste disagree. Both say "dedicated", which is banned. One drops "performance data", and "performance data specialist" is the one term. Changing "explains" to "delivers" also changes the approved verbs: collect, check, connect, explain.
+   - **"Ignition operator" text for a later section.** "Operator" is not the approved term. It would use "performance data specialist".
 
 ## The stages
 

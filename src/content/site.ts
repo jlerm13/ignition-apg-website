@@ -22,20 +22,35 @@ export const hero = {
   label: "A performance data specialist for your athletic department",
   heading: "Athlete data your staff can trust.",
   text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist collects, checks, connects, and explains athlete data.",
-  underButton: "Every decision stays with your coaches and clinicians.",
+  underButton: "Your staff keep the context, interpretation, and decisions.",
 };
 
-// Hero role picker (Jake, 2026-10-13). Each role opens Calendly with the role question prefilled (a1).
+// Hero picker (Jake, 2026-10-16). Two taps: the role, then what takes the most time. Calendly opens with both
+// answers filled in (a1 = role, a3 = problem). Order and types of the Calendly questions: docs/BOOKING.md.
 export const rolePicker = {
   prompt: "What best describes your role?",
+  hint: "Your answers fill in the booking form for you.",
   roles: [
-    "Director of High Performance",
-    "Director of Sports Science",
-    "Director of Strength and Conditioning",
-    "Sport scientist",
-    "Athletic trainer",
+    "Performance director",
+    "Sport science director",
+    "Strength and conditioning director",
+    "Sport scientist or performance analyst",
+    "Sport coach",
   ],
   otherLink: "Other role? Book a 30-minute workflow review",
+  problem: {
+    prompt: "What takes the most time each week?",
+    hint: "Choose the closest answer. Next, you choose a time.",
+    // Each choice fills the Calendly problem question. "Fix" is not used: BRIEF.md bans it for values.
+    choices: [
+      "Exporting files and refreshing reports",
+      "Finding missing or wrong data",
+      "Connecting data from different systems",
+      "Getting reports ready before coaches need them",
+    ],
+    other: "Something else",
+  },
+  back: "Back",
 };
 
 // Section 2, rewritten by Jake on 2026-10-13.

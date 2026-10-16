@@ -70,9 +70,15 @@
   .link--inline::after { content: ""; position: absolute; inset: -0.875rem -0.25rem; }
 
   /* Hero role picker: outlined choices that fill with ink on hover. */
-  .btn--choice { justify-content: flex-start; background: var(--color-paper); color: var(--color-ink); }
+  .btn--choice { justify-content: flex-start; text-align: left; white-space: normal; line-height: 1.25; padding-block: 0.75rem; background: var(--color-paper); color: var(--color-ink); }
   .btn--choice:hover { background: var(--color-ink); color: var(--color-on-ink); border-color: var(--color-ink); }
   .btn--choice:active { background: var(--color-neutral); color: var(--color-on-ink); border-color: var(--color-neutral); }
+
+  /* Hero picker progress: two 2 px rules, like the rule over the lead text. No numbers. */
+  .progress { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+  .progress span { height: 2px; background: var(--color-rule-2); }
+  .progress span[data-on] { background: var(--color-ink); }
+  [data-step] > p[tabindex="-1"]:focus { outline: none; }
 
   /* A week with your data specialist: ordered in the HTML, no visible numerals. */
   .week li { padding-block: 0.75rem; border-bottom: 1px solid var(--color-rule-2); }

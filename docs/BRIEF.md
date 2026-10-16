@@ -57,6 +57,18 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 1. The closing line of "How it starts" is now: "Staff ask questions by email, Slack, or text. They see results on our platform." It replaces the original "Your staff reach us by email, Slack, or text. No new login is needed to ask a question." The old line could read as a contradiction of "Your staff log in to our platform to see the results."
 2. Jake approved the Stage 4 audit.
 
+## Changes from Jake, 2026-10-16 (two-step hero picker)
+
+These override the role picker lines in the 2026-10-13 section below.
+
+1. **Two taps in the hero.** The role, then "What takes the most time each week?". Then Calendly opens with both answers filled in (`a1` role, `a3` problem). A two-segment bar shows the step. It has no numbers.
+2. **Role buttons:** Performance director, Sport science director, Strength and conditioning director, Sport scientist or performance analyst, Sport coach. Then the link "Other role? Book a 30-minute workflow review".
+3. **Problem choices:** Exporting files and refreshing reports. Finding missing or wrong data. Connecting data from different systems. Getting reports ready before coaches need them. Something else. ("Fixing" is not used. This site never says we fix a value.)
+4. **Lines:** "Your answers fill in the booking form for you." under the role question. "Choose the closest answer. Next, you choose a time." under the problem question.
+5. **Under the picker:** "Your staff keep the context, interpretation, and decisions." It replaces "Every decision stays with your coaches and clinicians."
+6. **Events:** `cta_click` and `booking_opened` fire on the last tap, with section "hero" and the role. Tapping a role alone does not open the booking.
+7. **Waiting on Jake:** a third question, "Who handles that work today?", and new copy for "How it starts", the hero heading and text, and the later ownership text. Some of the proposed words break the hard rules. See `docs/STATUS.md`.
+
 ## Changes from Jake, 2026-10-13 (review of the preview)
 
 1. **Data specialist section** (option A: a role, with no name, no photo, and no personal story; company first stays; the only number stays "20-minute"). It sits after "What you can hand us" and before "We handle the data work. Your staff keep the judgment." The words are in `docs/MESSAGE.md` section 3b.
