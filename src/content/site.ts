@@ -228,7 +228,7 @@ export const thankYou = {
   heading: "Your call is booked.",
   paragraphs: [
     "Check your email for the confirmation and the calendar invite.",
-    "Before the call, pick one export from one system you use. We can review it after we talk.",
+    "Before the call, you can choose exports, reports, or examples of the process to share. Remove athlete names first if you like. We can review them after we talk.",
   ],
   emailLine: "Questions before then? Email us at",
   backLink: "Back to the home page",
