@@ -11,31 +11,59 @@ export const site = {
   name: "Ignition APG",
   // The logo spells out the full name, so visitors learn what APG stands for (Jake, 2026-10-15).
   logoAlt: "Ignition Athletic Performance Group",
-  pageTitle: "Ignition APG: athlete data your staff can trust",
+  pageTitle: "Ignition APG: performance data your staff can trust",
   description:
-    "Ignition APG gives each college athletic department its own performance data specialist. We collect, check, connect, and explain athlete data. Every decision stays with your staff.",
+    "Ignition APG gives each college athletic department its own performance data specialist. We organize, check, connect, and deliver performance data. Every decision stays with your staff.",
   bookButton: "Book a 30-minute workflow review",
   emailLink: "Email us",
 };
 
 export const hero = {
   label: "A performance data specialist for your athletic department",
-  heading: "Athlete data your staff can trust.",
-  text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist collects, checks, connects, and explains athlete data.",
-  underButton: "Every decision stays with your coaches and clinicians.",
+  heading: "Performance data your staff can trust.",
+  text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist organizes, checks, connects, and delivers information across the systems your staff already use.",
+  underButton: "Your staff keep the context, interpretation, and decisions.",
 };
 
-// Hero role picker (Jake, 2026-10-13). Each role opens Calendly with the role question prefilled (a1).
+// Hero picker (Jake, 2026-10-16). Three taps: the role, what takes the most time, and who handles that work today.
+// Calendly opens with the answers filled in (a1 = role, a3 = problem, a4 = who handles it). Order and types of the
+// Calendly questions: docs/BOOKING.md.
 export const rolePicker = {
   prompt: "What best describes your role?",
+  hint: "Your answers fill in the booking form for you.",
   roles: [
-    "Director of High Performance",
-    "Director of Sports Science",
-    "Director of Strength and Conditioning",
-    "Sport scientist",
-    "Athletic trainer",
+    "Performance director",
+    "Sport science director",
+    "Strength and conditioning director",
+    "Sport scientist or performance analyst",
+    "Sport coach",
   ],
   otherLink: "Other role? Book a 30-minute workflow review",
+  problem: {
+    prompt: "What takes the most time each week?",
+    hint: "Choose the closest answer.",
+    // Each choice fills the Calendly problem question. "Fix" is not used: BRIEF.md bans it for values.
+    choices: [
+      "Exporting files and refreshing reports",
+      "Finding missing or wrong data",
+      "Connecting data from different systems",
+      "Getting reports ready before coaches need them",
+    ],
+    other: "Something else",
+  },
+  owner: {
+    prompt: "Who handles that work today?",
+    hint: "Choose the closest answer. Next, you choose a time.",
+    choices: [
+      "A strength or performance coach",
+      "A sport scientist",
+      "A graduate assistant or intern",
+      "A data or technology specialist",
+      "Several people share it",
+      "Nobody consistently owns it",
+    ],
+  },
+  back: "Back",
 };
 
 // Section 2, rewritten by Jake on 2026-10-13.
@@ -88,12 +116,16 @@ export const handUs = {
 // Data specialist section (Jake, 2026-10-13). A role, with no name, no photo, and no personal story.
 export const specialist = {
   heading: "One person owns your data work.",
-  text: "Your performance data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue.",
+  // Jake's "what working with us looks like" text (2026-10-16), in the approved words. "Operator" became "performance data specialist".
+  text: [
+    "Your performance data specialist becomes an extension of your staff. Send a text, email, or Slack message, whichever your team already uses.",
+    "Your specialist learns your systems, your sports, and your weekly rhythm, and owns the recurring data work.",
+    "We work across the systems already in place. Our software does the repeat checks and shows your staff the results. Your specialist reviews every flagged number. You do not get a support queue.",
+  ],
   who: {
     heading: "Who your performance data specialist is",
     items: [
       "Your performance data specialist has worked in sports performance and in data.",
-      "They work with your staff by email, Slack, or text.",
     ],
   },
   week: {
@@ -121,23 +153,25 @@ export const staysWithStaff = {
   ],
 };
 
+// Rewritten by Jake, 2026-10-16. The email, Slack, and text line moved: the specialist section and "What do we get?" say it.
 export const howItStarts = {
-  heading: "How it starts. Free.",
+  heading: "Find the first workflow we could own. Free.",
   steps: [
     {
-      title: "A 30-minute call",
-      text: "You tell us about your systems and the data problem that costs your staff the most time.",
+      title: "Map one recurring workflow",
+      text: "On a 30-minute call, you show us which systems are involved, who manages them, and where the process slows down.",
     },
     {
-      title: "A review of one export",
-      text: "You send one export from one system you use. You can remove athlete names first. We check every value.",
+      title: "Review the real handoffs",
+      text: "You can share exports, reports, or examples of the process. Remove athlete names first if you like. We look for repeated manual work, missing ownership, and delays between systems.",
     },
     {
-      title: "What we found",
-      text: "We walk you through what we found on a short call. You get a written summary and a plan for your data.",
+      title: "Get a practical next-step plan",
+      text: "We walk you through what we found. You get a written summary of the problems, the improvements we recommend, and the first workflow we could own.",
     },
   ],
-  closingLine: "Staff ask questions by email, Slack, or text. They see results on our platform.",
+  closingLine:
+    "If the problem fits, we will explain what it looks like when a performance data specialist owns that work. If your systems and staff already cover it reliably, we will say so.",
 };
 
 export const questions = {
@@ -194,7 +228,7 @@ export const thankYou = {
   heading: "Your call is booked.",
   paragraphs: [
     "Check your email for the confirmation and the calendar invite.",
-    "Before the call, pick one export from one system you use. We can review it after we talk.",
+    "Before the call, you can choose exports, reports, or examples of the process to share. Remove athlete names first if you like. We can review them after we talk.",
   ],
   emailLine: "Questions before then? Email us at",
   backLink: "Back to the home page",
@@ -206,13 +240,14 @@ export const privacy = {
     "This page covers this website only.",
     "This site uses no cookies.",
     "We count visits with Vercel Web Analytics. It uses no cookies and does not identify you.",
-    "When you book a call, Calendly collects your name, email, role, school and sports, and your answer about your data problem.",
+    "When you book a call, Calendly collects your name, email, role, and school and sports.",
+    "It also collects your answers about your data problem and who handles that work today.",
     "We use that information to prepare for the call.",
     "Calendly handles the booking. We do not sell your information or add you to a mailing list.",
   ],
   emailLine: "To see or delete your information, email",
   // A practical date, not a statistic. check-claims allows digits only on this line.
-  lastUpdated: "Last updated: October 12, 2026",
+  lastUpdated: "Last updated: October 16, 2026",
 };
 
 export const notFound = {

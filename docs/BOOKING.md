@@ -14,45 +14,66 @@ Do these steps in Calendly on a computer. Calendly sometimes moves or renames it
 
 ## 2. Add the booking questions
 
-Calendly always asks for **Name** and **Email**. Add three more questions. Each one decides whether a booking is qualified.
+Calendly always asks for **Name** and **Email**. Add four more questions. Each one decides whether a booking is qualified.
 
 1. In the event, open **Booking form** (some accounts call it **Invitee Questions**).
-2. Click **Add new question** three times, with these settings:
+2. Click **Add new question** four times, with these settings (added the fourth on 2026-10-16):
 
 | Question | Answer type | Required |
 |---|---|---|
 | What is your role? | One line | Yes |
 | Which school and sports do you work with? | Multiple lines | Yes |
 | Which data problem costs your staff the most time? | Multiple lines | Yes |
+| Who handles that work today? | One line | Yes |
 
 3. Click **Save**.
 
 The last question is the one you prepare the call from. It is also the "most painful problem first" idea, so you know the problem before you talk.
 
-## 2b. Role prefill (added 2026-10-13)
+## 2b. Prefill from the hero picker (updated 2026-10-16)
 
-The hero now asks "What best describes your role?" and shows five buttons. Each button opens your Calendly page with the role already typed into the role question. Calendly does this from the link: `?a1=` fills the **first question you added** to the booking form. Name and email do not count, because Calendly adds those itself.
+The hero asks three questions. Each answer fills a Calendly booking question from the link, so visitors do not type it twice:
 
-For this to work, check two things in Calendly, under the event's **Booking form** (or **Invitee Questions**):
+- `?a1=` fills the **first question you added**, "What is your role?".
+- `?a3=` fills the **third question you added**, "Which data problem costs your staff the most time?". - `?a4=` fills the **fourth question you added**, "Who handles that work today?". Name and email do not count, because Calendly adds those itself.
 
-1. **"What is your role?" must be the first question you added**, directly under Name and Email. If it is not first, drag it to the top. If you want it somewhere else, tell me its position (second is `a2`, third is `a3`) and I will change the links.
-2. **Its answer type must be "One line"**, as step 2 above says. With One line, any text fills in. If you changed it to multiple choice (radio buttons or a drop-down), the five options must match the button text exactly, letter for letter:
-   - Director of High Performance
-   - Director of Sports Science
-   - Director of Strength and Conditioning
-   - Sport scientist
-   - Athletic trainer
+For this to work, check three things under the event's **Booking form** (or **Invitee Questions**):
 
-   One line is simpler. With it, "Other role?" visitors can type anything.
+1. **The order is: role, then school and sports, then the data problem, then who handles that work.** If you reorder them, tell me and I will change the links.
+2. **Role, problem, and who handles it are all text questions** ("One line" or "Multiple lines"). Do not change them to a drop-down or radio buttons. The text must match the picker exactly, and "Other role" visitors type their own.
+3. **None of these questions is hidden.** Visitors can still change what the picker filled in.
+
+The picker sends these values.
+
+Role (`a1`):
+- Performance director
+- Sport science director
+- Strength and conditioning director
+- Sport scientist or performance analyst
+- Sport coach
+
+Problem (`a3`). "Something else" sends no problem, so the box is empty:
+- Exporting files and refreshing reports
+- Finding missing or wrong data
+- Connecting data from different systems
+- Getting reports ready before coaches need them
+
+Who handles it (`a4`):
+- A strength or performance coach
+- A sport scientist
+- A graduate assistant or intern
+- A data or technology specialist
+- Several people share it
+- Nobody consistently owns it
 
 **Test it** (I cannot open calendly.com from my environment, so this is yours):
 
-1. Open this link: https://calendly.com/ja-lerman-ignitionapg/intro-call?a1=Sport%20scientist
+1. Open this link: https://calendly.com/ja-lerman-ignitionapg/intro-call?a1=Sport%20scientist%20or%20performance%20analyst&a3=Connecting%20data%20from%20different%20systems&a4=Several%20people%20share%20it
 2. Pick any time.
-3. On the form, "What is your role?" should already say **Sport scientist**. Visitors can still change it.
+3. On the form, "What is your role?" should say **Sport scientist or performance analyst**. The data problem box should say **Connecting data from different systems**. The fourth box should say **Several people share it**. School and sports should be empty.
 4. Close the page without booking.
 
-If the role box is empty, tell me what the question's position and type are, and I will fix the links.
+If a box is empty but the role box is filled, tell me that question's position and type, and I will fix the links.
 
 ## 3. Send people to the thank-you page after they book
 

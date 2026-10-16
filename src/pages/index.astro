@@ -24,20 +24,90 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
       <div class="col-span-12 border-t-2 border-ink pt-4 lg:col-span-5">
         <p class="max-w-[46ch] text-lead leading-[1.45] lg:max-w-[30ch] lg:text-[clamp(1.25rem,0.6vw+1rem,1.5rem)]">{hero.text}</p>
       </div>
-      <div class="col-span-12 flex flex-col items-start gap-4 lg:col-start-7 lg:col-span-6 lg:border-t-2 lg:border-ink lg:pt-4">
-        <div class="w-full">
-          <p id="role-prompt" class="font-bold">{rolePicker.prompt}</p>
-          <ul class="mt-3 grid gap-2" aria-labelledby="role-prompt">
-            {rolePicker.roles.map((role) => (
-              <li><a class="btn btn--choice w-full" href={roleLink(role)} data-event="cta_click" data-section="hero" data-role={role}>{role}</a></li>
-            ))}
-          </ul>
-          <p class="mt-3"><a class="link inline-flex min-h-11 items-center" href={links.booking} data-event="cta_click" data-section="hero" data-role="other">{rolePicker.otherLink}</a></p>
+      <div class="col-span-12 flex flex-col items-start gap-4 lg:col-start-7 lg:col-span-6">
+        <!-- Three taps: role, what takes the most time, who handles it. The bar has no numbers. Without script, a role opens Calendly at once. -->
+        <div class="w-full" data-picker data-booking={links.booking}>
+          <div class="progress" aria-hidden="true"><span data-on></span><span></span><span></span></div>
+          <div data-step="role" class="pt-4">
+            <p id="step-role-prompt" class="font-bold" tabindex="-1">{rolePicker.prompt}</p>
+            <p class="mt-1 text-muted">{rolePicker.hint}</p>
+            <ul class="mt-3 grid gap-2" aria-labelledby="step-role-prompt">
+              {rolePicker.roles.map((role) => (
+                <li><a class="btn btn--choice w-full" href={roleLink(role)} data-pick-role={role}>{role}</a></li>
+              ))}
+            </ul>
+            <p class="mt-3"><a class="link inline-flex min-h-11 items-center" href={links.booking} data-event="cta_click" data-section="hero" data-role="other">{rolePicker.otherLink}</a></p>
+          </div>
+          <div data-step="problem" class="pt-4" hidden>
+            <p id="step-problem-prompt" class="font-bold" tabindex="-1">{rolePicker.problem.prompt}</p>
+            <p class="mt-1 text-muted">{rolePicker.problem.hint}</p>
+            <ul class="mt-3 grid gap-2" aria-labelledby="step-problem-prompt">
+              {rolePicker.problem.choices.map((choice) => (
+                <li><a class="btn btn--choice w-full" href={links.booking} data-pick-problem={choice}>{choice}</a></li>
+              ))}
+              <li><a class="btn btn--choice w-full" href={links.booking} data-pick-problem="">{rolePicker.problem.other}</a></li>
+            </ul>
+            <p class="mt-3"><button type="button" class="link inline-flex min-h-11 cursor-pointer items-center" data-back>{rolePicker.back}</button></p>
+          </div>
+          <div data-step="owner" class="pt-4" hidden>
+            <p id="step-owner-prompt" class="font-bold" tabindex="-1">{rolePicker.owner.prompt}</p>
+            <p class="mt-1 text-muted">{rolePicker.owner.hint}</p>
+            <ul class="mt-3 grid gap-2" aria-labelledby="step-owner-prompt">
+              {rolePicker.owner.choices.map((choice) => (
+                <li><a class="btn btn--choice w-full" href={links.booking} data-event="cta_click" data-section="hero" data-pick-owner={choice}>{choice}</a></li>
+              ))}
+            </ul>
+            <p class="mt-3"><button type="button" class="link inline-flex min-h-11 cursor-pointer items-center" data-back>{rolePicker.back}</button></p>
+          </div>
         </div>
         <p class="text-muted">{hero.underButton}</p>
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    // Hero picker: one question at a time, then open Calendly with the answers filled in.
+    // Calendly fills its booking questions from ?a1= (role), ?a3= (problem), and ?a4= (who handles it). See docs/BOOKING.md.
+    (function () {
+      var picker = document.querySelector("[data-picker]");
+      if (!picker) return;
+      var booking = picker.getAttribute("data-booking");
+      var steps = ["role", "problem", "owner"].map(function (name) { return picker.querySelector('[data-step="' + name + '"]'); });
+      var bars = picker.querySelectorAll(".progress span");
+      var answers = { role: "", problem: "" };
+      function show(index) {
+        steps.forEach(function (step, i) { step.hidden = i !== index; });
+        bars.forEach(function (bar, i) { if (i <= index) bar.setAttribute("data-on", ""); else bar.removeAttribute("data-on"); });
+        steps[index].querySelector("[tabindex]").focus();
+      }
+      steps[0].querySelectorAll("[data-pick-role]").forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          answers.role = a.getAttribute("data-pick-role");
+          show(1);
+        });
+      });
+      steps[1].querySelectorAll("[data-pick-problem]").forEach(function (a) {
+        a.addEventListener("click", function (e) {
+          e.preventDefault();
+          answers.problem = a.getAttribute("data-pick-problem");
+          show(2);
+        });
+      });
+      steps[2].querySelectorAll("[data-pick-owner]").forEach(function (a) {
+        a.addEventListener("click", function () {
+          var url = booking + "?a1=" + encodeURIComponent(answers.role);
+          if (answers.problem) url += "&a3=" + encodeURIComponent(answers.problem);
+          url += "&a4=" + encodeURIComponent(a.getAttribute("data-pick-owner"));
+          a.href = url;
+          a.setAttribute("data-role", answers.role);
+        });
+      });
+      picker.querySelectorAll("[data-back]").forEach(function (button) {
+        button.addEventListener("click", function () { show(steps.indexOf(button.closest("[data-step]")) - 1); });
+      });
+    })();
+  </script>
 
   <!-- 2. Problem: heading left, symptom rows right, then the answer and a booking button. -->
   <section class="py-16 md:py-26" aria-labelledby="problem-title">
@@ -80,7 +150,9 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     <div class="wrap grid-12 gap-y-10">
       <div class="col-span-12 lg:sticky lg:top-24 lg:col-span-5 lg:self-start">
         <h2 id="specialist-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{specialist.heading}</h2>
-        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-neutral">{specialist.text}</p>
+        <div class="mt-4 max-w-[46ch] space-y-3 text-lead leading-[1.45] text-neutral">
+          {specialist.text.map((paragraph) => <p>{paragraph}</p>)}
+        </div>
       </div>
       <div class="col-span-12 space-y-10 lg:col-start-7 lg:col-span-6">
         <div class="border-t-2 border-ink pt-4">

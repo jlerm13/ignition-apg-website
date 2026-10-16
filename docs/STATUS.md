@@ -1,12 +1,12 @@
 # Status
 
-Last updated: 2026-10-16
+Last updated: 2026-10-16 (evening)
 
 ## Where we are
 
 **Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
-- Working branch: `claude/clever-ride-f3mrjh`. Commit and push there after each stage.
+- Working branch for the hero picker change: `claude/adoring-ritchie-41urmh` (new, from `main`). Every earlier branch is merged. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
 
 ## Done
@@ -104,6 +104,23 @@ Last updated: 2026-10-16
 
 ## Jake's decisions so far
 
+- 2026-10-16 (hero picker, "How it starts", and hero words; one branch, for Jake to review):
+  - Jake saw a clickable example of the picker and said it looks right. Built on the real site.
+  - Three taps: the role, "What takes the most time each week?", then "Who handles that work today?". Calendly opens with the role (`a1`), problem (`a3`), and owner (`a4`) filled in. "Something else" fills nothing for the problem.
+  - Role buttons are now Performance director, Sport science director, Strength and conditioning director, Sport scientist or performance analyst, Sport coach. "Athletic trainer" is no longer a button. Athletic trainers use "Other role?".
+  - The line under the picker is now "Your staff keep the context, interpretation, and decisions."
+  - Jake pasted new copy. Jake approved the third question and the rewrite of "How it starts" and the hero, with banned words swapped out:
+    - "Dedicated" became "its own". "Operator" is not used. "Ignition" became "Ignition APG" or "we".
+    - "Fixing missing or incorrect data" became "Finding missing or wrong data", because this site never says we "fix" a value. "Combining" became "Connecting".
+    - "How it starts" heading: "Find the first workflow we could own. Free." Its old closing line (email, Slack, text) is gone from there. The specialist section and "What do we get?" still say it.
+    - Hero heading: "Performance data your staff can trust." The page title, site description, and share image follow it.
+  - The later "what working with us looks like" text sits in the specialist section, under "One person owns your data work." Words changed: "operator" became "performance data specialist", and "provides its own software when a unifying workspace is needed" became "Our software does the repeat checks and shows your staff the results". The old "They work with your staff by email, Slack, or text." line left the "who" list because the new text says it.
+  - The thank-you page now matches step two: "Before the call, you can choose exports, reports, or examples of the process to share. Remove athlete names first if you like. We can review them after we talk."
+  - Privacy page: Calendly also collects the new answers, so the text says so. Its date is now October 16, 2026.
+  - Checks: `npm run check` passes (copy and claims). Tested at 320, 375, 390, and 1440 px: no sideways scroll, tap targets 44 px or taller, text 16 px or larger, focus moves to each new question, Back works at each step, and without script a role opens Calendly at once.
+  - `cta_click` and `booking_opened` fire on the last tap only, with the role.
+  - Jake must check Calendly before the merge. See `docs/BOOKING.md`: there must be a fourth question, "Who handles that work today?", as a text question.
+
 - 2026-10-15 (BASIS database updates, outside this site):
   - Jake asked for this one change in `basis-workspace` by name. It is a one-time exception to hard rule 1. Nothing on this site changed.
   - "Cloud: set up database" now updates every school in one run when the target is left empty. It goes one school at a time: demo first, then xavier. If one fails, the run stops before the next.
@@ -193,6 +210,9 @@ Last updated: 2026-10-16
 2. **Then:** weekly numbers every Monday, the first review after 2 weeks or 10 bookings, and outreach to the first 20 performance leaders (`docs/LAUNCH.md`).
 3. **Logo:** done. Jake merged PR #2 (Option D). An SVG of the logo would make it sharper later. Not required.
 4. Future site changes go on a fresh branch and a new pull request. Jake clicks merge himself. Never merge for him.
+5. **Hero picker pull request (PR #4).** Jake added the fourth Calendly question on 2026-10-16. Left for Jake: open the test link in `docs/BOOKING.md` section 2b and check that the role, problem, and owner boxes arrive filled in. Then merge when happy.
+6. **Decisions left:**
+   - "Explain" still appears in "What you can hand us" and in one answer. The hero no longer uses it. Jake decides if those change too.
 
 ## The stages
 

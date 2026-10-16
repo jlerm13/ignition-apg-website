@@ -90,7 +90,7 @@ Set by Jake in the build prompt:
   - No contractions, semicolons, or em or en dashes.
   - No marketing adjectives. The full banned list is in `CLAUDE.md`.
 - **Approved lines:**
-  - "Athlete data your staff can trust."
+  - "Performance data your staff can trust." (Jake, 2026-10-16. It was "Athlete data your staff can trust.")
   - "Performance staff cannot trust their numbers, and nobody owns fixing them."
   - The vision paragraph in `docs/BRIEF.md` section 3.4.
 - **Look:** careful, checked, and calm. Evidence over effects. Avoid the sports-tech look: dark background with neon green, athlete silhouettes, lens flares, glowing dashboards, and gradient blobs.
