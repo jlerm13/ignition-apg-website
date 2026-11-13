@@ -1,6 +1,6 @@
 # Message sheet (approved)
 
-Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 8 add Jake's changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
+Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 8 add Jake's changes of 2026-10-13. Version 9 (2026-11-13) is approved by Jake line by line. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
@@ -8,7 +8,7 @@ How to read it:
 - Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
 - What is left for you is at the bottom.
 
-## What changed in v9 (2026-11-13, draft for Jake's review)
+## What changed in v9 (2026-11-13, approved by Jake line by line)
 
 Jake chose seven ideas from the copy brainstorm, after the 3000-foot view in `docs/POSITIONING.md`. Sections 1 to 4, one answer in section 6, and one paragraph in section 7 changed. The other sections of this sheet were not touched in v9. The live copy for every section is `src/content/site.ts`.
 
@@ -243,7 +243,7 @@ All six answers are yours or approved by you. None names a compliance standard. 
 | Text | Today, our focus is giving each of those departments its own performance data specialist. That specialist works across the systems already in place and keeps the recurring data workflow running. |
 | Text | Our focus has evolved, but the principle remains the same: make professional-level support more accessible. |
 
-Approved as written by Jake on 2026-10-13. Paragraph three was shortened on 2026-11-13 (draft for Jake's review), because the problem section now makes the same point. There is no personal story and no photo.
+Approved as written by Jake on 2026-10-13. Paragraph three was shortened on 2026-11-13 (Jake approved), because the problem section now makes the same point. There is no personal story and no photo.
 
 ## 8. Final call to action
 

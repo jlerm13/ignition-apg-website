@@ -59,7 +59,7 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 
 ## Changes from Jake, 2026-11-13 (outcomes, the chain, and the four verbs)
 
-These override everything below where they conflict. Jake approved the ideas and the items marked "approved". The exact new wording marked "draft" waits for his review of the preview. The words are in `docs/MESSAGE.md` v9. The reasoning is in `docs/POSITIONING.md`.
+These override everything below where they conflict. Jake approved the ideas first, then every new line one by one on 2026-11-13 (15 lines, all yes). Where an item below says "draft", read "approved". The words are in `docs/MESSAGE.md` v9. The reasoning is in `docs/POSITIONING.md`.
 
 1. **The 3000-foot view (Jake approved it as clear and concise).** Ignition APG is managed data operations. Departments have the devices and the staff who decide. The work in between has no owner. We sell that owner: one specialist who runs the middle, with software to do the repetitive parts. Jake said this must be clear on the page.
 2. **New facts from Jake:**

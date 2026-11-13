@@ -11,7 +11,7 @@ Last updated: 2026-11-13
 
 ## In progress (2026-11-13): outcomes, the chain, and seven copy ideas
 
-**A draft is built on the branch `claude/zen-bardeen-kl4lxp`. It is not live. Jake reviews the screenshots, then decides.** The live site (`main`) has not changed.
+**A draft is built on the branch `claude/zen-bardeen-kl4lxp`. Jake approved every word. It is not live until he merges it.** The live site (`main`) has not changed.
 
 - **Why:** Jake found the page went from the problem straight into task detail. He asked what Ignition APG does at the 3000-foot level, approved that explanation (`docs/POSITIONING.md`), and chose all seven ideas from the copy brainstorm. He said the line "we sell that owner: one specialist who runs the middle, with software to do the repetitive parts" must be clear on the page.
 - **What the draft changes** (words in `docs/MESSAGE.md` v9, decisions in `docs/BRIEF.md`, layout in `docs/DESIGN.md`):
@@ -25,13 +25,11 @@ Last updated: 2026-11-13
   - "Who we are" paragraph three is shorter.
 - **Approved by Jake:** the outcomes section and its button, the timing outcome, one line per verb, the verb change, the guide line, and all seven ideas.
 - **Approved by Jake in a Y or N round (2026-11-13), now in the draft:** the label "What stays with your staff" and the plainer text above it, "What we are not" as its own row with bold labels ("Not interpretation", "Not a software product", "Not consulting"), and the line "Software alone does not close this gap. It takes a person who follows through." under the chain heading. The second outcome's supporting line stays as it is. "Managed data operations" stays off the site and is saved for marketing.
-- **Waiting on Jake (draft wording he has seen in screenshots and not yet approved line by line):**
-  - The four new symptoms and the two contrast lines.
-  - The new hero text.
-  - The chain: its two end lines, its lead text, and the caption.
-  - The third outcome's supporting line: "The work no longer waits until someone is free."
-  - The new specialist heading and the shorter "Who we are" paragraph three.
-  - Whether the page needs a line for departments with no AMS.
+- **Approved by Jake line by line (2026-11-13, 15 lines, all yes):** the hero text, the four symptoms, the two contrast lines, the third outcome's supporting line, the two end lines of the chain, the caption and closing line, the new specialist heading and text, and the shorter "Who we are" paragraph three. Every word in the draft is now approved.
+- **Waiting on Jake:**
+  - Whether to run the independent design and copy review on the full draft before it goes live.
+  - Whether to open a pull request. He clicks merge himself.
+  - Whether the page needs a line for departments with no AMS (not blocking).
 - **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
 - **Earlier in this session:** a first draft of the outcomes section was reviewed with the Impeccable critique, the Hallmark audit, and the Unslop checklist (run as separate reviewers on a private preview). Their fixes are in this draft. The new chain and the other six ideas have not had that review yet.
 - **`scripts/check-claims.mjs`** now reads a claim line from a paragraph as well as a list item.
