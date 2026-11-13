@@ -4,14 +4,23 @@ Last updated: 2026-11-13
 
 ## Where we are
 
-**Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
+**Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. The latest change is PR #5, merged on 2026-11-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
-- Working branch: `claude/zen-bardeen-kl4lxp` (from `main`, 2026-11-13). It holds a draft that is not merged. See "In progress" below. Every earlier branch is merged. Jake clicks merge himself.
+- Working branch: `claude/zen-bardeen-kl4lxp` (restarted from `main` on 2026-11-13). It holds the new `CLAUDE.md`, not merged. See "In progress" below. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
 
-## In progress (2026-11-13): outcomes, the chain, and seven copy ideas
+## In progress (2026-11-13): new `CLAUDE.md`
 
-**The work is on the branch `claude/zen-bardeen-kl4lxp`, in a pull request. Jake approved every word. It is not live until he merges it.** The live site (`main`) has not changed.
+On the branch `claude/zen-bardeen-kl4lxp` (restarted from `main` after pull request #5 merged). Not merged yet. It changes project instructions only. Nothing on the site changes.
+
+- Jake asked for a proper `CLAUDE.md` built with the guidelines at github.com/multica-ai/andrej-karpathy-skills.
+- The four guidelines are merged into a new "How to work" section, adapted to this repo. `docs/SKILLS.md` records the source and the commit.
+- Every hard rule is kept. Stale parts were updated: the site is live, the stage list became "Where things stand", Jake's standing decisions are in one list (with the four verbs, "never fix", the AMS fact, and the phrases saved for marketing), and "done" now names the checks.
+- **Waiting on Jake:** read the new file, then say whether to open a pull request.
+
+## Live since 2026-11-13: outcomes, the chain, and clearer positioning
+
+Jake merged pull request #5 on 2026-11-13. Everything below is live.
 
 - **Why:** Jake found the page went from the problem straight into task detail. He asked what Ignition APG does at the 3000-foot level, approved that explanation (`docs/POSITIONING.md`), and chose all seven ideas from the copy brainstorm. He said the line "we sell that owner: one specialist who runs the middle, with software to do the repetitive parts" must be clear on the page.
 - **What the draft changes** (words in `docs/MESSAGE.md` v9, decisions in `docs/BRIEF.md`, layout in `docs/DESIGN.md`):
@@ -42,8 +51,7 @@ Last updated: 2026-11-13
     - The Deliver line as two sentences.
     - Picker choice "Cleaning files and refreshing reports" (was "Exporting…"). `docs/BOOKING.md` matches. The Calendly question is free text, so Jake changes nothing in Calendly.
 - **Waiting on Jake:**
-  - Merge pull request #5 (https://github.com/jlerm13/ignition-apg-website/pull/5) when ready. He clicks merge himself. Vercel then publishes `main`.
-  - After the merge: open the live site on a phone, tap through the hero picker with "Cleaning files and refreshing reports", and check that Calendly opens with it filled in.
+  - Open the live site on a phone, tap through the hero picker with "Cleaning files and refreshing reports", and check that Calendly opens with it filled in.
   - Whether the page needs a line for departments with no AMS (not blocking).
 - **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
 - **Earlier in this session:** a first draft of the outcomes section had the same three reviews on a private preview. Their fixes are in this draft.
