@@ -45,7 +45,8 @@ export const rolePicker = {
     hint: "Choose the closest answer.",
     // Each choice fills the Calendly problem question. "Fix" is not used: BRIEF.md bans it for values.
     choices: [
-      "Exporting files and refreshing reports",
+      // 2026-11-13: "Exporting" became "Cleaning", because the staff still send the exports.
+      "Cleaning files and refreshing reports",
       "Finding missing or wrong data",
       "Connecting data from different systems",
       "Getting reports ready before coaches need them",
@@ -78,7 +79,7 @@ export const problem = {
     "Each new system adds work, because the systems do not work together.",
   ],
   contrast: [
-    "Well-resourced programs have a specialist for this work.",
+    "Well-resourced programs often have a specialist for this work.",
     "In many departments, it falls to a coach, a sport scientist, or a graduate assistant, on top of the main job.",
   ],
 };
@@ -101,7 +102,7 @@ export const chain = {
   heading: "One person owns your data work.",
   // The first line says why a person is needed (Jake, 2026-11-13).
   text: [
-    "Software alone does not close this gap. It takes a person who follows through.",
+    "Software alone does not close the gap between collection and decision. It takes a person who follows through.",
     "Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results.",
   ],
   caption: "Illustration: the chain from devices to decisions.",
@@ -115,7 +116,7 @@ export const chain = {
     { verb: "Organize", text: "We organize the exports your systems already produce. We keep every original file and log what is missing." },
     { verb: "Check", text: "We find missing, duplicate, and wrong values. Every number links back to its source file." },
     { verb: "Connect", text: "We match each athlete across your systems. We link GPS, testing, and other data to that athlete." },
-    { verb: "Deliver", text: "We build and update the reports your staff use, and we explain what each one shows and what it cannot show." },
+    { verb: "Deliver", text: "We build and update the reports your staff use. We explain what each one shows and what it cannot show." },
   ],
   end: {
     title: "Decisions",
@@ -160,7 +161,7 @@ export const staysWithStaff = {
     heading: "What we are not",
     items: [
       { label: "Not interpretation.", text: "We do not tell you what the data means for an athlete." },
-      { label: "Not a software product.", text: "Your staff do not get another tool to learn and run." },
+      { label: "Not a software product.", text: "Your specialist runs our software. Your staff log in only to see the results." },
       { label: "Not consulting.", text: "We do not advise and leave. We do the work every week." },
     ],
   },

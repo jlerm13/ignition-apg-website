@@ -11,7 +11,7 @@ Last updated: 2026-11-13
 
 ## In progress (2026-11-13): outcomes, the chain, and seven copy ideas
 
-**A draft is built on the branch `claude/zen-bardeen-kl4lxp`. Jake approved every word. It is not live until he merges it.** The live site (`main`) has not changed.
+**The work is on the branch `claude/zen-bardeen-kl4lxp`, in a pull request. Jake approved every word. It is not live until he merges it.** The live site (`main`) has not changed.
 
 - **Why:** Jake found the page went from the problem straight into task detail. He asked what Ignition APG does at the 3000-foot level, approved that explanation (`docs/POSITIONING.md`), and chose all seven ideas from the copy brainstorm. He said the line "we sell that owner: one specialist who runs the middle, with software to do the repetitive parts" must be clear on the page.
 - **What the draft changes** (words in `docs/MESSAGE.md` v9, decisions in `docs/BRIEF.md`, layout in `docs/DESIGN.md`):
@@ -34,16 +34,17 @@ Last updated: 2026-11-13
     - Dark band: the three "not" labels are quieter than the two headings.
     - Symptom order is now trust, time, late report, systems, so the three outcomes answer the first three in order. No words changed.
     - Lists keep their list role for screen readers.
-  - **Waiting on Jake (each changes approved wording or adds a button):**
-    - "Not a software product." Its sentence says staff get no tool, but "What do we get?" says staff log in to our platform. Proposed: "Your specialist runs our software. Your staff log in only to see the results."
-    - A booking button under the chain's closing line, on phones only. Today there are about six phone screens with no way to book.
-    - "Well-resourced programs often have a specialist for this work." (adds "often", to match Jake's stated fact).
-    - "Software alone does not close the gap between collection and decision." (names the gap).
+  - **Approved by Jake (six yes answers) and built:**
+    - "Not a software product. Your specialist runs our software. Your staff log in only to see the results."
+    - A booking button under the chain's closing line, on phones only.
+    - "Well-resourced programs often have a specialist for this work."
+    - "Software alone does not close the gap between collection and decision."
     - The Deliver line as two sentences.
-    - Picker choice "Exporting files and refreshing reports" becomes "Cleaning files and refreshing reports", because staff still send the exports.
-- **Also waiting on Jake:**
+    - Picker choice "Cleaning files and refreshing reports" (was "Exporting…"). `docs/BOOKING.md` matches. The Calendly question is free text, so Jake changes nothing in Calendly.
+- **Waiting on Jake:**
+  - Merge the pull request when ready. He clicks merge himself. Vercel then publishes `main`.
+  - After the merge: open the live site on a phone, tap through the hero picker with "Cleaning files and refreshing reports", and check that Calendly opens with it filled in.
   - Whether the page needs a line for departments with no AMS (not blocking).
-- **Pull request:** Jake said yes. Open it after his answers to the list above. He clicks merge himself.
 - **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
 - **Earlier in this session:** a first draft of the outcomes section had the same three reviews on a private preview. Their fixes are in this draft.
 - **`scripts/check-claims.mjs`** now reads a claim line from a paragraph as well as a list item.

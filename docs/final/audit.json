@@ -62,14 +62,14 @@
       "thank-you": []
     },
     "weight": {
-      "firstLoadKB": 112,
+      "firstLoadKB": 112.4,
       "jsKB": 2.7,
       "files": [
-        "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
-        "/ 29624",
-        "/_astro/Base.CsI_oQu2.css 17678",
-        "/logo-ignition-apg.png 27815",
+        "/ 29976",
         "/_vercel/insights/script.js 0",
+        "/_astro/Base.BBHD-M_8.css 17737",
+        "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
+        "/logo-ignition-apg.png 27815",
         "/favicon.png 4647"
       ]
     },

@@ -178,6 +178,8 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
         <figcaption class="mt-10 border-rule-2 text-small text-muted lg:border-t lg:pt-3">{chain.caption}</figcaption>
       </figure>
       <p class="mt-6 font-bold">{chain.closingLine}</p>
+      <!-- Phones only: the header button is hidden there, and the next booking button is several screens away. -->
+      <a class="btn mt-6 w-full min-[30rem]:hidden" href={links.booking} data-event="cta_click" data-section="chain">{site.bookButton}</a>
     </div>
   </section>
 

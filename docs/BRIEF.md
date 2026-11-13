@@ -83,7 +83,14 @@ These override everything below where they conflict. Jake approved the ideas fir
    - The second outcome's supporting line stays "They stop cleaning files and refreshing reports." for now.
    - "High-value staff" stays in the symptom line. "Expensive people doing clerical work" is not used.
    - "Managed data operations" and "the unglamorous middle" stay off the site. Jake wants them saved for marketing. They are in `docs/POSITIONING.md`.
-9. **Rejected on purpose:** "without another AMS", "no dashboards", any hours-per-week figure, "before morning lift", and any line about readiness reports. They break the hard rules or are not true.
+9. **After the second independent review (Jake, six yes answers, 2026-11-13):**
+   - "Not a software product. Your specialist runs our software. Your staff log in only to see the results." The earlier sentence contradicted "Your staff log in to our platform to see the results."
+   - A booking button under the chain's closing line, on phones only (event section "chain").
+   - "Well-resourced programs often have a specialist for this work."
+   - "Software alone does not close the gap between collection and decision. It takes a person who follows through."
+   - Deliver: "We build and update the reports your staff use. We explain what each one shows and what it cannot show."
+   - Picker choice: "Cleaning files and refreshing reports" replaces "Exporting files and refreshing reports", because the staff still send the exports. This overrides the problem choices in the 2026-10-16 section below.
+10. **Rejected on purpose:** "without another AMS", "no dashboards", any hours-per-week figure, "before morning lift", and any line about readiness reports. They break the hard rules or are not true.
 
 ## Changes from Jake, 2026-10-16 (hero picker, "How it starts", hero words)
 

@@ -19,7 +19,8 @@ Jake chose seven ideas from the copy brainstorm, after the 3000-foot view in `do
 - **The four verbs are Organize, Check, Connect, Deliver** everywhere (Jake, 2026-11-13). They replace Collect, Check, Connect, Explain.
 - **Section 3b** has a new heading, taken from Jake's own first sentence: "Your specialist becomes an extension of your staff." Lines now said in section 3 are gone from 3b.
 - **Section 4:** the six lines now sit under their own label, "What stays with your staff", and the text above them is plainer. Three "What we are not" lines sit in their own row below, each with a bold label (Jake approved these words on 2026-11-13).
-- **Section 3** opens with why a person is needed: "Software alone does not close this gap. It takes a person who follows through." (Jake approved, 2026-11-13).
+- **Section 3** opens with why a person is needed: "Software alone does not close the gap between collection and decision. It takes a person who follows through." (Jake approved, 2026-11-13).
+- **After the second review (Jake, six yes answers, 2026-11-13):** "Not a software product" no longer contradicts the platform login. A booking button sits under the chain on phones. "often" is in the contrast line. The Deliver line is two sentences. The picker choice "Exporting files and refreshing reports" is now "Cleaning files and refreshing reports".
 - **Said once:** "works across the systems you already use" and "our software does the repeat checks" each appear in one section now. "Who we are" paragraph three is shorter, because the problem section makes the same point.
 
 ## What changed in v8 (Jake, 2026-10-13, round 4)
@@ -107,7 +108,7 @@ The role picker (three taps, Jake, 2026-10-16) is unchanged. Its words are in `s
 | Symptom | High-value staff spend time cleaning files and refreshing reports, because no one else is there to do it. |
 | Symptom | The report arrives after coaches needed it, because the work waits until someone is free. |
 | Symptom | Each new system adds work, because the systems do not work together. |
-| Contrast | Well-resourced programs have a specialist for this work. |
+| Contrast | Well-resourced programs often have a specialist for this work. |
 | Contrast | In many departments, it falls to a coach, a sport scientist, or a graduate assistant, on top of the main job. |
 
 The contrast uses Jake's facts from round 4 ("Who we are"). It says "many", not "most". There is no button in this section now.
@@ -134,7 +135,7 @@ On the page this section is the chain, under the heading "One person owns your d
 | Element | Copy |
 |---|---|
 | Heading | One person owns your data work. |
-| Text | Software alone does not close this gap. It takes a person who follows through. |
+| Text | Software alone does not close the gap between collection and decision. It takes a person who follows through. |
 | Text | Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results. |
 | Owner label | Your staff |
 | Start | Devices and tests |
@@ -147,12 +148,13 @@ On the page this section is the chain, under the heading "One person owns your d
 | Group | Connect |
 | Item | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. |
 | Group | Deliver |
-| Item | We build and update the reports your staff use, and we explain what each one shows and what it cannot show. |
+| Item | We build and update the reports your staff use. We explain what each one shows and what it cannot show. |
 | Owner label | Your staff |
 | End | Decisions |
 | End text | Your staff add context, interpret the information, and make the decisions. |
 | Caption | Illustration: the chain from devices to decisions. |
 | Closing line | On the call, we show you how your specialist does this work. |
+| Button (phones only) | Book a 30-minute workflow review |
 
 The chain shows no numbers and carries the label "Illustration" (hard rule 10).
 
@@ -191,7 +193,7 @@ A role, not a person: no name, no photo, no avatar, no icon. The week is an orde
 | Not label | Not interpretation. |
 | Not | We do not tell you what the data means for an athlete. |
 | Not label | Not a software product. |
-| Not | Your staff do not get another tool to learn and run. |
+| Not | Your specialist runs our software. Your staff log in only to see the results. |
 | Not label | Not consulting. |
 | Not | We do not advise and leave. We do the work every week. |
 
@@ -314,7 +316,7 @@ This is for you, not for the page. Row numbers follow the table in `docs/BRIEF.m
 | Organize | We organize the exports your systems already produce. We keep every original file and log what is missing. | Row 1 (the exports from your systems; "collect" became "organize" on 2026-11-13). Row 2 (keep every original file, log what is missing). |
 | Check | We find missing, duplicate, and wrong values. Every number links back to its source file. | Row 3 (find missing, duplicate, and wrong values). Row 5, first sentence. |
 | Connect | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. | Row 6 (match each athlete). Row 8 (link GPS, testing, and other data). |
-| Deliver | We build and update the reports your staff use, and we explain what each one shows and what it cannot show. | Row 9 (build and update reports). Row 10 (what each report shows and cannot show). |
+| Deliver | We build and update the reports your staff use. We explain what each one shows and what it cannot show. | Row 9 (build and update reports). Row 10 (what each report shows and cannot show). |
 
 Confirmed rows that sit elsewhere on the page:
 
