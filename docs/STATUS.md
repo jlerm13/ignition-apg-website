@@ -1,6 +1,6 @@
 # Status
 
-Last updated: 2026-10-16 (evening)
+Last updated: 2026-11-13
 
 ## Where we are
 
@@ -8,6 +8,29 @@ Last updated: 2026-10-16 (evening)
 
 - Working branch for the hero picker change: `claude/adoring-ritchie-41urmh` (new, from `main`). Every earlier branch is merged. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
+
+## In progress (2026-11-13): outcomes section and shorter list
+
+Nothing is built on the site yet. The branch for this work is `claude/zen-bardeen-kl4lxp`. So far it holds only `docs/POSITIONING.md` and this note.
+
+- **New reference file:** `docs/POSITIONING.md`, the 3000-foot view of what Ignition APG does (managed data operations: the middle between devices and decisions has no owner). Jake asked to keep it. It is not page copy.
+- **Approved by Jake, not yet built:**
+  - A new section after the problem section, "What changes for your staff", as three ruled rows (statement left, supporting line right), then the booking button. The button moves there from the end of the problem section, and its event section becomes "outcomes".
+    - "Your staff can trust the numbers." / "We review every flagged number before a report goes out."
+    - "Your staff get their time back." / "They stop cleaning files and refreshing reports."
+    - "Reports arrive before coaches need them." / "Your staff get checked reports on the schedule you agree."
+  - "What you can hand us" becomes one line per verb:
+    - "We collect the exports your systems already produce. We keep every original file and log what is missing." (The first verb word is waiting on the decision below.)
+    - "We find missing, duplicate, and wrong values. Every number links back to its source file."
+    - "We match each athlete across your systems. We link GPS, testing, and other data to that athlete."
+    - "We build and update the reports your staff use, and we explain what each one shows and what it cannot show."
+  - Last line of the week list: "Each month, your specialist updates your written guide to your sources, definitions, and methods."
+- **Waiting on Jake:**
+  - The verb change. Recommended: Organize, Check, Connect, Deliver everywhere, to match the hero. Then the first list line starts "We organize the exports…", and the answer to "Do you make decisions about athletes?" ends "We organize, check, connect, and deliver the data they use."
+  - Whether the page needs a line for departments with no AMS. Jake's fact: we work across the whole tech stack, and a department may have an AMS.
+  - Which ideas from the copy brainstorm (2026-11-13) to take further, if any.
+- **Reviews done on a private preview** (Impeccable critique, Hallmark audit, Unslop checklist): the first draft of the section was revised after them. Their fixes are in the approved wording above.
+- **When building:** update `docs/MESSAGE.md`, `docs/BRIEF.md`, `docs/DESIGN.md` (a new "Outcome rows" component), and the approved list that `scripts/check-claims.mjs` reads. Then run `npm run check`.
 
 ## Done
 
