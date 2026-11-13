@@ -4,19 +4,17 @@ Last updated: 2026-11-13
 
 ## Where we are
 
-**Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. The latest change is PR #5, merged on 2026-11-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
+**Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. The latest site change is PR #5, merged on 2026-11-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
-- Working branch: `claude/zen-bardeen-kl4lxp` (restarted from `main` on 2026-11-13). It holds the new `CLAUDE.md`, not merged. See "In progress" below. Jake clicks merge himself.
+- No branch is waiting. Pull requests #5 and #6 are merged. Start new work on a new branch from `main`. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
 
-## In progress (2026-11-13): new `CLAUDE.md`
+## Nothing in progress
 
-On the branch `claude/zen-bardeen-kl4lxp` (restarted from `main` after pull request #5 merged). Not merged yet. It changes project instructions only. Nothing on the site changes.
-
-- Jake asked for a proper `CLAUDE.md` built with the guidelines at github.com/multica-ai/andrej-karpathy-skills.
-- The four guidelines are merged into a new "How to work" section, adapted to this repo. `docs/SKILLS.md` records the source and the commit.
-- Every hard rule is kept. Stale parts were updated: the site is live, the stage list became "Where things stand", Jake's standing decisions are in one list (with the four verbs, "never fix", the AMS fact, and the phrases saved for marketing), and "done" now names the checks.
-- **Waiting on Jake:** read the new file, then say whether to open a pull request.
+- **New `CLAUDE.md`: merged.** Jake merged pull request #6 on 2026-11-13. It adds the "How to work" section (four working guidelines, source in `docs/SKILLS.md`) and brings the rules up to date. It changed project instructions only.
+- **Still open for Jake, not blocking:**
+  - Test the hero picker on a phone on the live site (see the next section).
+  - Whether the page needs a line for departments with no AMS.
 
 ## Live since 2026-11-13: outcomes, the chain, and clearer positioning
 
