@@ -1,4 +1,4 @@
-# Design skills
+# Skills and guidelines
 
 All skills are installed at project level in `.claude/skills/`, so the repo records them. They were installed on 2026-10-12.
 
@@ -79,6 +79,19 @@ What we lose: Impeccable's automatic detector and its live mode. These checks co
 - `scripts/scan.mjs` was read before install. It has no dependencies and reads files only. It never edits files and makes no network calls.
 - By default it skips folders named `dist`, so point it directly at the built site folder.
 - Its own test file, `scripts/scan.test.mjs`, is not needed for our use.
+
+## Working guidelines in `CLAUDE.md` (not a skill folder)
+
+Added on 2026-11-13 at Jake's request.
+
+- **Source:** `CLAUDE.md` at github.com/multica-ai/andrej-karpathy-skills, commit `2c606141936f1eeef17fa3043a72095b4765b9c2`.
+- **What it is:** four short working guidelines: think before coding, simplicity first, surgical changes, and goal-driven execution. It is one text file. It has no scripts, no installer, and no network calls. It was read in full before use.
+- **How it was installed:** by hand. Its four guidelines were merged into the "How to work" section of this repo's `CLAUDE.md`, as the source file itself suggests. Nothing was added to `.claude/skills/`.
+- **Local changes:**
+  - Reworded to this repo's plain style.
+  - Each guideline has an "In this repo" line.
+  - Its examples about writing tests were replaced by this repo's own checks: `npm run check`, `node scripts/audit.mjs`, screenshots, and matching docs.
+- **Rank:** below the hard rules, the brief, WCAG, and `docs/DESIGN.md`. See "When sources disagree" in `CLAUDE.md`.
 
 ## Reading skills before use
 
