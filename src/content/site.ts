@@ -73,8 +73,8 @@ export const problem = {
   heading: "Performance staff have the data. Nobody owns the work between collection and decision.",
   symptoms: [
     "Staff do not fully trust the numbers, because nobody has time to check them.",
-    "The report arrives after coaches needed it, because the work waits until someone is free.",
     "High-value staff spend time cleaning files and refreshing reports, because no one else is there to do it.",
+    "The report arrives after coaches needed it, because the work waits until someone is free.",
     "Each new system adds work, because the systems do not work together.",
   ],
   contrast: [
@@ -83,7 +83,8 @@ export const problem = {
   ],
 };
 
-// Outcomes (Jake, 2026-11-13). What changes for the visitor's staff. Each line answers one symptom above.
+// Outcomes (Jake, 2026-11-13). What changes for the visitor's staff. They answer the first three symptoms, in order.
+// The chain's Connect row answers the fourth.
 export const outcomes = {
   heading: "What changes for your staff",
   items: [

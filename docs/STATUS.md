@@ -26,12 +26,26 @@ Last updated: 2026-11-13
 - **Approved by Jake:** the outcomes section and its button, the timing outcome, one line per verb, the verb change, the guide line, and all seven ideas.
 - **Approved by Jake in a Y or N round (2026-11-13), now in the draft:** the label "What stays with your staff" and the plainer text above it, "What we are not" as its own row with bold labels ("Not interpretation", "Not a software product", "Not consulting"), and the line "Software alone does not close this gap. It takes a person who follows through." under the chain heading. The second outcome's supporting line stays as it is. "Managed data operations" stays off the site and is saved for marketing.
 - **Approved by Jake line by line (2026-11-13, 15 lines, all yes):** the hero text, the four symptoms, the two contrast lines, the third outcome's supporting line, the two end lines of the chain, the caption and closing line, the new specialist heading and text, and the shorter "Who we are" paragraph three. Every word in the draft is now approved.
-- **Waiting on Jake:**
-  - Whether to run the independent design and copy review on the full draft before it goes live.
-  - Whether to open a pull request. He clicks merge himself.
+- **Second independent review, on the full draft (2026-11-13):** Impeccable critique 24 of 32, "ship with fixes". Hallmark audit 0 critical, 3 major, 13 minor. Unslop checklist: all 12 pass. Both named the same top three.
+  - **Fixed without changing any wording:**
+    - The chain on phones and tablets: the hand-back to the staff is now plain (ink rule, ink label, a stem with an arrowhead, more space). Before, "Decisions" could be read as the specialist's fifth step.
+    - Chain headings: each owner label is now the heading of its part, and the three parts are an ordered list.
+    - Arrowhead contrast and position, label baselines, small-text token, off-scale gaps.
+    - Dark band: the three "not" labels are quieter than the two headings.
+    - Symptom order is now trust, time, late report, systems, so the three outcomes answer the first three in order. No words changed.
+    - Lists keep their list role for screen readers.
+  - **Waiting on Jake (each changes approved wording or adds a button):**
+    - "Not a software product." Its sentence says staff get no tool, but "What do we get?" says staff log in to our platform. Proposed: "Your specialist runs our software. Your staff log in only to see the results."
+    - A booking button under the chain's closing line, on phones only. Today there are about six phone screens with no way to book.
+    - "Well-resourced programs often have a specialist for this work." (adds "often", to match Jake's stated fact).
+    - "Software alone does not close the gap between collection and decision." (names the gap).
+    - The Deliver line as two sentences.
+    - Picker choice "Exporting files and refreshing reports" becomes "Cleaning files and refreshing reports", because staff still send the exports.
+- **Also waiting on Jake:**
   - Whether the page needs a line for departments with no AMS (not blocking).
+- **Pull request:** Jake said yes. Open it after his answers to the list above. He clicks merge himself.
 - **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
-- **Earlier in this session:** a first draft of the outcomes section was reviewed with the Impeccable critique, the Hallmark audit, and the Unslop checklist (run as separate reviewers on a private preview). Their fixes are in this draft. The new chain and the other six ideas have not had that review yet.
+- **Earlier in this session:** a first draft of the outcomes section had the same three reviews on a private preview. Their fixes are in this draft.
 - **`scripts/check-claims.mjs`** now reads a claim line from a paragraph as well as a list item.
 - **Next:** Jake reviews. After his changes, open a pull request only when he asks. He clicks merge himself.
 

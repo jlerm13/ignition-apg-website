@@ -104,8 +104,8 @@ The role picker (three taps, Jake, 2026-10-16) is unchanged. Its words are in `s
 |---|---|
 | Heading | Performance staff have the data. Nobody owns the work between collection and decision. |
 | Symptom | Staff do not fully trust the numbers, because nobody has time to check them. |
-| Symptom | The report arrives after coaches needed it, because the work waits until someone is free. |
 | Symptom | High-value staff spend time cleaning files and refreshing reports, because no one else is there to do it. |
+| Symptom | The report arrives after coaches needed it, because the work waits until someone is free. |
 | Symptom | Each new system adds work, because the systems do not work together. |
 | Contrast | Well-resourced programs have a specialist for this work. |
 | Contrast | In many departments, it falls to a coach, a sport scientist, or a graduate assistant, on top of the main job. |
@@ -125,7 +125,7 @@ The contrast uses Jake's facts from round 4 ("Who we are"). It says "many", not 
 | Support | The work no longer waits until someone is free. |
 | Button | Book a 30-minute workflow review |
 
-Each outcome answers one symptom in section 2. The first support line is confirmed row 5, word for word.
+The three outcomes answer the first three symptoms in section 2, in the same order. The Connect row of the chain answers the fourth. The first support line is confirmed row 5, word for word.
 
 ## 3. What you can hand us
 
