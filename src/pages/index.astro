@@ -146,7 +146,9 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     <div class="wrap">
       <div class="grid-12 gap-y-4">
         <h2 id="chain-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:col-span-5">{chain.heading}</h2>
-        <p class="col-span-12 max-w-[46ch] text-lead leading-[1.45] text-neutral lg:col-start-7 lg:col-span-6">{chain.text}</p>
+        <div class="col-span-12 max-w-[46ch] space-y-3 text-lead leading-[1.45] lg:col-start-7 lg:col-span-6">
+          {chain.text.map((line, i) => <p class={i === 0 ? "font-bold" : "text-neutral"}>{line}</p>)}
+        </div>
       </div>
       <figure class="mt-10">
         <div class="chain grid-12 gap-y-10">
@@ -204,24 +206,36 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     </div>
   </section>
 
-  <!-- 4. What stays with your staff: the one ink band. -->
+  <!-- 4. What stays with your staff: the one ink band. The six lines carry their own label. "What we are not" is a separate row below. -->
   <section class="bg-ink py-16 text-on-ink md:py-26" aria-labelledby="stays-title">
-    <div class="wrap grid-12 gap-y-10">
-      <div class="col-span-12 lg:col-span-5">
-        <h2 id="stays-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{staysWithStaff.heading}</h2>
-        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-on-ink-muted">{staysWithStaff.text}</p>
-        <h3 class="mt-10 text-lead font-extrabold tracking-[-0.01em]">{staysWithStaff.not.heading}</h3>
-        <ul class="mt-2">
-          {staysWithStaff.not.items.map((item) => <li class="border-t border-ink-2 py-3 text-item leading-[1.4] first:border-t-0">{item}</li>)}
+    <div class="wrap">
+      <div class="grid-12 gap-y-10">
+        <div class="col-span-12 lg:col-span-5">
+          <h2 id="stays-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{staysWithStaff.heading}</h2>
+          <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-on-ink-muted">{staysWithStaff.text}</p>
+        </div>
+        <div class="col-span-12 lg:col-start-7 lg:col-span-6">
+          <h3 id="stays-list" class="text-lead font-extrabold tracking-[-0.01em]">{staysWithStaff.listLabel}</h3>
+          <ul class="mt-4 grid gap-x-10 sm:grid-cols-2" aria-labelledby="stays-list">
+            {staysWithStaff.items.map((item) => (
+              <li class="border-t border-ink-2 py-4 text-item leading-[1.4]" data-claim="stays">
+                {split(item).map((part, i, all) => <>{part}{i < all.length - 1 && <span class="whitespace-nowrap">{TERM}</span>}</>)}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+      <div class="mt-16 border-t-2 border-on-ink pt-6">
+        <h3 id="not-list" class="text-lead font-extrabold tracking-[-0.01em]">{staysWithStaff.not.heading}</h3>
+        <ul class="mt-4" aria-labelledby="not-list">
+          {staysWithStaff.not.items.map((item) => (
+            <li class="grid-12 gap-y-1 border-t border-ink-2 py-4">
+              <p class="col-span-12 text-lead font-extrabold tracking-[-0.01em] lg:col-span-5">{item.label}</p>
+              <p class="col-span-12 text-item leading-[1.4] lg:col-start-7 lg:col-span-6">{item.text}</p>
+            </li>
+          ))}
         </ul>
       </div>
-      <ul class="col-span-12 grid gap-x-10 sm:grid-cols-2 lg:col-start-7 lg:col-span-6">
-        {staysWithStaff.items.map((item) => (
-          <li class="border-t border-ink-2 py-4 text-item leading-[1.4]" data-claim="stays">
-            {split(item).map((part, i, all) => <>{part}{i < all.length - 1 && <span class="whitespace-nowrap">{TERM}</span>}</>)}
-          </li>
-        ))}
-      </ul>
     </div>
   </section>
 

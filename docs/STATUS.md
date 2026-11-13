@@ -21,15 +21,15 @@ Last updated: 2026-11-13
   - The chain replaces the "What you can hand us" list: staff own the devices and tests and the decisions, the specialist owns Organize, Check, Connect, Deliver. Labelled "Illustration". One line per verb.
   - The four verbs are Organize, Check, Connect, Deliver everywhere.
   - Specialist section: new heading "Your specialist becomes an extension of your staff.", shorter text, and the written-guide line.
-  - Dark band: three "What we are not" lines.
+  - Dark band: the six lines under the label "What stays with your staff", then "What we are not" in its own row.
   - "Who we are" paragraph three is shorter.
 - **Approved by Jake:** the outcomes section and its button, the timing outcome, one line per verb, the verb change, the guide line, and all seven ideas.
-- **Waiting on Jake (draft wording he has not read yet):**
+- **Approved by Jake in a Y or N round (2026-11-13), now in the draft:** the label "What stays with your staff" and the plainer text above it, "What we are not" as its own row with bold labels ("Not interpretation", "Not a software product", "Not consulting"), and the line "Software alone does not close this gap. It takes a person who follows through." under the chain heading. The second outcome's supporting line stays as it is. "Managed data operations" stays off the site and is saved for marketing.
+- **Waiting on Jake (draft wording he has seen in screenshots and not yet approved line by line):**
   - The four new symptoms and the two contrast lines.
   - The new hero text.
   - The chain: its two end lines, its lead text, and the caption.
   - The third outcome's supporting line: "The work no longer waits until someone is free."
-  - The three "What we are not" lines.
   - The new specialist heading and the shorter "Who we are" paragraph three.
   - Whether the page needs a line for departments with no AMS.
 - **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.

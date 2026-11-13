@@ -76,7 +76,14 @@ These override everything below where they conflict. Jake approved the ideas and
    6. Each point is said once. Repeated lines were cut from the specialist section and "Who we are".
    7. The hero text leads with the gap.
 7. **Week list, last line** (approved): "Each month, your specialist updates your written guide to your sources, definitions, and methods."
-8. **Rejected on purpose:** "without another AMS", "no dashboards", any hours-per-week figure, "before morning lift", and any line about readiness reports. They break the hard rules or are not true.
+8. **Approved by Jake, Y or N round (2026-11-13):**
+   - The six "stays with your staff" lines carry the label "What stays with your staff". The text above them is "These decisions and tasks stay with your staff. We support them with checked data. We never take them over."
+   - "What we are not" is its own row under the six lines: "Not interpretation. We do not tell you what the data means for an athlete." "Not a software product. Your staff do not get another tool to learn and run." "Not consulting. We do not advise and leave. We do the work every week." Jake chose "Not interpretation" over "Not analytics".
+   - Under the chain heading: "Software alone does not close this gap. It takes a person who follows through."
+   - The second outcome's supporting line stays "They stop cleaning files and refreshing reports." for now.
+   - "High-value staff" stays in the symptom line. "Expensive people doing clerical work" is not used.
+   - "Managed data operations" and "the unglamorous middle" stay off the site. Jake wants them saved for marketing. They are in `docs/POSITIONING.md`.
+9. **Rejected on purpose:** "without another AMS", "no dashboards", any hours-per-week figure, "before morning lift", and any line about readiness reports. They break the hard rules or are not true.
 
 ## Changes from Jake, 2026-10-16 (hero picker, "How it starts", hero words)
 

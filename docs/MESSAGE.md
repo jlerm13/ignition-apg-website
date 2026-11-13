@@ -18,7 +18,8 @@ Jake chose seven ideas from the copy brainstorm, after the 3000-foot view in `do
 - **Section 3 is now the chain.** It shows who owns each part of the work: the staff own the devices and tests and the decisions, and the specialist owns the middle. The heading is "One person owns your data work." The "What you can hand us" list is one line per verb, inside the chain.
 - **The four verbs are Organize, Check, Connect, Deliver** everywhere (Jake, 2026-11-13). They replace Collect, Check, Connect, Explain.
 - **Section 3b** has a new heading, taken from Jake's own first sentence: "Your specialist becomes an extension of your staff." Lines now said in section 3 are gone from 3b.
-- **Section 4** adds three "What we are not" lines.
+- **Section 4:** the six lines now sit under their own label, "What stays with your staff", and the text above them is plainer. Three "What we are not" lines sit in their own row below, each with a bold label (Jake approved these words on 2026-11-13).
+- **Section 3** opens with why a person is needed: "Software alone does not close this gap. It takes a person who follows through." (Jake approved, 2026-11-13).
 - **Said once:** "works across the systems you already use" and "our software does the repeat checks" each appear in one section now. "Who we are" paragraph three is shorter, because the problem section makes the same point.
 
 ## What changed in v8 (Jake, 2026-10-13, round 4)
@@ -133,6 +134,7 @@ On the page this section is the chain, under the heading "One person owns your d
 | Element | Copy |
 |---|---|
 | Heading | One person owns your data work. |
+| Text | Software alone does not close this gap. It takes a person who follows through. |
 | Text | Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results. |
 | Owner label | Your staff |
 | Start | Devices and tests |
@@ -177,17 +179,21 @@ A role, not a person: no name, no photo, no avatar, no icon. The week is an orde
 | Element | Copy |
 |---|---|
 | Heading | We handle the data work. Your staff keep the judgment. |
-| Text | We support this work with checked data. We never take it over. |
-| Subheading | What we are not |
-| Not | We are not another tool for your staff to run. |
-| Not | We do not tell you what the data means for an athlete. |
-| Not | We do not advise and leave. We do the work every week. |
+| Text | These decisions and tasks stay with your staff. We support them with checked data. We never take them over. |
+| List label | What stays with your staff |
 | Item | Readiness, load, and return-to-play decisions. |
 | Item | Which athletes need a conversation, and what changes in training. |
 | Item | Training plans and sessions. |
 | Item | Putting devices on athletes and running test sessions on site. |
 | Item | Who can see athlete data. You set the rules and we follow them. |
 | Item | Your data strategy and which tools to buy. |
+| Subheading | What we are not |
+| Not label | Not interpretation. |
+| Not | We do not tell you what the data means for an athlete. |
+| Not label | Not a software product. |
+| Not | Your staff do not get another tool to learn and run. |
+| Not label | Not consulting. |
+| Not | We do not advise and leave. We do the work every week. |
 
 This list gets the same visual weight as section 3. The six items use the confirmed wording without change. They give away no method, and they answer the director's biggest fear, so they stay in full.
 

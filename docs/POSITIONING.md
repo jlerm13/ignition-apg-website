@@ -2,6 +2,8 @@
 
 Saved on 2026-11-13 at Jake's request. He called this explanation clear and concise, and wants it kept for reference.
 
+**Saved for marketing (Jake, 2026-11-13).** "Managed data operations" and "the unglamorous middle" stay off the website. Jake wants them kept for marketing use elsewhere.
+
 **How to use this file.** It is an internal reference for what Ignition APG does and why. It is not page copy. Any line that moves to the site must still pass the rules in `CLAUDE.md` and trace to `docs/BRIEF.md`. For example, the word "prediction" below is fine here and is not allowed on the site.
 
 ---

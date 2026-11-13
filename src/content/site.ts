@@ -98,7 +98,11 @@ export const outcomes = {
 // The four lines must match the Items in docs/MESSAGE.md section 3 (scripts/check-claims.mjs).
 export const chain = {
   heading: "One person owns your data work.",
-  text: "Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results.",
+  // The first line says why a person is needed (Jake, 2026-11-13).
+  text: [
+    "Software alone does not close this gap. It takes a person who follows through.",
+    "Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results.",
+  ],
   caption: "Illustration: the chain from devices to decisions.",
   staff: "Your staff",
   specialist: "Your performance data specialist",
@@ -147,14 +151,16 @@ export const specialist = {
 
 export const staysWithStaff = {
   heading: "We handle the data work. Your staff keep the judgment.",
-  text: "We support this work with checked data. We never take it over.",
-  // What we are not (2026-11-13). Three plain limits beside the six confirmed lines.
+  text: "These decisions and tasks stay with your staff. We support them with checked data. We never take them over.",
+  // The label over the six confirmed lines, so nobody reads them as things we do (Jake, 2026-11-13).
+  listLabel: "What stays with your staff",
+  // What we are not (Jake, 2026-11-13). Its own row under the six lines.
   not: {
     heading: "What we are not",
     items: [
-      "We are not another tool for your staff to run.",
-      "We do not tell you what the data means for an athlete.",
-      "We do not advise and leave. We do the work every week.",
+      { label: "Not interpretation.", text: "We do not tell you what the data means for an athlete." },
+      { label: "Not a software product.", text: "Your staff do not get another tool to learn and run." },
+      { label: "Not consulting.", text: "We do not advise and leave. We do the work every week." },
     ],
   },
   items: [
