@@ -6,31 +6,36 @@ Last updated: 2026-11-13
 
 **Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
-- Working branch for the hero picker change: `claude/adoring-ritchie-41urmh` (new, from `main`). Every earlier branch is merged. Jake clicks merge himself.
+- Working branch: `claude/zen-bardeen-kl4lxp` (from `main`, 2026-11-13). It holds a draft that is not merged. See "In progress" below. Every earlier branch is merged. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
 
-## In progress (2026-11-13): outcomes section and shorter list
+## In progress (2026-11-13): outcomes, the chain, and seven copy ideas
 
-Nothing is built on the site yet. The branch for this work is `claude/zen-bardeen-kl4lxp`. So far it holds only `docs/POSITIONING.md` and this note.
+**A draft is built on the branch `claude/zen-bardeen-kl4lxp`. It is not live. Jake reviews the screenshots, then decides.** The live site (`main`) has not changed.
 
-- **New reference file:** `docs/POSITIONING.md`, the 3000-foot view of what Ignition APG does (managed data operations: the middle between devices and decisions has no owner). Jake asked to keep it. It is not page copy.
-- **Approved by Jake, not yet built:**
-  - A new section after the problem section, "What changes for your staff", as three ruled rows (statement left, supporting line right), then the booking button. The button moves there from the end of the problem section, and its event section becomes "outcomes".
-    - "Your staff can trust the numbers." / "We review every flagged number before a report goes out."
-    - "Your staff get their time back." / "They stop cleaning files and refreshing reports."
-    - "Reports arrive before coaches need them." / "Your staff get checked reports on the schedule you agree."
-  - "What you can hand us" becomes one line per verb:
-    - "We collect the exports your systems already produce. We keep every original file and log what is missing." (The first verb word is waiting on the decision below.)
-    - "We find missing, duplicate, and wrong values. Every number links back to its source file."
-    - "We match each athlete across your systems. We link GPS, testing, and other data to that athlete."
-    - "We build and update the reports your staff use, and we explain what each one shows and what it cannot show."
-  - Last line of the week list: "Each month, your specialist updates your written guide to your sources, definitions, and methods."
-- **Waiting on Jake:**
-  - The verb change. Recommended: Organize, Check, Connect, Deliver everywhere, to match the hero. Then the first list line starts "We organize the exports…", and the answer to "Do you make decisions about athletes?" ends "We organize, check, connect, and deliver the data they use."
-  - Whether the page needs a line for departments with no AMS. Jake's fact: we work across the whole tech stack, and a department may have an AMS.
-  - Which ideas from the copy brainstorm (2026-11-13) to take further, if any.
-- **Reviews done on a private preview** (Impeccable critique, Hallmark audit, Unslop checklist): the first draft of the section was revised after them. Their fixes are in the approved wording above.
-- **When building:** update `docs/MESSAGE.md`, `docs/BRIEF.md`, `docs/DESIGN.md` (a new "Outcome rows" component), and the approved list that `scripts/check-claims.mjs` reads. Then run `npm run check`.
+- **Why:** Jake found the page went from the problem straight into task detail. He asked what Ignition APG does at the 3000-foot level, approved that explanation (`docs/POSITIONING.md`), and chose all seven ideas from the copy brainstorm. He said the line "we sell that owner: one specialist who runs the middle, with software to do the repetitive parts" must be clear on the page.
+- **What the draft changes** (words in `docs/MESSAGE.md` v9, decisions in `docs/BRIEF.md`, layout in `docs/DESIGN.md`):
+  - Hero text leads with the gap.
+  - Problem: each symptom gives its cause. The contrast with well-resourced programs replaces the old four-line answer. No button here.
+  - New section "What changes for your staff": three outcome rows, then the booking button (event section "outcomes").
+  - The chain replaces the "What you can hand us" list: staff own the devices and tests and the decisions, the specialist owns Organize, Check, Connect, Deliver. Labelled "Illustration". One line per verb.
+  - The four verbs are Organize, Check, Connect, Deliver everywhere.
+  - Specialist section: new heading "Your specialist becomes an extension of your staff.", shorter text, and the written-guide line.
+  - Dark band: three "What we are not" lines.
+  - "Who we are" paragraph three is shorter.
+- **Approved by Jake:** the outcomes section and its button, the timing outcome, one line per verb, the verb change, the guide line, and all seven ideas.
+- **Waiting on Jake (draft wording he has not read yet):**
+  - The four new symptoms and the two contrast lines.
+  - The new hero text.
+  - The chain: its two end lines, its lead text, and the caption.
+  - The third outcome's supporting line: "The work no longer waits until someone is free."
+  - The three "What we are not" lines.
+  - The new specialist heading and the shorter "Who we are" paragraph three.
+  - Whether the page needs a line for departments with no AMS.
+- **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
+- **Earlier in this session:** a first draft of the outcomes section was reviewed with the Impeccable critique, the Hallmark audit, and the Unslop checklist (run as separate reviewers on a private preview). Their fixes are in this draft. The new chain and the other six ideas have not had that review yet.
+- **`scripts/check-claims.mjs`** now reads a claim line from a paragraph as well as a list item.
+- **Next:** Jake reviews. After his changes, open a pull request only when he asks. He clicks merge himself.
 
 ## Done
 

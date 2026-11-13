@@ -1,5 +1,5 @@
 {
-  "date": "2026-10-15",
+  "date": "2026-11-13",
   "results": {
     "axe": {
       "404@375": [],
@@ -62,14 +62,14 @@
       "thank-you": []
     },
     "weight": {
-      "firstLoadKB": 100.5,
-      "jsKB": 0.6,
+      "firstLoadKB": 110.2,
+      "jsKB": 2.7,
       "files": [
-        "/ 20254",
-        "/_vercel/insights/script.js 0",
-        "/_astro/Base.DRhwZSvn.css 15237",
-        "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
+        "/ 28372",
         "/logo-ignition-apg.png 27815",
+        "/_astro/Base.u0Z7EM6p.css 17125",
+        "/_astro/archivo-latin-wght-normal.E0tuGl4L.woff2 34928",
+        "/_vercel/insights/script.js 0",
         "/favicon.png 4647"
       ]
     },

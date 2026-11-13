@@ -57,6 +57,27 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 1. The closing line of "How it starts" is now: "Staff ask questions by email, Slack, or text. They see results on our platform." It replaces the original "Your staff reach us by email, Slack, or text. No new login is needed to ask a question." The old line could read as a contradiction of "Your staff log in to our platform to see the results."
 2. Jake approved the Stage 4 audit.
 
+## Changes from Jake, 2026-11-13 (outcomes, the chain, and the four verbs)
+
+These override everything below where they conflict. Jake approved the ideas and the items marked "approved". The exact new wording marked "draft" waits for his review of the preview. The words are in `docs/MESSAGE.md` v9. The reasoning is in `docs/POSITIONING.md`.
+
+1. **The 3000-foot view (Jake approved it as clear and concise).** Ignition APG is managed data operations. Departments have the devices and the staff who decide. The work in between has no owner. We sell that owner: one specialist who runs the middle, with software to do the repetitive parts. Jake said this must be clear on the page.
+2. **New facts from Jake:**
+   - Ignition APG works across the department's whole tech stack. A department may have an AMS, and the specialist works across it. Ignition APG is not an alternative to an AMS. Do not position the site against AMS products.
+3. **The four verbs are Organize, Check, Connect, Deliver** (approved). They replace Collect, Check, Connect, Explain in the list and in the answer to "Do you make decisions about athletes?". Reasons: "collect" clashed with the problem heading, where collection is the staff's work, and "explain" sat too close to "interpret", which stays with staff. In section 3.6 below, the group names Collect and Explain now read Organize and Deliver. The rows do not change.
+4. **New section "What changes for your staff"** after the problem section (approved): three outcomes in ruled rows, then the booking button. The timing outcome replaced the ownership outcome (approved). The button moved here from the problem section (approved). Its event section is "outcomes".
+5. **"What you can hand us" is one line per verb** (approved), now shown inside the chain (draft). "We record each system's definitions" stays on the "Save for the call" list.
+6. **Seven copy ideas, all chosen by Jake** (the wording is draft):
+   1. The chain as a diagram, labelled "Illustration", with no numbers: devices and tests, the four verbs, decisions. The two ends are marked "Your staff" and the middle "Your performance data specialist".
+   2. The contrast with well-resourced programs moves up into the problem section.
+   3. "You have both ends": said once, in the hero text, and drawn in the chain.
+   4. Each symptom gives its cause with "because".
+   5. Three "What we are not" lines in the dark band.
+   6. Each point is said once. Repeated lines were cut from the specialist section and "Who we are".
+   7. The hero text leads with the gap.
+7. **Week list, last line** (approved): "Each month, your specialist updates your written guide to your sources, definitions, and methods."
+8. **Rejected on purpose:** "without another AMS", "no dashboards", any hours-per-week figure, "before morning lift", and any line about readiness reports. They break the hard rules or are not true.
+
 ## Changes from Jake, 2026-10-16 (hero picker, "How it starts", hero words)
 
 These override the role picker lines in the 2026-10-13 section below, and the "How it starts" and hero text further down.

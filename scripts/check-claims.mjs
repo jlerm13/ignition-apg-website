@@ -20,7 +20,7 @@ const files = [];
 const decode = (s) => s.replace(/&amp;/g, "&").replace(/&#39;|&#x27;/g, "'").replace(/&quot;/g, '"').replace(/&nbsp;/g, " ");
 const visible = (html) => decode(html.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<style[\s\S]*?<\/style>/g, "").replace(/<[^>]+>/g, "\n"))
   .split("\n").map((l) => l.replace(/\s+/g, " ").trim()).filter(Boolean);
-const claims = (html, kind) => [...html.matchAll(new RegExp(`<li[^>]*data-claim="${kind}"[^>]*>([\\s\\S]*?)</li>`, "g"))].map((m) => decode(m[1].replace(/<[^>]+>/g, "")).trim());
+const claims = (html, kind) => [...html.matchAll(new RegExp(`<(li|p)[^>]*data-claim="${kind}"[^>]*>([\\s\\S]*?)</\\1>`, "g"))].map((m) => decode(m[2].replace(/<[^>]+>/g, "")).trim());
 
 // Approved lines.
 const message = readFileSync("docs/MESSAGE.md", "utf8");
