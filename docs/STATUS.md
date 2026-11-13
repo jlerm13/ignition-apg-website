@@ -1,13 +1,54 @@
 # Status
 
-Last updated: 2026-10-16 (evening)
+Last updated: 2026-11-13
 
 ## Where we are
 
 **Stage 5 (launch): done. The site is live.** Jake merged PR #1 on 2026-10-13. Vercel publishes `main` to https://ignition-apg-website.vercel.app. What is left is Jake's launch checklist in `docs/LAUNCH.md`.
 
-- Working branch for the hero picker change: `claude/adoring-ritchie-41urmh` (new, from `main`). Every earlier branch is merged. Jake clicks merge himself.
+- Working branch: `claude/zen-bardeen-kl4lxp` (from `main`, 2026-11-13). It holds a draft that is not merged. See "In progress" below. Every earlier branch is merged. Jake clicks merge himself.
 - Rules for every session: `CLAUDE.md`. Source of truth for copy and claims: `docs/BRIEF.md`.
+
+## In progress (2026-11-13): outcomes, the chain, and seven copy ideas
+
+**The work is on the branch `claude/zen-bardeen-kl4lxp`, in a pull request. Jake approved every word. It is not live until he merges it.** The live site (`main`) has not changed.
+
+- **Why:** Jake found the page went from the problem straight into task detail. He asked what Ignition APG does at the 3000-foot level, approved that explanation (`docs/POSITIONING.md`), and chose all seven ideas from the copy brainstorm. He said the line "we sell that owner: one specialist who runs the middle, with software to do the repetitive parts" must be clear on the page.
+- **What the draft changes** (words in `docs/MESSAGE.md` v9, decisions in `docs/BRIEF.md`, layout in `docs/DESIGN.md`):
+  - Hero text leads with the gap.
+  - Problem: each symptom gives its cause. The contrast with well-resourced programs replaces the old four-line answer. No button here.
+  - New section "What changes for your staff": three outcome rows, then the booking button (event section "outcomes").
+  - The chain replaces the "What you can hand us" list: staff own the devices and tests and the decisions, the specialist owns Organize, Check, Connect, Deliver. Labelled "Illustration". One line per verb.
+  - The four verbs are Organize, Check, Connect, Deliver everywhere.
+  - Specialist section: new heading "Your specialist becomes an extension of your staff.", shorter text, and the written-guide line.
+  - Dark band: the six lines under the label "What stays with your staff", then "What we are not" in its own row.
+  - "Who we are" paragraph three is shorter.
+- **Approved by Jake:** the outcomes section and its button, the timing outcome, one line per verb, the verb change, the guide line, and all seven ideas.
+- **Approved by Jake in a Y or N round (2026-11-13), now in the draft:** the label "What stays with your staff" and the plainer text above it, "What we are not" as its own row with bold labels ("Not interpretation", "Not a software product", "Not consulting"), and the line "Software alone does not close this gap. It takes a person who follows through." under the chain heading. The second outcome's supporting line stays as it is. "Managed data operations" stays off the site and is saved for marketing.
+- **Approved by Jake line by line (2026-11-13, 15 lines, all yes):** the hero text, the four symptoms, the two contrast lines, the third outcome's supporting line, the two end lines of the chain, the caption and closing line, the new specialist heading and text, and the shorter "Who we are" paragraph three. Every word in the draft is now approved.
+- **Second independent review, on the full draft (2026-11-13):** Impeccable critique 24 of 32, "ship with fixes". Hallmark audit 0 critical, 3 major, 13 minor. Unslop checklist: all 12 pass. Both named the same top three.
+  - **Fixed without changing any wording:**
+    - The chain on phones and tablets: the hand-back to the staff is now plain (ink rule, ink label, a stem with an arrowhead, more space). Before, "Decisions" could be read as the specialist's fifth step.
+    - Chain headings: each owner label is now the heading of its part, and the three parts are an ordered list.
+    - Arrowhead contrast and position, label baselines, small-text token, off-scale gaps.
+    - Dark band: the three "not" labels are quieter than the two headings.
+    - Symptom order is now trust, time, late report, systems, so the three outcomes answer the first three in order. No words changed.
+    - Lists keep their list role for screen readers.
+  - **Approved by Jake (six yes answers) and built:**
+    - "Not a software product. Your specialist runs our software. Your staff log in only to see the results."
+    - A booking button under the chain's closing line, on phones only.
+    - "Well-resourced programs often have a specialist for this work."
+    - "Software alone does not close the gap between collection and decision."
+    - The Deliver line as two sentences.
+    - Picker choice "Cleaning files and refreshing reports" (was "Exporting…"). `docs/BOOKING.md` matches. The Calendly question is free text, so Jake changes nothing in Calendly.
+- **Waiting on Jake:**
+  - Merge pull request #5 (https://github.com/jlerm13/ignition-apg-website/pull/5) when ready. He clicks merge himself. Vercel then publishes `main`.
+  - After the merge: open the live site on a phone, tap through the hero picker with "Cleaning files and refreshing reports", and check that Calendly opens with it filled in.
+  - Whether the page needs a line for departments with no AMS (not blocking).
+- **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
+- **Earlier in this session:** a first draft of the outcomes section had the same three reviews on a private preview. Their fixes are in this draft.
+- **`scripts/check-claims.mjs`** now reads a claim line from a paragraph as well as a list item.
+- **Next:** Jake reviews. After his changes, open a pull request only when he asks. He clicks merge himself.
 
 ## Done
 

@@ -1,12 +1,27 @@
 # Message sheet (approved)
 
-Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 8 add Jake's changes of 2026-10-13. This is every word on the site, in page order. There is no design yet.
+Version 4, approved by Jake at gate 1 on 2026-10-12. Versions 5 to 8 add Jake's changes of 2026-10-13. Version 9 (2026-11-13) is approved by Jake line by line. This is every word on the site, in page order. There is no design yet.
 
 How to read it:
 
 - The **Copy** column is what visitors will see.
 - Every slot you had to fill is now filled. The only placeholder left is the privacy date, which is set at launch.
 - What is left for you is at the bottom.
+
+## What changed in v9 (2026-11-13, approved by Jake line by line)
+
+Jake chose seven ideas from the copy brainstorm, after the 3000-foot view in `docs/POSITIONING.md`. Sections 1 to 4, one answer in section 6, and one paragraph in section 7 changed. The other sections of this sheet were not touched in v9. The live copy for every section is `src/content/site.ts`.
+
+- **Hero text** leads with the gap: the department has the devices and the staff who decide, and we give it the person who owns the work in between.
+- **Problem section:** each symptom now gives its cause ("because"). The four-line answer is replaced by the contrast with well-resourced programs. The booking button moved to the new section 2b.
+- **New section 2b, "What changes for your staff":** three outcomes, each answering one symptom, then the booking button.
+- **Section 3 is now the chain.** It shows who owns each part of the work: the staff own the devices and tests and the decisions, and the specialist owns the middle. The heading is "One person owns your data work." The "What you can hand us" list is one line per verb, inside the chain.
+- **The four verbs are Organize, Check, Connect, Deliver** everywhere (Jake, 2026-11-13). They replace Collect, Check, Connect, Explain.
+- **Section 3b** has a new heading, taken from Jake's own first sentence: "Your specialist becomes an extension of your staff." Lines now said in section 3 are gone from 3b.
+- **Section 4:** the six lines now sit under their own label, "What stays with your staff", and the text above them is plainer. Three "What we are not" lines sit in their own row below, each with a bold label (Jake approved these words on 2026-11-13).
+- **Section 3** opens with why a person is needed: "Software alone does not close the gap between collection and decision. It takes a person who follows through." (Jake approved, 2026-11-13).
+- **After the second review (Jake, six yes answers, 2026-11-13):** "Not a software product" no longer contradicts the platform login. A booking button sits under the chain on phones. "often" is in the contrast line. The Deliver line is two sentences. The picker choice "Exporting files and refreshing reports" is now "Cleaning files and refreshing reports".
+- **Said once:** "works across the systems you already use" and "our software does the repeat checks" each appear in one section now. "Who we are" paragraph three is shorter, because the problem section makes the same point.
 
 ## What changed in v8 (Jake, 2026-10-13, round 4)
 
@@ -77,69 +92,87 @@ How to read it:
 | Element | Copy |
 |---|---|
 | Label | A performance data specialist for your athletic department |
-| Heading | Athlete data your staff can trust. |
-| Text | Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist collects, checks, connects, and explains athlete data. |
+| Heading | Performance data your staff can trust. |
+| Text | Your department has the devices and the staff who make the decisions. Ignition APG gives you a performance data specialist who owns the work in between, supported by our software. |
 | Prompt | What best describes your role? |
-| Role button | Director of High Performance |
-| Role button | Director of Sports Science |
-| Role button | Director of Strength and Conditioning |
-| Role button | Sport scientist |
-| Role button | Athletic trainer |
-| Link | Other role? Book a 30-minute workflow review |
-| Under the button | Every decision stays with your coaches and clinicians. |
+| Under the picker | Your staff keep the context, interpretation, and decisions. |
 
-Each role button opens Calendly with that role filled in. The "Other role?" link opens Calendly with no role filled in. Setup: `docs/BOOKING.md`, "Role prefill".
+The role picker (three taps, Jake, 2026-10-16) is unchanged. Its words are in `src/content/site.ts` and `docs/BRIEF.md`.
 
-## 2. The problem (rewritten by Jake, 2026-10-13)
+## 2. The problem (heading by Jake, 2026-10-13; symptoms and contrast, 2026-11-13)
 
 | Element | Copy |
 |---|---|
 | Heading | Performance staff have the data. Nobody owns the work between collection and decision. |
-| Symptom | High-value staff spend time cleaning files and refreshing reports. |
-| Symptom | The report arrives after coaches needed the information. |
-| Symptom | One person manages data from GPS, force plates, and the AMS, but the systems do not work together. |
-| Symptom | Each new system adds work when nobody owns the workflow. |
-| Solution | Ignition APG gives your staff a performance data specialist. |
-| Solution | The specialist works across the systems you already use. |
-| Solution | We monitor incoming data, investigate problems, maintain the workflow, and deliver current information before coaches need it. |
-| Solution | Your staff add context, interpret the information, and make the decisions. |
-| Button | Book a 30-minute workflow review |
+| Symptom | Staff do not fully trust the numbers, because nobody has time to check them. |
+| Symptom | High-value staff spend time cleaning files and refreshing reports, because no one else is there to do it. |
+| Symptom | The report arrives after coaches needed it, because the work waits until someone is free. |
+| Symptom | Each new system adds work, because the systems do not work together. |
+| Contrast | Well-resourced programs often have a specialist for this work. |
+| Contrast | In many departments, it falls to a coach, a sport scientist, or a graduate assistant, on top of the main job. |
 
-The symptoms appear as plain lines, with no names and no quote marks. Jake's draft said "Ignition", "a dedicated sport science data operator", and "Your staff adds". With his approval these became "Ignition APG", "a sport science data specialist" ("dedicated" is a banned word, and "data specialist" is the site's one term), and "Your staff add". In v7 the line became "a performance data specialist".
+The contrast uses Jake's facts from round 4 ("Who we are"). It says "many", not "most". There is no button in this section now.
 
-## 3. What you can hand us
+## 2b. What changes for your staff (Jake, 2026-11-13)
 
 | Element | Copy |
 |---|---|
-| Heading | What you can hand us |
-| Text | Your performance data specialist does this work for your staff. On the call, we show you how. |
-| Group | Collect |
-| Item | We collect the exports your systems already produce, and we keep every original file. |
-| Group | Check |
-| Item | We find missing, duplicate, and wrong values. We find the cause. We correct it with your staff, or we exclude it and record the reason. |
-| Item | Every number links back to its source file. We review every flagged number before a report goes out. |
-| Group | Connect |
-| Item | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. |
-| Group | Explain |
-| Item | We build and update the reports your staff use. We answer their data questions by email, Slack, or text. |
-| Item | We explain what each report shows and what it cannot show. |
-| Item | We give you a written guide to your sources, definitions, and methods. |
+| Heading | What changes for your staff |
+| Outcome | Your staff can trust the numbers. |
+| Support | We review every flagged number before a report goes out. |
+| Outcome | Your staff get their time back. |
+| Support | They stop cleaning files and refreshing reports. |
+| Outcome | Reports arrive before coaches need them. |
+| Support | The work no longer waits until someone is free. |
+| Button | Book a 30-minute workflow review |
 
-## 3b. Your performance data specialist (Jake, 2026-10-13)
+The three outcomes answer the first three symptoms in section 2, in the same order. The Connect row of the chain answers the fourth. The first support line is confirmed row 5, word for word.
+
+## 3. What you can hand us
+
+On the page this section is the chain, under the heading "One person owns your data work." The four Items below are the "What you can hand us" lines. `scripts/check-claims.mjs` reads them from here.
 
 | Element | Copy |
 |---|---|
 | Heading | One person owns your data work. |
-| Text | Your performance data specialist learns your systems, your sports, and your staff. Our software does the repeat checks. Your specialist reviews every flagged number. You do not get a support queue. |
+| Text | Software alone does not close the gap between collection and decision. It takes a person who follows through. |
+| Text | Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results. |
+| Owner label | Your staff |
+| Start | Devices and tests |
+| Start text | Your staff put devices on athletes, run the tests, and send the exports. |
+| Owner label | Your performance data specialist |
+| Group | Organize |
+| Item | We organize the exports your systems already produce. We keep every original file and log what is missing. |
+| Group | Check |
+| Item | We find missing, duplicate, and wrong values. Every number links back to its source file. |
+| Group | Connect |
+| Item | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. |
+| Group | Deliver |
+| Item | We build and update the reports your staff use. We explain what each one shows and what it cannot show. |
+| Owner label | Your staff |
+| End | Decisions |
+| End text | Your staff add context, interpret the information, and make the decisions. |
+| Caption | Illustration: the chain from devices to decisions. |
+| Closing line | On the call, we show you how your specialist does this work. |
+| Button (phones only) | Book a 30-minute workflow review |
+
+The chain shows no numbers and carries the label "Illustration" (hard rule 10).
+
+## 3b. Your performance data specialist (Jake, 2026-10-13 and 2026-10-16; trimmed 2026-11-13)
+
+| Element | Copy |
+|---|---|
+| Heading | Your specialist becomes an extension of your staff. |
+| Text | Send a text, email, or Slack message, whichever your team already uses. You do not get a support queue. |
+| Text | Your specialist learns your systems, your sports, and your weekly rhythm. |
 | Subheading | Who your performance data specialist is |
 | Point | Your performance data specialist has worked in sports performance and in data. |
-| Point | They work with your staff by email, Slack, or text. |
 | Subheading | A week with your performance data specialist |
 | Week item | After each session, your staff send the exports. Your specialist checks them. |
 | Week item | When a number looks wrong, your specialist finds the cause. They correct it with your staff, or exclude it and record the reason. |
 | Week item | Your staff get checked reports on the schedule you agree. |
 | Week item | Any day, your staff message your specialist with data questions. |
-| Week item | Each month, your specialist updates your data guide. |
+| Week item | Each month, your specialist updates your written guide to your sources, definitions, and methods. |
 
 A role, not a person: no name, no photo, no avatar, no icon. The week is an ordered list with no visible numbers.
 
@@ -148,13 +181,21 @@ A role, not a person: no name, no photo, no avatar, no icon. The week is an orde
 | Element | Copy |
 |---|---|
 | Heading | We handle the data work. Your staff keep the judgment. |
-| Text | We support this work with checked data. We never take it over. |
+| Text | These decisions and tasks stay with your staff. We support them with checked data. We never take them over. |
+| List label | What stays with your staff |
 | Item | Readiness, load, and return-to-play decisions. |
 | Item | Which athletes need a conversation, and what changes in training. |
 | Item | Training plans and sessions. |
 | Item | Putting devices on athletes and running test sessions on site. |
 | Item | Who can see athlete data. You set the rules and we follow them. |
 | Item | Your data strategy and which tools to buy. |
+| Subheading | What we are not |
+| Not label | Not interpretation. |
+| Not | We do not tell you what the data means for an athlete. |
+| Not label | Not a software product. |
+| Not | Your specialist runs our software. Your staff log in only to see the results. |
+| Not label | Not consulting. |
+| Not | We do not advise and leave. We do the work every week. |
 
 This list gets the same visual weight as section 3. The six items use the confirmed wording without change. They give away no method, and they answer the director's biggest fear, so they stay in full.
 
@@ -185,7 +226,7 @@ None of these steps cost money. Step 3 makes no time promise, so "30-minute" sta
 | Question | Which systems do you work with? |
 | Answer | Your staff send the exports their systems already produce. We need no new connections and no IT project. |
 | Question | Do you make decisions about athletes? |
-| Answer | No. Readiness, load, and return-to-play decisions stay with your coaches and clinicians. We collect, check, connect, and explain the data they use. |
+| Answer | No. Readiness, load, and return-to-play decisions stay with your coaches and clinicians. We organize, check, connect, and deliver the data they use. |
 | Question | How do you protect athlete data? |
 | Answer | You decide who can see athlete data. You set the rules and we follow them. For the first review, you can remove athlete names before you send the export. We do not share your data with anyone outside your department. |
 | Question | What does it cost? |
@@ -200,11 +241,11 @@ All six answers are yours or approved by you. None names a compliance standard. 
 | Heading | Who we are |
 | Text | Ignition APG began with a simple mission: help every athlete train like a pro. |
 | Text | For over 20 years, we have brought the principles, standards, and problem-solving approach of elite performance programs to athletes at every level. |
-| Text | Along the way, we saw another gap. Well-resourced sports organizations often have specialized technical staff supporting performance and sport-science data. In many other programs, that work falls to coaches, sport scientists, graduate assistants, and interns alongside their primary responsibilities. |
+| Text | Along the way, we saw another gap. Well-resourced sports organizations often have specialized technical staff for performance data. Many other programs do not. |
 | Text | Today, our focus is giving each of those departments its own performance data specialist. That specialist works across the systems already in place and keeps the recurring data workflow running. |
 | Text | Our focus has evolved, but the principle remains the same: make professional-level support more accessible. |
 
-Approved as written. There is no personal story and no photo.
+Approved as written by Jake on 2026-10-13. Paragraph three was shortened on 2026-11-13 (Jake approved), because the problem section now makes the same point. There is no personal story and no photo.
 
 ## 8. Final call to action
 
@@ -272,13 +313,17 @@ This is for you, not for the page. Row numbers follow the table in `docs/BRIEF.m
 
 | Group | Line on the page | Confirmed rows it comes from |
 |---|---|---|
-| Collect | We collect the exports your systems already produce, and we keep every original file. | Row 1 (collect the exports). Row 2, first half (keep every original file). |
-| Check | We find missing, duplicate, and wrong values. We find the cause. We correct it with your staff, or we exclude it and record the reason. | Row 3 (find missing, duplicate, and wrong values). Row 4, full wording (2026-10-13). |
-| Check | Every number links back to its source file. We review every flagged number before a report goes out. | Row 5, same wording. Back on the page in v3. |
+| Organize | We organize the exports your systems already produce. We keep every original file and log what is missing. | Row 1 (the exports from your systems; "collect" became "organize" on 2026-11-13). Row 2 (keep every original file, log what is missing). |
+| Check | We find missing, duplicate, and wrong values. Every number links back to its source file. | Row 3 (find missing, duplicate, and wrong values). Row 5, first sentence. |
 | Connect | We match each athlete across your systems. We link GPS, testing, and other data to that athlete. | Row 6 (match each athlete). Row 8 (link GPS, testing, and other data). |
-| Explain | We build and update the reports your staff use. We answer their data questions by email, Slack, or text. | Row 9 (build and update reports). Row 11 (answer data questions by email, Slack, or text). |
-| Explain | We explain what each report shows and what it cannot show. | Row 10, same wording. Restored 2026-10-13. |
-| Explain | We give you a written guide to your sources, definitions, and methods. | Row 12, same wording. Restored 2026-10-13. |
+| Deliver | We build and update the reports your staff use. We explain what each one shows and what it cannot show. | Row 9 (build and update reports). Row 10 (what each report shows and cannot show). |
+
+Confirmed rows that sit elsewhere on the page:
+
+- Row 4 (find the cause, correct it with your staff or exclude it): the week list in section 3b.
+- Row 5, second sentence (review every flagged number): the first outcome in section 2b.
+- Row 11 (email, Slack, or text): section 3b and the answer to "What do we get?".
+- Row 12 (the written guide): the last line of the week list.
 
 The page has no response time, no custom reports, and no task IDs. BASIS appears once, in your answer to "What do we get?"
 
@@ -286,7 +331,7 @@ The page has no response time, no custom reports, and no task IDs. BASIS appears
 
 These confirmed items are true, but they are not on the page. They show how your specialist works, so they make good material for your walkthrough.
 
-- **Collect.** We log what arrived and what is missing. (Row 2, second half)
+- **Organize.** "We log what is missing" is on the page since 2026-11-13. The detail of how we log what arrived stays for the call. (Row 2, second half)
 - **Connect.** We convert every value to the same units. We record each system's definitions, so different measures are never mixed. (Row 7)
 - **Now on the page.** "You can remove athlete names first" moved to step 2 and the data protection answer in v4.
 - **Where to start.** Hand us your most painful data problem first. The booking question asks for it, so you know it before the call.

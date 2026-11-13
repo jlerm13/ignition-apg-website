@@ -53,7 +53,7 @@ Role (`a1`):
 - Sport coach
 
 Problem (`a3`). "Something else" sends no problem, so the box is empty:
-- Exporting files and refreshing reports
+- Cleaning files and refreshing reports
 - Finding missing or wrong data
 - Connecting data from different systems
 - Getting reports ready before coaches need them

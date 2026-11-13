@@ -2,7 +2,7 @@
 // The Ignition APG home page. Design: docs/DESIGN.md. Words: src/content/site.ts.
 import Base from "../layouts/Base.astro";
 import {
-  site, links, hero, rolePicker, problem, handUs, specialist, staysWithStaff, howItStarts, questions, whoWeAre, finalCall,
+  site, links, hero, rolePicker, problem, outcomes, chain, specialist, staysWithStaff, howItStarts, questions, whoWeAre, finalCall,
 } from "../content/site";
 
 // Keep "return-to-play" on one line wherever it appears (the words stay as approved).
@@ -31,7 +31,7 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
           <div data-step="role" class="pt-4">
             <p id="step-role-prompt" class="font-bold" tabindex="-1">{rolePicker.prompt}</p>
             <p class="mt-1 text-muted">{rolePicker.hint}</p>
-            <ul class="mt-3 grid gap-2" aria-labelledby="step-role-prompt">
+            <ul role="list" class="mt-3 grid gap-2" aria-labelledby="step-role-prompt">
               {rolePicker.roles.map((role) => (
                 <li><a class="btn btn--choice w-full" href={roleLink(role)} data-pick-role={role}>{role}</a></li>
               ))}
@@ -41,7 +41,7 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
           <div data-step="problem" class="pt-4" hidden>
             <p id="step-problem-prompt" class="font-bold" tabindex="-1">{rolePicker.problem.prompt}</p>
             <p class="mt-1 text-muted">{rolePicker.problem.hint}</p>
-            <ul class="mt-3 grid gap-2" aria-labelledby="step-problem-prompt">
+            <ul role="list" class="mt-3 grid gap-2" aria-labelledby="step-problem-prompt">
               {rolePicker.problem.choices.map((choice) => (
                 <li><a class="btn btn--choice w-full" href={links.booking} data-pick-problem={choice}>{choice}</a></li>
               ))}
@@ -52,7 +52,7 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
           <div data-step="owner" class="pt-4" hidden>
             <p id="step-owner-prompt" class="font-bold" tabindex="-1">{rolePicker.owner.prompt}</p>
             <p class="mt-1 text-muted">{rolePicker.owner.hint}</p>
-            <ul class="mt-3 grid gap-2" aria-labelledby="step-owner-prompt">
+            <ul role="list" class="mt-3 grid gap-2" aria-labelledby="step-owner-prompt">
               {rolePicker.owner.choices.map((choice) => (
                 <li><a class="btn btn--choice w-full" href={links.booking} data-event="cta_click" data-section="hero" data-pick-owner={choice}>{choice}</a></li>
               ))}
@@ -109,39 +109,77 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     })();
   </script>
 
-  <!-- 2. Problem: heading left, symptom rows right, then the answer and a booking button. -->
+  <!-- 2. Problem: heading left, symptom rows right, then the contrast with well-resourced programs. -->
   <section class="py-16 md:py-26" aria-labelledby="problem-title">
     <div class="wrap grid-12 gap-y-10">
       <h2 id="problem-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:sticky lg:top-24 lg:col-span-5 lg:self-start">{problem.heading}</h2>
       <div class="col-span-12 lg:col-start-7 lg:col-span-6">
-        <ul class="border-y-2 border-ink">
+        <ul role="list" class="border-y-2 border-ink">
           {problem.symptoms.map((s) => <li class="border-b border-rule-2 py-4 text-item leading-[1.4] last:border-b-0">{s}</li>)}
         </ul>
         <div class="mt-10 space-y-3 text-lead leading-[1.45]">
-          {problem.solution.map((line, i) => <p class={i < 2 ? "font-bold" : "text-neutral"}>{line}</p>)}
+          {problem.contrast.map((line, i) => <p class={i === 0 ? "font-bold" : "text-neutral"}>{line}</p>)}
         </div>
-        <a class="btn mt-10 max-[30rem]:w-full" href={links.booking} data-event="cta_click" data-section="problem">{site.bookButton}</a>
       </div>
     </div>
   </section>
 
-  <!-- 3. What you can hand us: heading left, the four verb groups right. It mirrors section 4, light then dark. -->
-  <section class="border-t border-rule-2 bg-paper-2 py-16 md:py-26" aria-labelledby="hand-title">
-    <div class="wrap grid-12 gap-y-10">
-      <div class="col-span-12 lg:sticky lg:top-24 lg:col-span-5 lg:self-start">
-        <h2 id="hand-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{handUs.heading}</h2>
-        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-neutral">{handUs.text}</p>
-      </div>
-      <div class="col-span-12 lg:col-start-7 lg:col-span-6">
-        {handUs.groups.map((g) => (
-          <div class="border-t-2 border-ink pt-4 pb-6 last:pb-0">
-            <h3 class="text-lead font-extrabold tracking-[-0.01em]">{g.verb}</h3>
-            <ul class="mt-2 space-y-3">
-              {g.items.map((item) => <li class="text-item leading-[1.4]" data-claim="hand-us">{item}</li>)}
-            </ul>
-          </div>
+  <!-- 2b. What changes for your staff: three ruled rows, the outcome left and its supporting line right, then the booking button. -->
+  <section class="border-t border-rule-2 py-16 md:py-26" aria-labelledby="outcomes-title">
+    <div class="wrap">
+      <h2 id="outcomes-title" class="text-lead font-extrabold tracking-[-0.01em]">{outcomes.heading}</h2>
+      <ul role="list" class="mt-6 border-y-2 border-ink">
+        {outcomes.items.map((item) => (
+          <li class="grid-12 gap-y-3 border-rule-2 py-6 not-last:border-b lg:items-baseline lg:py-10">
+            <h3 class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:col-span-6">{item.title}</h3>
+            <p class="col-span-12 text-lead leading-[1.45] lg:col-start-8 lg:col-span-5">{item.text}</p>
+          </li>
         ))}
+      </ul>
+      <a class="btn mt-10 max-[30rem]:w-full" href={links.booking} data-event="cta_click" data-section="outcomes">{site.bookButton}</a>
+    </div>
+  </section>
+
+  <!-- 3. The chain: who owns each part of the work. The two ends belong to the staff, the middle to the specialist.
+       The four middle lines are the "What you can hand us" claims (scripts/check-claims.mjs). No numbers, labelled "Illustration". -->
+  <section class="border-t border-rule-2 bg-paper-2 py-16 md:py-26" aria-labelledby="chain-title">
+    <div class="wrap">
+      <div class="grid-12 gap-y-4">
+        <h2 id="chain-title" class="col-span-12 text-section leading-[1.08] font-extrabold tracking-[-0.02em] lg:col-span-5">{chain.heading}</h2>
+        <div class="col-span-12 max-w-[46ch] space-y-3 text-lead leading-[1.45] lg:col-start-7 lg:col-span-6">
+          {chain.text.map((line, i) => <p class={i === 0 ? "font-bold" : "text-neutral"}>{line}</p>)}
+        </div>
       </div>
+      <figure class="mt-10">
+        <!-- Three parts in order. Each owner label is the heading of its part, so the outline keeps who owns what. -->
+        <ol role="list" class="grid-12 gap-y-16 lg:gap-y-10">
+          <li class="chain-part col-span-12 lg:col-span-3">
+            <h3 class="chain-owner">{chain.staff}</h3>
+            <h4 class="mt-4 text-lead font-extrabold tracking-[-0.01em]">{chain.start.title}</h4>
+            <p class="mt-2 text-neutral">{chain.start.text}</p>
+          </li>
+          <li class="chain-part chain-part--ours col-span-12 lg:col-span-6">
+            <h3 class="chain-owner">{chain.specialist}</h3>
+            <ol role="list" class="mt-4">
+              {chain.steps.map((step) => (
+                <li class="border-rule-2 py-4 not-last:border-b first:pt-0 last:pb-0 sm:grid sm:grid-cols-[7rem_1fr] sm:items-baseline sm:gap-x-6">
+                  <h4 class="text-lead font-extrabold tracking-[-0.01em]">{step.verb}</h4>
+                  <p class="text-item leading-[1.4] max-sm:mt-2" data-claim="hand-us">{step.text}</p>
+                </li>
+              ))}
+            </ol>
+          </li>
+          <li class="chain-part col-span-12 lg:col-span-3">
+            <h3 class="chain-owner">{chain.staff}</h3>
+            <h4 class="mt-4 text-lead font-extrabold tracking-[-0.01em]">{chain.end.title}</h4>
+            <p class="mt-2 text-neutral">{chain.end.text}</p>
+          </li>
+        </ol>
+        <figcaption class="mt-10 border-rule-2 text-small text-muted lg:border-t lg:pt-3">{chain.caption}</figcaption>
+      </figure>
+      <p class="mt-6 font-bold">{chain.closingLine}</p>
+      <!-- Phones only: the header button is hidden there, and the next booking button is several screens away. -->
+      <a class="btn mt-6 w-full min-[30rem]:hidden" href={links.booking} data-event="cta_click" data-section="chain">{site.bookButton}</a>
     </div>
   </section>
 
@@ -157,13 +195,13 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
       <div class="col-span-12 space-y-10 lg:col-start-7 lg:col-span-6">
         <div class="border-t-2 border-ink pt-4">
           <h3 class="text-lead font-extrabold tracking-[-0.01em]">{specialist.who.heading}</h3>
-          <ul class="mt-2 space-y-3">
+          <ul role="list" class="mt-2 space-y-3">
             {specialist.who.items.map((item) => <li class="text-item leading-[1.4]">{item}</li>)}
           </ul>
         </div>
         <div class="border-t-2 border-ink pt-4">
           <h3 class="text-lead font-extrabold tracking-[-0.01em]">{specialist.week.heading}</h3>
-          <ol class="week mt-2">
+          <ol role="list" class="week mt-2">
             {specialist.week.items.map((item) => <li class="text-item leading-[1.4]">{item}</li>)}
           </ol>
         </div>
@@ -171,20 +209,36 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     </div>
   </section>
 
-  <!-- 4. What stays with your staff: the one ink band. -->
+  <!-- 4. What stays with your staff: the one ink band. The six lines carry their own label. "What we are not" is a separate row below. -->
   <section class="bg-ink py-16 text-on-ink md:py-26" aria-labelledby="stays-title">
-    <div class="wrap grid-12 gap-y-10">
-      <div class="col-span-12 lg:col-span-5">
-        <h2 id="stays-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{staysWithStaff.heading}</h2>
-        <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-on-ink-muted">{staysWithStaff.text}</p>
+    <div class="wrap">
+      <div class="grid-12 gap-y-10">
+        <div class="col-span-12 lg:col-span-5">
+          <h2 id="stays-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{staysWithStaff.heading}</h2>
+          <p class="mt-4 max-w-[46ch] text-lead leading-[1.45] text-on-ink-muted">{staysWithStaff.text}</p>
+        </div>
+        <div class="col-span-12 lg:col-start-7 lg:col-span-6">
+          <h3 id="stays-list" class="text-lead font-extrabold tracking-[-0.01em]">{staysWithStaff.listLabel}</h3>
+          <ul role="list" class="mt-4 grid gap-x-10 sm:grid-cols-2" aria-labelledby="stays-list">
+            {staysWithStaff.items.map((item) => (
+              <li class="border-t border-ink-2 py-4 text-item leading-[1.4]" data-claim="stays">
+                {split(item).map((part, i, all) => <>{part}{i < all.length - 1 && <span class="whitespace-nowrap">{TERM}</span>}</>)}
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <ul class="col-span-12 grid gap-x-10 sm:grid-cols-2 lg:col-start-7 lg:col-span-6">
-        {staysWithStaff.items.map((item) => (
-          <li class="border-t border-ink-2 py-4 text-item leading-[1.4]" data-claim="stays">
-            {split(item).map((part, i, all) => <>{part}{i < all.length - 1 && <span class="whitespace-nowrap">{TERM}</span>}</>)}
-          </li>
-        ))}
-      </ul>
+      <div class="mt-10 border-t-2 border-on-ink pt-6 lg:mt-16">
+        <h3 id="not-list" class="text-lead font-extrabold tracking-[-0.01em]">{staysWithStaff.not.heading}</h3>
+        <ul role="list" class="mt-4" aria-labelledby="not-list">
+          {staysWithStaff.not.items.map((item) => (
+            <li class="grid-12 gap-y-2 border-t border-ink-2 py-4 lg:items-baseline">
+              <p class="col-span-12 text-item font-bold lg:col-span-5">{item.label}</p>
+              <p class="col-span-12 text-item leading-[1.4] lg:col-start-7 lg:col-span-6">{item.text}</p>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -193,7 +247,7 @@ const roleLink = (role: string) => `${links.booking}?a1=${encodeURIComponent(rol
     <div class="wrap">
       <h2 id="start-title" class="text-section leading-[1.08] font-extrabold tracking-[-0.02em]">{howItStarts.heading}</h2>
       <!-- deslop-ignore-next-line 28: three plain text steps in sentence case, not an all-caps card grid -->
-      <ol class="mt-10 grid border-y-2 border-ink md:grid-cols-3">
+      <ol role="list" class="mt-10 grid border-y-2 border-ink md:grid-cols-3">
         {howItStarts.steps.map((step) => (
           <li class="border-rule-2 py-6 max-md:not-last:border-b md:px-6 md:first:pl-0 md:not-last:border-r">
             <h3 class="text-lead font-extrabold tracking-[-0.01em]">{step.title}</h3>

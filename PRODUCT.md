@@ -30,7 +30,7 @@ Set by Jake in the build prompt:
 
 ## Product Purpose
 
-- Ignition APG gives each athletic department its own performance data specialist, one to one. The specialist collects, checks, connects, and explains athlete data, using BASIS, our software. The site names BASIS once, in the answer to "What do we get?"
+- Ignition APG gives each athletic department its own performance data specialist, one to one. The specialist organizes, checks, connects, and delivers performance data, using BASIS, our software. The site names BASIS once, in the answer to "What do we get?"
 - Staff log in to the Ignition APG platform to see results. Asking a question needs no login: they use email, Slack, or text.
 - **The site's one job:** get a qualified college performance leader to book a 30-minute call with us. Jake takes the call. The site says "us," not "Jake."
 - **Success:** qualified bookings. Qualified means a performance staff member at a college or professional program, based on the four booking answers:
@@ -42,7 +42,7 @@ Set by Jake in the build prompt:
 ## Positioning
 
 - Ignition is people doing data work, supported by software. It is not a software product the staff must learn.
-- The service has a written limit: Ignition collects, checks, connects, and explains data. Every decision about athletes stays with coaches and clinicians.
+- The service has a written limit: Ignition organizes, checks, connects, and delivers data (the four verbs since 2026-11-13). Every decision about athletes stays with coaches and clinicians.
 - Ignition works with the exports the department's systems already produce. It needs no new connections, no IT project, and no new login to ask a question.
 
 ## Operating Context
@@ -57,7 +57,7 @@ Set by Jake in the build prompt:
 
 ## Capabilities and Constraints
 
-- **Capabilities:** the 12 confirmed items in `docs/BRIEF.md` section 3.6, under four verbs: collect, check, connect, explain.
+- **Capabilities:** the 12 confirmed items in `docs/BRIEF.md` section 3.6, under four verbs: organize, check, connect, deliver (renamed from collect and explain on 2026-11-13).
   - Most are true because a person does the work with BASIS support. Never imply software does them automatically.
   - Never imply software does them automatically.
 - **Limits** (equal weight to capabilities): the six items in `docs/BRIEF.md` section 3.6 that stay with staff. They include readiness, load, and return-to-play decisions.

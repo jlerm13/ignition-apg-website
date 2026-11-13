@@ -57,6 +57,41 @@ Jake filled every open slot. The words are in `docs/MESSAGE.md` v4. New facts:
 1. The closing line of "How it starts" is now: "Staff ask questions by email, Slack, or text. They see results on our platform." It replaces the original "Your staff reach us by email, Slack, or text. No new login is needed to ask a question." The old line could read as a contradiction of "Your staff log in to our platform to see the results."
 2. Jake approved the Stage 4 audit.
 
+## Changes from Jake, 2026-11-13 (outcomes, the chain, and the four verbs)
+
+These override everything below where they conflict. Jake approved the ideas first, then every new line one by one on 2026-11-13 (15 lines, all yes). Where an item below says "draft", read "approved". The words are in `docs/MESSAGE.md` v9. The reasoning is in `docs/POSITIONING.md`.
+
+1. **The 3000-foot view (Jake approved it as clear and concise).** Ignition APG is managed data operations. Departments have the devices and the staff who decide. The work in between has no owner. We sell that owner: one specialist who runs the middle, with software to do the repetitive parts. Jake said this must be clear on the page.
+2. **New facts from Jake:**
+   - Ignition APG works across the department's whole tech stack. A department may have an AMS, and the specialist works across it. Ignition APG is not an alternative to an AMS. Do not position the site against AMS products.
+3. **The four verbs are Organize, Check, Connect, Deliver** (approved). They replace Collect, Check, Connect, Explain in the list and in the answer to "Do you make decisions about athletes?". Reasons: "collect" clashed with the problem heading, where collection is the staff's work, and "explain" sat too close to "interpret", which stays with staff. In section 3.6 below, the group names Collect and Explain now read Organize and Deliver. The rows do not change.
+4. **New section "What changes for your staff"** after the problem section (approved): three outcomes in ruled rows, then the booking button. The timing outcome replaced the ownership outcome (approved). The button moved here from the problem section (approved). Its event section is "outcomes".
+5. **"What you can hand us" is one line per verb** (approved), now shown inside the chain (draft). "We record each system's definitions" stays on the "Save for the call" list.
+6. **Seven copy ideas, all chosen by Jake** (the wording is draft):
+   1. The chain as a diagram, labelled "Illustration", with no numbers: devices and tests, the four verbs, decisions. The two ends are marked "Your staff" and the middle "Your performance data specialist".
+   2. The contrast with well-resourced programs moves up into the problem section.
+   3. "You have both ends": said once, in the hero text, and drawn in the chain.
+   4. Each symptom gives its cause with "because".
+   5. Three "What we are not" lines in the dark band.
+   6. Each point is said once. Repeated lines were cut from the specialist section and "Who we are".
+   7. The hero text leads with the gap.
+7. **Week list, last line** (approved): "Each month, your specialist updates your written guide to your sources, definitions, and methods."
+8. **Approved by Jake, Y or N round (2026-11-13):**
+   - The six "stays with your staff" lines carry the label "What stays with your staff". The text above them is "These decisions and tasks stay with your staff. We support them with checked data. We never take them over."
+   - "What we are not" is its own row under the six lines: "Not interpretation. We do not tell you what the data means for an athlete." "Not a software product. Your staff do not get another tool to learn and run." "Not consulting. We do not advise and leave. We do the work every week." Jake chose "Not interpretation" over "Not analytics".
+   - Under the chain heading: "Software alone does not close this gap. It takes a person who follows through."
+   - The second outcome's supporting line stays "They stop cleaning files and refreshing reports." for now.
+   - "High-value staff" stays in the symptom line. "Expensive people doing clerical work" is not used.
+   - "Managed data operations" and "the unglamorous middle" stay off the site. Jake wants them saved for marketing. They are in `docs/POSITIONING.md`.
+9. **After the second independent review (Jake, six yes answers, 2026-11-13):**
+   - "Not a software product. Your specialist runs our software. Your staff log in only to see the results." The earlier sentence contradicted "Your staff log in to our platform to see the results."
+   - A booking button under the chain's closing line, on phones only (event section "chain").
+   - "Well-resourced programs often have a specialist for this work."
+   - "Software alone does not close the gap between collection and decision. It takes a person who follows through."
+   - Deliver: "We build and update the reports your staff use. We explain what each one shows and what it cannot show."
+   - Picker choice: "Cleaning files and refreshing reports" replaces "Exporting files and refreshing reports", because the staff still send the exports. This overrides the problem choices in the 2026-10-16 section below.
+10. **Rejected on purpose:** "without another AMS", "no dashboards", any hours-per-week figure, "before morning lift", and any line about readiness reports. They break the hard rules or are not true.
+
 ## Changes from Jake, 2026-10-16 (hero picker, "How it starts", hero words)
 
 These override the role picker lines in the 2026-10-13 section below, and the "How it starts" and hero text further down.

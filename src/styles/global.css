@@ -24,6 +24,7 @@
   --text-lead: 1.25rem;
   --text-item: 1.1875rem;
   --text-body: 1.0625rem;
+  --text-small: 1rem;
 
   --breakpoint-md: 52rem;
 }
@@ -46,7 +47,7 @@
 
 @layer components {
   .wrap { max-width: 80rem; margin-inline: auto; padding-inline: clamp(1rem, 4vw, 3rem); }
-  .grid-12 { display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: clamp(0.75rem, 1.6vw, 1.5rem); }
+  .grid-12 { --grid-gap: clamp(0.75rem, 1.6vw, 1.5rem); display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); column-gap: var(--grid-gap); }
 
   .btn {
     display: inline-flex; align-items: center; justify-content: center;
@@ -91,6 +92,21 @@
   .faq details[open] summary::after { content: "\2212"; }
   .faq summary:hover { color: var(--color-neutral); }
   .faq summary:active { color: var(--color-muted); }
+
+  /* The chain: who owns each part of the work. The middle (the specialist) carries an 8 px ink bar.
+     Stacked (below 64rem): the staff parts carry a 2 px ink rule and an ink owner label, and a stem with an arrowhead joins each part to the next,
+     so the hand-back to the staff is plain. Wide: the three parts sit on one line, the staff parts go grey, and a small arrowhead sits in the gutter. */
+  .chain-part { position: relative; padding-top: 1.5rem; }
+  .chain-part::before { content: ""; position: absolute; top: 3px; left: 0; right: 0; height: 2px; background: var(--color-ink); }
+  .chain-part--ours::before { top: 0; height: 8px; }
+  .chain-owner { font-weight: 700; font-size: var(--text-small); color: var(--color-ink); }
+  .chain-part:not(:last-child)::after { content: ""; position: absolute; left: 0; bottom: -3.25rem; width: 1rem; height: 2.5rem; background: var(--color-ink); clip-path: polygon(7px 0, 9px 0, 9px 28px, 16px 28px, 8px 40px, 0 28px, 7px 28px); }
+  @media (min-width: 64rem) {
+    .chain-part:not(.chain-part--ours)::before { background: var(--color-rule-2); }
+    .chain-part:not(.chain-part--ours) .chain-owner { color: var(--color-muted); }
+    .chain-part:not(:last-child)::after { left: calc(100% + (var(--grid-gap) - 0.75rem) / 2); bottom: auto; top: -4px; width: 0; height: 0; background: none; clip-path: none; border-block: 0.5rem solid transparent; border-left: 0.75rem solid var(--color-muted); }
+    .chain-part--ours:not(:last-child)::after { border-left-color: var(--color-ink); }
+  }
 
   /* Small red square: the one marker shape on the page. */
   .marker { position: relative; padding-left: 1.5rem; }

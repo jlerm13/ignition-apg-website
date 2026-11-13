@@ -21,7 +21,8 @@ export const site = {
 export const hero = {
   label: "A performance data specialist for your athletic department",
   heading: "Performance data your staff can trust.",
-  text: "Ignition APG gives each department its own performance data specialist, supported by our software. Your specialist organizes, checks, connects, and delivers information across the systems your staff already use.",
+  // Rewritten 2026-11-13: the gap first, then the person and the software.
+  text: "Your department has the devices and the staff who make the decisions. Ignition APG gives you a performance data specialist who owns the work in between, supported by our software.",
   underButton: "Your staff keep the context, interpretation, and decisions.",
 };
 
@@ -44,7 +45,8 @@ export const rolePicker = {
     hint: "Choose the closest answer.",
     // Each choice fills the Calendly problem question. "Fix" is not used: BRIEF.md bans it for values.
     choices: [
-      "Exporting files and refreshing reports",
+      // 2026-11-13: "Exporting" became "Cleaning", because the staff still send the exports.
+      "Cleaning files and refreshing reports",
       "Finding missing or wrong data",
       "Connecting data from different systems",
       "Getting reports ready before coaches need them",
@@ -66,61 +68,70 @@ export const rolePicker = {
   back: "Back",
 };
 
-// Section 2, rewritten by Jake on 2026-10-13.
+// Section 2. Heading by Jake (2026-10-13). Symptoms now give the cause, and the answer is the contrast with
+// well-resourced programs (2026-11-13). The booking button moved to the outcomes section.
 export const problem = {
   heading: "Performance staff have the data. Nobody owns the work between collection and decision.",
   symptoms: [
-    "High-value staff spend time cleaning files and refreshing reports.",
-    "The report arrives after coaches needed the information.",
-    "One person manages data from GPS, force plates, and the AMS, but the systems do not work together.",
-    "Each new system adds work when nobody owns the workflow.",
+    "Staff do not fully trust the numbers, because nobody has time to check them.",
+    "High-value staff spend time cleaning files and refreshing reports, because no one else is there to do it.",
+    "The report arrives after coaches needed it, because the work waits until someone is free.",
+    "Each new system adds work, because the systems do not work together.",
   ],
-  solution: [
-    "Ignition APG gives your staff a performance data specialist.",
-    "The specialist works across the systems you already use.",
-    "We monitor incoming data, investigate problems, maintain the workflow, and deliver current information before coaches need it.",
-    "Your staff add context, interpret the information, and make the decisions.",
+  contrast: [
+    "Well-resourced programs often have a specialist for this work.",
+    "In many departments, it falls to a coach, a sport scientist, or a graduate assistant, on top of the main job.",
   ],
 };
 
-export const handUs = {
-  heading: "What you can hand us",
-  text: "Your performance data specialist does this work for your staff. On the call, we show you how.",
-  groups: [
-    {
-      verb: "Collect",
-      items: ["We collect the exports your systems already produce, and we keep every original file."],
-    },
-    {
-      verb: "Check",
-      items: [
-        "We find missing, duplicate, and wrong values. We find the cause. We correct it with your staff, or we exclude it and record the reason.",
-        "Every number links back to its source file. We review every flagged number before a report goes out.",
-      ],
-    },
-    {
-      verb: "Connect",
-      items: ["We match each athlete across your systems. We link GPS, testing, and other data to that athlete."],
-    },
-    {
-      verb: "Explain",
-      items: [
-        "We build and update the reports your staff use. We answer their data questions by email, Slack, or text.",
-        "We explain what each report shows and what it cannot show.",
-        "We give you a written guide to your sources, definitions, and methods.",
-      ],
-    },
+// Outcomes (Jake, 2026-11-13). What changes for the visitor's staff. They answer the first three symptoms, in order.
+// The chain's Connect row answers the fourth.
+export const outcomes = {
+  heading: "What changes for your staff",
+  items: [
+    { title: "Your staff can trust the numbers.", text: "We review every flagged number before a report goes out." },
+    { title: "Your staff get their time back.", text: "They stop cleaning files and refreshing reports." },
+    { title: "Reports arrive before coaches need them.", text: "The work no longer waits until someone is free." },
   ],
 };
 
-// Data specialist section (Jake, 2026-10-13). A role, with no name, no photo, and no personal story.
-export const specialist = {
+// The chain (Jake, 2026-11-13): devices and tests, then the four verbs, then decisions. The two ends belong to the
+// visitor's staff. The middle is the specialist's work. It replaces the "What you can hand us" list, one line per verb.
+// The four lines must match the Items in docs/MESSAGE.md section 3 (scripts/check-claims.mjs).
+export const chain = {
   heading: "One person owns your data work.",
-  // Jake's "what working with us looks like" text (2026-10-16), in the approved words. "Operator" became "performance data specialist".
+  // The first line says why a person is needed (Jake, 2026-11-13).
   text: [
-    "Your performance data specialist becomes an extension of your staff. Send a text, email, or Slack message, whichever your team already uses.",
-    "Your specialist learns your systems, your sports, and your weekly rhythm, and owns the recurring data work.",
-    "We work across the systems already in place. Our software does the repeat checks and shows your staff the results. Your specialist reviews every flagged number. You do not get a support queue.",
+    "Software alone does not close the gap between collection and decision. It takes a person who follows through.",
+    "Your specialist works across the systems you already use. Our software does the repeat checks and shows your staff the results.",
+  ],
+  caption: "Illustration: the chain from devices to decisions.",
+  staff: "Your staff",
+  specialist: "Your performance data specialist",
+  start: {
+    title: "Devices and tests",
+    text: "Your staff put devices on athletes, run the tests, and send the exports.",
+  },
+  steps: [
+    { verb: "Organize", text: "We organize the exports your systems already produce. We keep every original file and log what is missing." },
+    { verb: "Check", text: "We find missing, duplicate, and wrong values. Every number links back to its source file." },
+    { verb: "Connect", text: "We match each athlete across your systems. We link GPS, testing, and other data to that athlete." },
+    { verb: "Deliver", text: "We build and update the reports your staff use. We explain what each one shows and what it cannot show." },
+  ],
+  end: {
+    title: "Decisions",
+    text: "Your staff add context, interpret the information, and make the decisions.",
+  },
+  closingLine: "On the call, we show you how your specialist does this work.",
+};
+
+// Specialist section (Jake, 2026-10-13 and 2026-10-16). A role, with no name, no photo, and no personal story.
+// 2026-11-13: the heading is the first sentence of Jake's text. Lines now said in the chain section are gone from here.
+export const specialist = {
+  heading: "Your specialist becomes an extension of your staff.",
+  text: [
+    "Send a text, email, or Slack message, whichever your team already uses. You do not get a support queue.",
+    "Your specialist learns your systems, your sports, and your weekly rhythm.",
   ],
   who: {
     heading: "Who your performance data specialist is",
@@ -135,14 +146,25 @@ export const specialist = {
       "When a number looks wrong, your specialist finds the cause. They correct it with your staff, or exclude it and record the reason.",
       "Your staff get checked reports on the schedule you agree.",
       "Any day, your staff message your specialist with data questions.",
-      "Each month, your specialist updates your data guide.",
+      "Each month, your specialist updates your written guide to your sources, definitions, and methods.",
     ],
   },
 };
 
 export const staysWithStaff = {
   heading: "We handle the data work. Your staff keep the judgment.",
-  text: "We support this work with checked data. We never take it over.",
+  text: "These decisions and tasks stay with your staff. We support them with checked data. We never take them over.",
+  // The label over the six confirmed lines, so nobody reads them as things we do (Jake, 2026-11-13).
+  listLabel: "What stays with your staff",
+  // What we are not (Jake, 2026-11-13). Its own row under the six lines.
+  not: {
+    heading: "What we are not",
+    items: [
+      { label: "Not interpretation.", text: "We do not tell you what the data means for an athlete." },
+      { label: "Not a software product.", text: "Your specialist runs our software. Your staff log in only to see the results." },
+      { label: "Not consulting.", text: "We do not advise and leave. We do the work every week." },
+    ],
+  },
   items: [
     "Readiness, load, and return-to-play decisions.",
     "Which athletes need a conversation, and what changes in training.",
@@ -191,7 +213,7 @@ export const questions = {
     },
     {
       q: "Do you make decisions about athletes?",
-      a: "No. Readiness, load, and return-to-play decisions stay with your coaches and clinicians. We collect, check, connect, and explain the data they use.",
+      a: "No. Readiness, load, and return-to-play decisions stay with your coaches and clinicians. We organize, check, connect, and deliver the data they use.",
     },
     {
       q: "How do you protect athlete data?",
@@ -209,7 +231,7 @@ export const whoWeAre = {
   paragraphs: [
     "Ignition APG began with a simple mission: help every athlete train like a pro.",
     "For over 20 years, we have brought the principles, standards, and problem-solving approach of elite performance programs to athletes at every level.",
-    "Along the way, we saw another gap. Well-resourced sports organizations often have specialized technical staff supporting performance and sport-science data. In many other programs, that work falls to coaches, sport scientists, graduate assistants, and interns alongside their primary responsibilities.",
+    "Along the way, we saw another gap. Well-resourced sports organizations often have specialized technical staff for performance data. Many other programs do not.",
     "Today, our focus is giving each of those departments its own performance data specialist. That specialist works across the systems already in place and keeps the recurring data workflow running.",
     "Our focus has evolved, but the principle remains the same: make professional-level support more accessible.",
   ],
