@@ -42,7 +42,7 @@ Last updated: 2026-11-13
     - The Deliver line as two sentences.
     - Picker choice "Cleaning files and refreshing reports" (was "Exporting…"). `docs/BOOKING.md` matches. The Calendly question is free text, so Jake changes nothing in Calendly.
 - **Waiting on Jake:**
-  - Merge the pull request when ready. He clicks merge himself. Vercel then publishes `main`.
+  - Merge pull request #5 (https://github.com/jlerm13/ignition-apg-website/pull/5) when ready. He clicks merge himself. Vercel then publishes `main`.
   - After the merge: open the live site on a phone, tap through the hero picker with "Cleaning files and refreshing reports", and check that Calendly opens with it filled in.
   - Whether the page needs a line for departments with no AMS (not blocking).
 - **Checks on the draft:** `npm run check` passes (copy and claims). `node scripts/audit.mjs` passes: axe 0 violations, Lighthouse 100 on home and privacy, no sideways scroll. Kill AI Slop scan: no signals. `docs/final/home-1440.png` and `home-390.png` show the draft.
